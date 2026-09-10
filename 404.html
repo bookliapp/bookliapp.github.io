@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bookli</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --cream: #FFF8E7;
+    --ink: #1a1a1a;
+    --muted: #999;
+    --muted2: #555;
+    --amber: #f5a623;
+    --amber-dark: #d4830a;
+    --card: #ffffff;
+    --border: #eee3c8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    min-height: 100vh;
+  }
+  .wrap { width: 100%; max-width: 420px; }
+  .card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 32px 28px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  }
+  .banner {
+    width: 100%; height: 140px; border-radius: 14px; object-fit: cover; margin-bottom: 16px;
+    background: linear-gradient(135deg, #fff3d6, #ffe6b8);
+    display: flex; align-items: center; justify-content: center; font-size: 48px;
+  }
+  .logo-row { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; }
+  .logo {
+    width: 48px; height: 48px; border-radius: 12px; object-fit: cover; flex-shrink: 0;
+    background: var(--cream); display: flex; align-items: center; justify-content: center; font-size: 24px;
+    border: 1px solid var(--border);
+  }
+  h1 { font-size: 20px; margin: 0; }
+  .rating { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .row { display: flex; align-items: flex-start; gap: 10px; margin-top: 14px; font-size: 14px; color: var(--ink); }
+  .row .ic { flex-shrink: 0; width: 20px; text-align: center; }
+  .row a { color: var(--ink); text-decoration: none; }
+  .section-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 20px 0 8px; }
+  .svc { display: flex; justify-content: space-between; gap: 10px; font-size: 14px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .svc:last-child { border-bottom: none; }
+  .svc-name { font-weight: 600; }
+  .svc-meta { color: var(--muted); font-size: 12px; white-space: nowrap; }
+  .cta {
+    display: block; text-align: center; margin-top: 22px; padding: 14px;
+    background: linear-gradient(135deg, var(--amber), var(--amber-dark));
+    color: #fff; font-weight: 700; border-radius: 14px; text-decoration: none; font-size: 15px;
+  }
+  .hint { text-align: center; font-size: 12px; color: var(--muted); margin-top: 10px; }
+  .center { text-align: center; padding: 40px 0; color: var(--muted); }
+  .brand { text-align: center; margin-top: 20px; font-size: 13px; color: var(--muted); }
+  .brand a { color: var(--amber-dark); text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card" id="card">
+    <div class="center" id="loading">Loading…</div>
+  </div>
+  <div class="brand">👋 <a href="/">Bookli</a></div>
+</div>
+<script>
+(function () {
+  // Public, publishable key — meant to be exposed client-side (same key the apps ship with).
+  // Its entire security boundary is Postgres RLS / this RPC's own column list, not secrecy of
+  // the key itself. get_business_by_slug never returns user_id/tax_rate/blocked_client_names —
+  // see the iOS/Android READMEs' "Supabase security hardening" sections.
+  var SUPABASE_URL = "https://mtkoxewhavzlyqlmbndb.supabase.co";
+  var ANON_KEY = "sb_publishable_DRqOO0VxUSKQD71dFDTd5Q_RFf8Evlj";
+
+  var ICONS = {
+    beauty: "💅", sports: "🏋️", health: "🏥", edu: "📚", home: "🏠", animals: "🐾",
+    creative: "🎨", wellness: "🧘", tech: "💻", auto: "🚗", food: "🍕", cleaning: "🧹",
+    events: "🎉", finance: "💼", legal: "⚖️"
+  };
+
+  function escapeHtml(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function notFound(card) {
+    card.innerHTML =
+      '<div class="center">' +
+      '<div style="font-size:40px;margin-bottom:8px;">🔍</div>' +
+      '<div style="font-weight:600;margin-bottom:4px;color:#1c1c1c;">Business not found</div>' +
+      '<div style="font-size:13px;">This link may be out of date, or the business removed its page.</div>' +
+      '</div>';
+  }
+
+  function genericNotFound(card) {
+    card.innerHTML =
+      '<div class="center">' +
+      '<div style="font-size:40px;margin-bottom:8px;">🤔</div>' +
+      '<div style="font-weight:600;color:#1c1c1c;">Page not found</div>' +
+      '</div>';
+  }
+
+  var path = window.location.pathname.replace(/\/+$/, "");
+  var m = path.match(/^\/biz\/([^\/]+)$/);
+  var card = document.getElementById("card");
+
+  if (!m) {
+    genericNotFound(card);
+    return;
+  }
+
+  var slug = decodeURIComponent(m[1]);
+  var appLink = "bookli://biz/" + encodeURIComponent(slug);
+
+  fetch(SUPABASE_URL + "/rest/v1/rpc/get_business_by_slug", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "apikey": ANON_KEY,
+      "Authorization": "Bearer " + ANON_KEY
+    },
+    body: JSON.stringify({ p_slug: slug })
+  })
+    .then(function (r) { return r.ok ? r.json() : []; })
+    .then(function (rows) {
+      var biz = rows && rows[0];
+      if (!biz) { notFound(card); return; }
+
+      var icon = ICONS[biz.cat] || "🏢";
+      var bannerHtml = biz.banner_url
+        ? '<img class="banner" src="' + escapeHtml(biz.banner_url) + '" alt="">'
+        : '<div class="banner">' + icon + '</div>';
+      var logoHtml = biz.logo_url
+        ? '<img class="logo" src="' + escapeHtml(biz.logo_url) + '" alt="">'
+        : '<div class="logo">' + icon + '</div>';
+
+      var ratingHtml = "";
+      if (biz.reviews && Number(biz.reviews) > 0) {
+        var n = Number(biz.reviews);
+        ratingHtml = '<div class="rating">★ ' + Number(biz.rating).toFixed(1) + ' · ' + n +
+          (n === 1 ? " review" : " reviews") + '</div>';
+      }
+
+      var addrHtml = biz.loc
+        ? '<div class="row"><div class="ic">📍</div><div>' + escapeHtml(biz.loc) + '</div></div>'
+        : "";
+      var phoneHtml = biz.phone
+        ? '<div class="row"><div class="ic">📞</div><a href="tel:' + escapeHtml(biz.phone) + '">' + escapeHtml(biz.phone) + '</a></div>'
+        : "";
+      var hoursHtml = (biz.open && biz.close)
+        ? '<div class="row"><div class="ic">🕒</div><div>' + escapeHtml(biz.open) + ' – ' + escapeHtml(biz.close) + '</div></div>'
+        : "";
+
+      var services = [];
+      if (Array.isArray(biz.services)) {
+        services = biz.services;
+      } else if (typeof biz.services === "string") {
+        try { services = JSON.parse(biz.services); } catch (e) { services = []; }
+      }
+
+      var svcHtml = "";
+      if (services.length) {
+        svcHtml = '<div class="section-title">Services</div>' + services.slice(0, 8).map(function (s) {
+          var price = (s.price != null) ? (escapeHtml(biz.currency || "") + " " + escapeHtml(s.price)) : "";
+          var dur = s.duration ? (escapeHtml(s.duration) + " min") : "";
+          return '<div class="svc"><div><div class="svc-name">' + escapeHtml(s.name) + '</div>' +
+            (dur ? '<div class="svc-meta">' + dur + '</div>' : '') + '</div>' +
+            '<div class="svc-meta">' + price + '</div></div>';
+        }).join("");
+      }
+
+      document.title = biz.name + " · Bookli";
+
+      card.innerHTML =
+        bannerHtml +
+        '<div class="logo-row">' + logoHtml +
+        '<div><h1>' + escapeHtml(biz.name) + '</h1>' + ratingHtml + '</div></div>' +
+        addrHtml + phoneHtml + hoursHtml +
+        svcHtml +
+        '<a class="cta" href="' + appLink + '">📱 Open in Bookli</a>' +
+        '<div class="hint">Opens directly if you already have the app installed.</div>';
+    })
+    .catch(function () { notFound(card); });
+})();
+</script>
+</body>
+</html>
