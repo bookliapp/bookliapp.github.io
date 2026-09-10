@@ -4,6 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bookli</title>
+<!-- Generic, not per-business: link-preview crawlers (iMessage, WhatsApp, Slack, …) don't run
+     this page's JS, so they only ever see this static markup, never the fetched business name —
+     a real per-slug preview would need server-side rendering, which a static GitHub Pages site
+     can't do. Still strictly better than no preview at all. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bookli">
+<meta property="og:title" content="Bookli — book an appointment">
+<meta property="og:description" content="View this business's services, hours, and contact info, and book an appointment.">
+<meta name="twitter:card" content="summary">
 <style>
   :root {
     color-scheme: light dark;
