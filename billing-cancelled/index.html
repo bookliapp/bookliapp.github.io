@@ -18,14 +18,20 @@
   h1 { font-size: 22px; margin: 0 0 12px; }
   p { font-size: 15px; line-height: 1.5; color: #555; margin: 0 0 8px; }
   .hint { font-size: 13px; color: #999; margin-top: 20px; }
+  .btn {
+    display: block; margin: 20px 0 4px; padding: 14px 20px; border-radius: 50px;
+    background: linear-gradient(90deg, #D97706, #F97316); color: #fff; font-weight: 700;
+    font-size: 15px; text-decoration: none; box-shadow: 0 6px 16px rgba(217,119,6,0.3);
+  }
 </style>
 </head>
 <body>
   <div class="card">
     <h1>Checkout cancelled</h1>
     <p>No charge was made — your card wasn't billed.</p>
-    <p>You can close this tab and go back to the Bookli app whenever you're ready to try again.</p>
-    <p class="hint">You can restart checkout any time from Settings → Subscription & Billing.</p>
+    <a class="btn" href="bookli://billing-cancelled">Open Bookli</a>
+    <p class="hint">You can restart checkout any time from Settings → Subscription & Billing. If
+    the button above does nothing, make sure Bookli is installed, then switch back to it manually.</p>
   </div>
 </body>
 </html>
