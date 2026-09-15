@@ -15,15 +15,61 @@
     max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
   }
+  .toolbar {
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    margin-bottom: 8px; flex-wrap: wrap;
+  }
+  select {
+    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
+    background: #fff; color: #1a1a1a;
+  }
   h1 { font-size: 26px; margin: 0 0 4px; }
   h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
   p { font-size: 15px; line-height: 1.6; color: #333; }
   .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
   a { color: #D97706; }
+  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
 </style>
 </head>
 <body>
   <div class="card">
+    <div class="toolbar">
+      <a href="/">← Bookli</a>
+      <select onchange="if(this.value) location.href=this.value;">
+        <option value="/privacy/">English</option>
+        <option value="/privacy/hu/">Magyar</option>
+        <option value="/privacy/de/">Deutsch</option>
+        <option value="/privacy/fr/">Français</option>
+        <option value="/privacy/it/">Italiano</option>
+        <option value="/privacy/es/">Español</option>
+        <option value="/privacy/nl/">Nederlands</option>
+        <option value="/privacy/pt/">Português</option>
+        <option value="/privacy/sv/">Svenska</option>
+        <option value="/privacy/da/">Dansk</option>
+        <option value="/privacy/no/">Norsk</option>
+        <option value="/privacy/fi/">Suomi</option>
+        <option value="/privacy/pl/">Polski</option>
+        <option value="/privacy/ro/">Română</option>
+        <option value="/privacy/cs/">Čeština</option>
+        <option value="/privacy/sk/">Slovenčina</option>
+        <option value="/privacy/hr/">Hrvatski</option>
+        <option value="/privacy/sr/">Српски</option>
+        <option value="/privacy/bg/">Български</option>
+        <option value="/privacy/el/">Ελληνικά</option>
+        <option value="/privacy/sl/">Slovenščina</option>
+        <option value="/privacy/et/">Eesti</option>
+        <option value="/privacy/lv/">Latviešu</option>
+        <option value="/privacy/lt/">Lietuvių</option>
+        <option value="/privacy/uk/">Українська</option>
+        <option value="/privacy/tr/">Türkçe</option>
+        <option value="/privacy/zh-Hans/">简体中文</option>
+        <option value="/privacy/ja/">日本語</option>
+        <option value="/privacy/ko/">한국어</option>
+        <option value="/privacy/th/" selected>ไทย</option>
+        <option value="/privacy/hi/">हिन्दी</option>
+        <option value="/privacy/ru/">Русский</option>
+      </select>
+    </div>
     <h1>🔒 นโยบายความเป็นส่วนตัวของ Bookli</h1>
     <p class="updated">อัปเดตล่าสุด: September 15, 2026</p>
     <h2>เราคือใคร</h2>
@@ -50,6 +96,7 @@
     <p>เราอาจอัปเดตนโยบายนี้เป็นครั้งคราว การเปลี่ยนแปลงที่สำคัญจะแสดงไว้ที่นี่พร้อมวันที่อัปเดตที่ด้านบนของหน้านี้</p>
     <h2>ติดต่อเรา</h2>
     <p>คำถามเกี่ยวกับนโยบายนี้หรือข้อมูลของคุณสามารถส่งไปที่ bookli.app.team@outlook.com</p>
+    <p class="crosslink">ดูเพิ่มเติม: <a href="/terms/th/">ข้อกำหนดการให้บริการของ Bookli</a></p>
   </div>
 </body>
 </html>
