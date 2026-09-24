@@ -1,110 +1,23 @@
 <!doctype html>
 <html lang="hu">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookli Általános Szerződési Feltételek</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #FFF8E7; color: #1a1a1a; padding: 24px; box-sizing: border-box;
-    display: flex; justify-content: center;
-  }
-  .card {
-    max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
-  }
-  .toolbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    margin-bottom: 8px; flex-wrap: wrap;
-  }
-  select {
-    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
-    background: #fff; color: #1a1a1a;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
-  p { font-size: 15px; line-height: 1.6; color: #333; }
-  .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
-  a { color: #D97706; }
-  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="toolbar">
-      <a href="/">← Bookli</a>
-      <select onchange="if(this.value) location.href=this.value;">
-        <option value="/terms/">English</option>
-        <option value="/terms/hu/" selected>Magyar</option>
-        <option value="/terms/de/">Deutsch</option>
-        <option value="/terms/fr/">Français</option>
-        <option value="/terms/it/">Italiano</option>
-        <option value="/terms/es/">Español</option>
-        <option value="/terms/nl/">Nederlands</option>
-        <option value="/terms/pt/">Português</option>
-        <option value="/terms/sv/">Svenska</option>
-        <option value="/terms/da/">Dansk</option>
-        <option value="/terms/no/">Norsk</option>
-        <option value="/terms/fi/">Suomi</option>
-        <option value="/terms/pl/">Polski</option>
-        <option value="/terms/ro/">Română</option>
-        <option value="/terms/cs/">Čeština</option>
-        <option value="/terms/sk/">Slovenčina</option>
-        <option value="/terms/hr/">Hrvatski</option>
-        <option value="/terms/sr/">Српски</option>
-        <option value="/terms/bg/">Български</option>
-        <option value="/terms/el/">Ελληνικά</option>
-        <option value="/terms/sl/">Slovenščina</option>
-        <option value="/terms/et/">Eesti</option>
-        <option value="/terms/lv/">Latviešu</option>
-        <option value="/terms/lt/">Lietuvių</option>
-        <option value="/terms/uk/">Українська</option>
-        <option value="/terms/tr/">Türkçe</option>
-        <option value="/terms/zh-Hans/">简体中文</option>
-        <option value="/terms/ja/">日本語</option>
-        <option value="/terms/ko/">한국어</option>
-        <option value="/terms/th/">ไทย</option>
-        <option value="/terms/hi/">हिन्दी</option>
-        <option value="/terms/ru/">Русский</option>
-      </select>
-    </div>
-    <h1>📜 Bookli Általános Szerződési Feltételek</h1>
-    <p class="updated">Utolsó frissítés: September 15, 2026</p>
-    <h2>A jelen Feltételek elfogadása</h2>
-    <p>Fiók létrehozásával vagy a Bookli használatával elfogadod a jelen Általános Szerződési Feltételeket és az Adatvédelmi Tájékoztatónkat. Ha nem értesz egyet, kérjük, ne használd a Bookli-t. Ezek a Feltételek mindenkire vonatkoznak, aki az alkalmazást használja, akár ügyfélként foglal időpontot, akár üzletként kezel egyet.</p>
-    <h2>Mi a Bookli</h2>
-    <p>A Bookli egy foglalási platform, amely kisvállalkozásokat köt össze a szolgáltatásaikat lefoglalni kívánó ügyfelekkel. A Bookli maga egy technológiai szolgáltató — nem részese a rajta keresztül létrejött egyetlen időpontnak sem, és nem alkalmazza, nem irányítja és nem felügyeli a rajta szereplő egyetlen üzletet sem.</p>
-    <h2>Jogosultság és a fiókod</h2>
-    <p>A Bookli használatához legalább 16 évesnek kell lenned. Te felelsz a regisztrációkor megadott adatok pontosságáért, és bejelentkezési adataid biztonságban tartásáért. Te felelsz mindenért, ami a fiókod alatt történik.</p>
-    <h2>A Bookli használata ügyfélként</h2>
-    <p>A Bookli-val való foglalás teljesen ingyenes az ügyfelek számára, és mindig az is marad — sosem fizetsz a Bookli-nak azért, hogy megtalálj vagy lefoglalj egy üzletet. Amikor időpontot foglalsz, közvetlenül azzal az üzlettel lépsz szerződéses viszonyba, nem a Bookli-val; az üzlet felelős az időpont betartásáért, áthelyezéséért vagy lemondásáért, és a Bookli nem részese ennek.</p>
-    <h2>A Bookli használata üzletként</h2>
-    <p>Az üzleti fiókok tartalmaznak egy ingyenes próbaidőszakot, amely után a Bookli üzleti funkcióinak további használatához fizetős havi előfizetés szükséges. Az előfizetési díjakat teljes egészében a Stripe dolgozza fel; a Bookli sosem látja vagy tárolja a kártyaadataidat. Az előfizetésed automatikusan megújul minden hónapban, amíg le nem mondod a Beállítások Előfizetés kezelése menüpontján keresztül, ami megnyitja a Stripe saját Ügyfélportálját — a lemondás megállítja a jövőbeli megújításokat, de nem téríti vissza az aktuális elszámolási időszakot. Ésszerű előzetes értesítéssel megváltoztathatjuk az előfizetési árakat; ha az árváltozás életbe lépése után is tovább használod a Bookli üzleti funkcióit, az azt jelenti, hogy elfogadod az új árat. Üzletként kizárólag te felelsz a hirdetésed pontosságáért, az általad kínált szolgáltatásokért, az általad felszámított árakért, valamint a rád vonatkozó adó-, fogyasztóvédelmi és üzleti engedélyezési jogszabályok betartásáért — a Bookli bevétel- és ÁFA-eszközei kizárólag kényelmi célokat szolgálnak, és nem minősülnek adó- vagy jogi tanácsadásnak.</p>
-    <h2>Az általad megadott tartalom</h2>
-    <p>Megtartod a tulajdonjogot minden olyan értékelés, fotó vagy egyéb tartalom felett, amit a Bookli-hoz adsz, de a beküldésével licencet adsz a Bookli-nak arra, hogy megjelenítse azt az alkalmazáson belül azoknak, akiknek szánva van — például egy értékelés bárki számára látható, aki megnézi az adott üzlet profilját. Te felelsz azért, amit közzéteszel: nem lehet hamis, rágalmazó, jogellenes, vagy mások jogait sértő. Eltávolíthatunk olyan tartalmat, vagy elrejthetünk a nyilvánosság elől egy értékelést, amely ezt megsérti, vagy amelyet jogos okból kérnek tőlünk eltávolítani.</p>
-    <h2>Elfogadható használat</h2>
-    <p>Vállalod, hogy nem használod a Bookli-t mások zaklatására, megkárosítására vagy becsapására; más személy vagy üzlet megszemélyesítésére; hamis vagy félrevezető információk közzétételére; az alkalmazás normál működésének megzavarására; vagy hogy megpróbálj hozzáférni egy másik fiókhoz vagy adatokhoz, amelyek nem a tieid.</p>
-    <h2>A Bookli szerepe a vitákban</h2>
-    <p>A Bookli egy semleges platform, amely üzleteket és ügyfeleket köt össze. Nem vagyunk felelősek egy üzlet és egy ügyfél közötti bármely időpont, szolgáltatás vagy interakció minőségéért, biztonságáért, jogszerűségéért vagy kimeneteléért, és nem közvetítünk közöttük vitákat. Ha valami elromlik egy adott időponttal kapcsolatban, az az érintett üzlet és ügyfél közötti ügy.</p>
-    <h2>Szellemi tulajdon</h2>
-    <p>A Bookli név, logó és maga az alkalmazás a Bookli üzemeltetőjének tulajdona. Semmi a jelen Feltételekben nem ad neked jogot ezek használatára az alkalmazás normál használatán kívül.</p>
-    <h2>Felfüggesztés és megszüntetés</h2>
-    <p>Bármikor abbahagyhatod a Bookli használatát, és törölheted a fiókodat a Beállításokból. Felfüggeszthetünk vagy megszüntethetünk egy olyan fiókot, amely megsérti a jelen Feltételeket, csalást vagy visszaélést követ el, vagy kockázatot, illetve jogi kitettséget teremt a Bookli vagy más felhasználók számára — a helyzet súlyosságától függően, értesítéssel vagy anélkül.</p>
-    <h2>Jogi nyilatkozatok</h2>
-    <p>A Bookli "ahogy van" és "amennyiben elérhető" alapon kerül biztosításra, mindenféle kifejezett vagy hallgatólagos garancia nélkül, ideértve azt a garanciát is, hogy az alkalmazás megszakítás nélküli, hibamentes, vagy egy adott célra alkalmas lesz. Mindent megteszünk annak érdekében, hogy a Bookli megbízható és pontos maradjon, de nem garantálhatjuk, hogy mindig az lesz.</p>
-    <h2>Felelősségkorlátozás</h2>
-    <p>A törvény által megengedett legteljesebb mértékben a Bookli és üzemeltetője nem felel semmilyen közvetett, véletlen, különleges vagy következményi kárért, amely az alkalmazás használatodból ered, ideértve az elmaradt hasznot, elmaradt foglalásokat vagy elveszett adatokat. A Bookli-val kapcsolatos bármely követelésre vonatkozó teljes felelősségünk az igény felmerülése előtti 12 hónapban nekünk fizetett összegre korlátozódik, ha volt ilyen.</p>
-    <h2>Kártalanítás</h2>
-    <p>Vállalod, hogy kártalanítod és mentesíted a Bookli-t és üzemeltetőjét minden olyan követeléssel, veszteséggel vagy költséggel szemben — beleértve az ésszerű jogi költségeket is —, amely a jelen Feltételek általad elkövetett megsértéséből, az alkalmazással való visszaélésedből, vagy az általad közzétett tartalomból ered.</p>
-    <h2>Alkalmazandó jog</h2>
-    <p>A jelen Feltételekre Dánia jogszabályai irányadók, tekintet nélkül annak kollíziós szabályaira. Minden olyan vitát, amely nem oldható meg informálisan, a dán bíróságok kizárólagos joghatósága alá tartozik.</p>
-    <h2>A jelen Feltételek módosításai</h2>
-    <p>Időről időre frissíthetjük a jelen Feltételeket. Ha lényeges változtatást hajtunk végre, azt itt tüntetjük fel, az oldal tetején található frissített dátummal; ha a változás életbe lépése után is tovább használod a Bookli-t, az azt jelenti, hogy elfogadod a frissített Feltételeket.</p>
-    <h2>Kapcsolat</h2>
-    <p>A jelen Feltételekkel kapcsolatos kérdéseket a bookli.app.team@outlook.com címre küldheted.</p>
-    <p class="crosslink">Lásd még: <a href="/privacy/hu/">Bookli Adatvédelmi Tájékoztató</a></p>
-  </div>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf7ed"><title>Bookli felhasználási feltételek</title><link rel="stylesheet" href="/assets/legal.css"></head>
+<body><main class="shell"><div class="toolbar"><a class="brand" href="/"><span class="mark">B</span><span>Bookli</span></a><select aria-label="Nyelv" onchange="if(this.value) location.href=this.value;"><option value="/terms/">English</option><option value="/terms/hu/" selected>Magyar</option></select></div><article class="card">
+<span class="eyebrow">Feltételek · alkalmazás és weboldal</span><h1>Bookli felhasználási feltételek</h1><p class="updated">Utoljára frissítve: 2026. szeptember 24.</p>
+<div class="identity"><strong>A Bookli szolgáltatója</strong><p>A Booklit Báthori Zsolt magánszemélyként üzemelteti. Nem önálló cég vagy jogi személy, jelenleg nincs CVR-száma. Kapcsolat: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p></div>
+<nav class="contents" aria-label="Tartalom"><a href="#service">A szolgáltatás</a><a href="#accounts">Fiókok</a><a href="#clients">Ügyfelek</a><a href="#business">Üzletek</a><a href="#payments">Fizetés</a><a href="#content">Tartalom</a><a href="#ending">Megszüntetés</a><a href="#law">Jogi feltételek</a></nav>
+<h2 id="acceptance">1. A megállapodás hatálya</h2><p>Ezek a feltételek a Bookli-fiók létrehozására és használatára, valamint a Bookli weboldal használatára vonatkoznak. A Bookli használatával elfogadod ezeket a feltételeket és az <a href="/privacy/hu/">Adatvédelmi Tájékoztatót</a>. Ha üzlet nevében használod a Booklit, kijelented, hogy jogosult vagy az üzlet nevében elfogadni a feltételeket. Ha nem értesz egyet, ne hozz létre fiókot, és ne használd a szolgáltatást.</p>
+<h2 id="service">2. Mit nyújt a Bookli?</h2><p>A Bookli digitális eszközöket biztosít üzleti profil közzétételéhez, szolgáltatások felsorolásához, elérhetőség kezeléséhez, időpontkérések fogadásához, ügyféladatok rendezéséhez és üzleti nyilvántartások megtekintéséhez. Az ügyfelek megtalálhatják a csatlakozott üzleteket és foglalást kezdeményezhetnek. A Bookli nem nyújtja az üzlet által meghirdetett szolgáltatásokat, és nem részese az üzlet és ügyfele közötti szolgáltatási szerződésnek.</p><p>A Bookli aktív fejlesztés alatt áll. Egyes funkciók béta, próba, tervezett vagy hamarosan érkező állapotúak lehetnek. A weboldalon jelzett tervezett ár vagy funkció önmagában nem hoz létre előfizetést, és nem jelenti, hogy a funkció már elérhető. A regisztráció előtt az alkalmazásban megjelenő aktuális ajánlat az irányadó.</p>
+<h2 id="accounts">3. Jogosultság és fiókok</h2><p>A Bookli használatához legalább 16 évesnek kell lenned. Tartsd naprakészen a fiókadataidat, védd a belépési adataidat, és jelezd nekem, ha illetéktelen hozzáférésre gyanakszol. A fiókod alatti tevékenységekért felelsz, kivéve, ha azok az általam jogszabály szerint elvárt észszerű biztonsági intézkedések elmulasztásából erednek.</p>
+<h2 id="clients">4. Ügyfelek és foglalások</h2><p>Az ügyfeleknek a Bookli nem számít fel díjat üzlet kereséséért vagy foglalásért. Az üzlet a saját szolgáltatásaiért az ügyfélnek bemutatott feltételek szerint kérhet díjat. A foglalás elfogadásával vagy visszaigazolásával közvetlen megállapodás jön létre az ügyfél és az üzlet között. Az üzlet felelős a szolgáltatásért, annak leírásáért és áráért, az időpont módosításáért vagy lemondásáért, a visszatérítésért és az adott szolgáltatásra érvényes fogyasztói jogokért. Egy konkrét foglalással kapcsolatban az üzletet keresd; ha maga az alkalmazás nem működik megfelelően, nekem írj.</p>
+<h2 id="business">5. Üzleti fiókok és személyes adatok</h2><p>Az üzleti felhasználó felelős a nyilvános hirdetés, a szolgáltatások és az árak pontosságáért, valamint a rá vonatkozó jogszabályok betartásáért. Jogalappal kell rendelkeznie az ügyféladatok Bookliba viteléhez, meg kell adnia a szükséges adatvédelmi tájékoztatást, csak a szükséges adatokat rögzítheti, és nem tárolhat érzékeny vagy oda nem tartozó adatokat a megjegyzésekben. Az ügyfél- és foglalási nyilvántartások célját rendszerint az üzlet határozza meg; az ezekkel kapcsolatos kérelmekre az üzletnek kell válaszolnia, az <a href="/privacy/hu/">Adatvédelmi Tájékoztató</a> szerint. Mielőtt egy üzlet a Booklin keresztül ügyfelei személyes adatait kezeli, az üzletnek és nekem írásbeli adatfeldolgozási megállapodást kell kötnünk. Ha az alkalmazás még nem kínál ilyen megállapodást, az ügyféladatok felvitele előtt keress meg, és addig ne rögzíts ügyféladatokat.</p><p>A Bookli bevételi és ÁFA-funkciói rendszerezési segédeszközök. Nem minősülnek adó-, könyvelési vagy jogi tanácsadásnak. A nyilvántartások és adókötelezettségek ellenőrzése a te felelősséged.</p>
+<h2 id="payments">6. Üzleti előfizetés, próbaidő és lemondás</h2><p>Az üzleti funkciók próbaidővel és fizetős havi előfizetéssel lehetnek elérhetők. A próbaidő hosszát, az előfizetés árát és pénznemét, az adókat, a megújulás dátumát és a számlázási feltételeket a fizetés megerősítése előtt az alkalmazás mutatja meg. A weboldalon szereplő árak tervezett bevezető árak; csak akkor alapoznak meg fizetést, ha ugyanaz az ajánlat az alkalmazás előfizetési folyamatában megjelenik, és elfogadod.</p><p>Az előfizetés havonta automatikusan megújul, amíg le nem mondod. A Beállítások → Előfizetés kezelése menüponttal megnyithatod a Stripe ügyfélportálját és lemondhatod az előfizetést. A lemondás megállítja a későbbi megújításokat; a hozzáférés általában a már kifizetett időszak végéig megmarad. A rád vonatkozó kötelező elállási, megfelelőségi és visszatérítési jogokat ez a feltétel nem korlátozza. A fizetést a Stripe kezeli a saját feltételei szerint; a teljes kártyaszámot nem kapom meg és nem tárolom.</p><p>Lényeges árváltozásról és előfizetési módosításról előzetesen tájékoztatlak. Az új ár életbe lépése előtt lemondhatod az előfizetést. A módosítás nem növel visszamenőleg egy már teljesített terhelést.</p>
+<h2 id="content">7. Profilok, értékelések és beküldött tartalom</h2><p>A beküldött tartalom tulajdonjoga nálad marad. Nem kizárólagos, világszerte érvényes, díjmentes engedélyt adsz nekem arra, hogy a tartalmat tároljam, szükség szerint átméretezzem és megjelenítsem a Bookli általad választott funkcióinak működtetéséhez és népszerűsítéséhez, például üzleti profil vagy értékelés megjelenítésekor. Az engedély a tartalom eltávolításakor megszűnik, kivéve a biztonsági mentésekben maradó korlátozott másolatokat és a jogszabály miatt megőrzendő példányokat.</p><p>Csak olyan tartalmat tölts fel, amelynek használatára jogosult vagy. Ne tegyél közzé jogellenes, megtévesztő, bántalmazó, diszkriminatív, rágalmazó vagy jogsértő tartalmat, más személy személyes adatát megfelelő felhatalmazás nélkül, illetve a szolgáltatáshoz nem kapcsolódó anyagot. Az értékelés valós tapasztalatot tükrözzön. Korlátozhatom vagy eltávolíthatom a feltételeket sértő, biztonsági vagy jogi kockázatot jelentő, illetve jogszabály alapján eltávolítandó tartalmat. Hirdetés vagy értékelés bejelentéséhez küldd el a linket és rövid indoklást a <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a> címre.</p>
+<h2 id="acceptable">8. Elfogadható használat</h2><p>Ne használd a Booklit zaklatásra, fenyegetésre, csalásra vagy károkozásra; más személy vagy üzlet megszemélyesítésére; más adatainak jogosulatlan használatára; az alkalmazás megzavarására; a biztonság megkerülésére; kéretlen üzenetek küldésére; vagy más fiókjához, illetve adataihoz való hozzáférésre. Vészhelyzetben ne a Booklira hagyatkozz, és ne ez legyen az egyetlen nyilvántartásod egy foglalásról vagy üzleti tranzakcióról.</p>
+<h2 id="thirdparty">9. Külső szolgáltatások és elérhetőség</h2><p>A Bookli tárhely-, térkép-, üzenetküldő és fizetési szolgáltatóktól függ. Ezek külön feltételek szerint működnek, és időnként elérhetetlenné válhatnak. Törekszem a Bookli hasznos és biztonságos működtetésére, de folyamatos elérhetőséget nem tudok ígérni. Karbantarthatom, frissíthetem vagy módosíthatom a funkciókat; ha a változás lényegesen érint egy fizetős előfizetést, előzetesen tájékoztatlak és biztosítom a jogszabály szerinti jogaidat.</p>
+<h2 id="ip">10. Szellemi tulajdon</h2><p>A Bookli szoftvere, márkája, arculata és anyagai az én vagy az érintett licencadók tulajdonában állnak. A feltételek korlátozott, visszavonható engedélyt adnak az alkalmazás rendeltetésszerű használatára. A tulajdonjog nem száll át rád; az alkalmazást nem másolhatod, értékesítheted tovább vagy fejtheted vissza, kivéve, ha ezt az alkalmazandó jog megengedi.</p>
+<h2 id="ending">11. Fiók felfüggesztése és megszüntetése</h2><p>Bármikor abbahagyhatod a Bookli használatát és törölheted a fiókodat a Beállításokban. Ideiglenesen korlátozhatom a hozzáférést, ha ez észszerűen szükséges a felhasználók védelméhez, csalás vagy visszaélés kivizsgálásához, biztonsági probléma elhárításához, jogszabályi kötelezettség teljesítéséhez vagy súlyos szerződésszegés kezeléséhez. Ha lehetséges, elmagyarázom az okot, és lehetőséget adok a kapcsolatfelvételre. A fiók megszüntetése nem bontja fel az üzlet és ügyfél külön megállapodását, és nem töröl olyan adatot, amelyet jogszerűen meg kell őrizni.</p>
+<h2 id="warranties">12. Jótállás és felelősség</h2><p>A Booklit észszerű gondossággal és szakértelemmel működtetem, de a fejlesztés alatt álló funkciók hibásak lehetnek vagy átmenetileg elérhetetlenné válhatnak. Semmi ezekben a feltételekben nem zár ki olyan kötelező fogyasztói garanciát, digitális szolgáltatással kapcsolatos jogorvoslatot vagy más jogot, amelyet jogszerűen nem lehet kizárni. Az üzlet felel az általa meghirdetett és nyújtott szolgáltatásokért.</p><p>A jogszabályok által megengedett mértékben egyik fél sem felel olyan veszteségért, amely a megállapodás létrejöttekor észszerűen nem volt előre látható. A feltételek nem zárják ki a csalásért, szándékos károkozásért vagy a jogszabály szerint nem korlátozható felelősségért való felelősséget. A kötelező fogyasztói jogok mindig elsőbbséget élveznek.</p>
+<h2 id="law">13. Irányadó jog és viták</h2><p>A feltételekre a dán jog irányadó, a lakóhely szerinti fogyasztókat védő kötelező szabályok figyelembevételével. A vitát az alkalmazandó jog szerint hatáskörrel és illetékességgel rendelkező bíróság rendezheti; ez nem vonja el a fogyasztótól azt a kötelező jogot, hogy más illetékes bíróság előtt indítson eljárást.</p>
+<h2 id="changes">14. A feltételek módosítása</h2><p>A Bookli vagy a jogszabályok változásakor módosíthatom ezeket a feltételeket. Lényeges változás esetén frissítem a fenti dátumot, és lehetőség szerint az alkalmazásban vagy e-mailben is értesítelek. Ha nem fogadod el a módosítást, hagyd abba az érintett funkció használatát, és az életbe lépés előtt mondd le az előfizetést. A módosítások nem vonatkoznak visszamenőleg a már felmerült vitákra.</p>
+<h2 id="contact">15. Kapcsolat</h2><p>Kérdés, ügyfélszolgálati kérés vagy tartalombejelentés: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p><p class="crosslink">Lásd még: <a href="/privacy/hu/">Bookli adatvédelmi tájékoztató</a>.</p>
+</article></main></body></html>
