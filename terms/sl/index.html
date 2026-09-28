@@ -1,110 +1,23 @@
 <!doctype html>
 <html lang="sl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookli pogoji uporabe</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #FFF8E7; color: #1a1a1a; padding: 24px; box-sizing: border-box;
-    display: flex; justify-content: center;
-  }
-  .card {
-    max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
-  }
-  .toolbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    margin-bottom: 8px; flex-wrap: wrap;
-  }
-  select {
-    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
-    background: #fff; color: #1a1a1a;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
-  p { font-size: 15px; line-height: 1.6; color: #333; }
-  .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
-  a { color: #D97706; }
-  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="toolbar">
-      <a href="/">← Bookli</a>
-      <select onchange="if(this.value) location.href=this.value;">
-        <option value="/terms/">English</option>
-        <option value="/terms/hu/">Magyar</option>
-        <option value="/terms/de/">Deutsch</option>
-        <option value="/terms/fr/">Français</option>
-        <option value="/terms/it/">Italiano</option>
-        <option value="/terms/es/">Español</option>
-        <option value="/terms/nl/">Nederlands</option>
-        <option value="/terms/pt/">Português</option>
-        <option value="/terms/sv/">Svenska</option>
-        <option value="/terms/da/">Dansk</option>
-        <option value="/terms/no/">Norsk</option>
-        <option value="/terms/fi/">Suomi</option>
-        <option value="/terms/pl/">Polski</option>
-        <option value="/terms/ro/">Română</option>
-        <option value="/terms/cs/">Čeština</option>
-        <option value="/terms/sk/">Slovenčina</option>
-        <option value="/terms/hr/">Hrvatski</option>
-        <option value="/terms/sr/">Српски</option>
-        <option value="/terms/bg/">Български</option>
-        <option value="/terms/el/">Ελληνικά</option>
-        <option value="/terms/sl/" selected>Slovenščina</option>
-        <option value="/terms/et/">Eesti</option>
-        <option value="/terms/lv/">Latviešu</option>
-        <option value="/terms/lt/">Lietuvių</option>
-        <option value="/terms/uk/">Українська</option>
-        <option value="/terms/tr/">Türkçe</option>
-        <option value="/terms/zh-Hans/">简体中文</option>
-        <option value="/terms/ja/">日本語</option>
-        <option value="/terms/ko/">한국어</option>
-        <option value="/terms/th/">ไทย</option>
-        <option value="/terms/hi/">हिन्दी</option>
-        <option value="/terms/ru/">Русский</option>
-      </select>
-    </div>
-    <h1>📜 Bookli pogoji uporabe</h1>
-    <p class="updated">Nazadnje posodobljeno: September 15, 2026</p>
-    <h2>Sprejem teh Pogojev</h2>
-    <p>Z ustvarjanjem računa ali uporabo Bookli sprejemate te Pogoje uporabe in našo Politiko zasebnosti. Če se ne strinjate, prosimo, ne uporabljajte Bookli. Ti Pogoji veljajo za vsakogar, ki uporablja aplikacijo, bodisi kot stranka, ki rezervira termin, bodisi kot podjetje, ki ga upravlja.</p>
-    <h2>Kaj je Bookli</h2>
-    <p>Bookli je platforma za rezervacije, ki povezuje mala podjetja s strankami, ki želijo rezervirati njihove storitve. Bookli je sam po sebi ponudnik tehnologije — ni stranka pri nobenem terminu, sklenjenem prek nje, in ne zaposluje, ne nadzoruje niti ne nadzira nobenega podjetja, navedenega na njej.</p>
-    <h2>Upravičenost in vaš račun</h2>
-    <p>Za uporabo Bookli morate biti stari vsaj 16 let. Odgovorni ste za točnost podatkov, ki jih navedete pri registraciji, in za varnost svojih prijavnih podatkov. Odgovorni ste za vse, kar se zgodi pod vašim računom.</p>
-    <h2>Uporaba Bookli kot stranka</h2>
-    <p>Rezervacija prek Bookli je in bo vedno ostala popolnoma brezplačna za stranke — Bookliju nikoli ne plačate ničesar za iskanje ali rezervacijo podjetja. Ko rezervirate termin, sklenete dogovor neposredno s tem podjetjem, ne z Bookli; podjetje je odgovorno za upoštevanje, prestavitev, ali odpoved tega termina, Bookli pa pri tem ni stranka.</p>
-    <h2>Uporaba Bookli kot podjetje</h2>
-    <p>Poslovni računi vključujejo brezplačno preizkusno obdobje, po katerem nadaljnja uporaba poslovnih funkcij Bookli zahteva plačljivo mesečno naročnino. Plačila naročnine v celoti obdeluje Stripe; Bookli nikoli ne vidi ali shranjuje podatkov vaše kartice. Vaša naročnina se samodejno obnovi vsak mesec, dokler je ne prekličete prek možnosti Upravljaj naročnino v Nastavitvah, ki odpre lasten Stripeov portal za stranke — preklic ustavi prihodnje obnovitve, vendar ne povrne trenutnega obračunskega obdobja. Cene naročnine lahko spremenimo z razumnim predhodnim obvestilom; nadaljnja uporaba poslovnih funkcij Bookli po uveljavitvi spremembe cene pomeni, da sprejemate novo ceno. Kot podjetje ste izključno odgovorni za točnost svoje ponudbe, storitve, ki jih ponujate, cene, ki jih zaračunavate, in upoštevanje vseh davčnih zakonov, zakonov o varstvu potrošnikov, in zakonov o poslovnih dovoljenjih, ki veljajo za vas — Booklijeva orodja za prihodke in DDV so na voljo zgolj zaradi udobja in ne pomenijo davčnega ali pravnega nasveta.</p>
-    <h2>Vsebina, ki jo posredujete</h2>
-    <p>Ohranite lastništvo nad vsako oceno, fotografijo, ali drugo vsebino, ki jo dodate v Bookli, vendar z oddajo Bookliju podelite licenco za prikaz znotraj aplikacije osebam, ki jim je namenjena — na primer, ocena se prikaže vsakomur, ki si ogleda profil tega podjetja. Odgovorni ste za to, kar objavite: ne sme biti neresnično, obrekljivo, nezakonito, ali kršiti pravic drugih. Lahko odstranimo vsebino, ali skrijemo oceno pred javnim prikazom, ki krši to, ali katere odstranitev nas prosijo iz legitimnega razloga.</p>
-    <h2>Sprejemljiva uporaba</h2>
-    <p>Strinjate se, da Bookli ne boste uporabljali za nadlegovanje, prevaro, ali škodovanje komurkoli; predstavljanje kot druga oseba ali podjetje; objavljanje lažnih ali zavajajočih informacij; motenje normalnega delovanja aplikacije; ali poskus dostopa do drugega računa ali podatkov, ki niso vaši.</p>
-    <h2>Vloga Bookli pri sporih</h2>
-    <p>Bookli je nevtralna platforma, ki povezuje podjetja in stranke. Nismo odgovorni za kakovost, varnost, zakonitost, ali izid katerega koli termina, storitve, ali interakcije med podjetjem in stranko, in ne posredujemo pri sporih med njimi. Če gre kaj narobe s posameznim terminom, je to zadeva med vpletenim podjetjem in stranko.</p>
-    <h2>Intelektualna lastnina</h2>
-    <p>Ime Bookli, logotip, in sama aplikacija so last upravljavca Bookli. Nič v teh Pogojih vam ne daje pravice do njihove uporabe zunaj običajne uporabe aplikacije.</p>
-    <h2>Začasna ukinitev in prekinitev</h2>
-    <p>Uporabo Bookli lahko kadar koli prekinete in izbrišete svoj račun v Nastavitvah. Lahko začasno ukinemo ali prekinemo račun, ki krši te Pogoje, se vključuje v goljufijo ali zlorabo, ali ustvarja tveganje ali pravno izpostavljenost za Bookli ali druge uporabnike, z obvestilom ali brez njega, odvisno od resnosti situacije.</p>
-    <h2>Omejitve odgovornosti</h2>
-    <p>Bookli je na voljo "takšen, kot je" in "kot je na voljo", brez kakršnih koli jamstev, izrecnih ali impliciranih, vključno z jamstvom, da bo aplikacija neprekinjena, brez napak, ali primerna za določen namen. Na vso moč si prizadevamo, da Bookli ostane zanesljiv in natančen, vendar ne moremo zagotoviti, da bo to vedno tako.</p>
-    <h2>Omejitev odgovornosti</h2>
-    <p>V največjem obsegu, dovoljenem z zakonom, Bookli in njegov upravljavec nista odgovorna za kakršno koli posredno, naključno, posebno, ali posledično škodo, ki izhaja iz vaše uporabe aplikacije, vključno z izgubljenim dobičkom, izgubljenimi rezervacijami, ali izgubljenimi podatki. Naša skupna odgovornost za katerikoli zahtevek, povezan z Bookli, je omejena na znesek, ki ste nam ga plačali, če sploh, v 12 mesecih pred nastankom zahtevka.</p>
-    <h2>Odškodnina</h2>
-    <p>Strinjate se, da boste Bookli in njegovega upravljavca razbremenili vsakega zahtevka, izgube, ali stroška — vključno z razumnimi pravnimi stroški — ki izhaja iz vaše lastne kršitve teh Pogojev, vaše zlorabe aplikacije, ali vsebine, ki jo objavite.</p>
-    <h2>Pravo, ki se uporablja</h2>
-    <p>Ti Pogoji so urejeni z zakoni Danske, ne glede na njena načela kolizije zakonov. Vsak spor, ki ga ni mogoče rešiti neformalno, bo predmet izključne pristojnosti danskih sodišč.</p>
-    <h2>Spremembe teh Pogojev</h2>
-    <p>Te Pogoje lahko občasno posodobimo. Če naredimo bistveno spremembo, jo bomo tukaj odrazili s posodobljenim datumom na vrhu te strani; nadaljnja uporaba Bookli po uveljavitvi spremembe pomeni, da sprejemate posodobljene Pogoje.</p>
-    <h2>Kontakt</h2>
-    <p>Vprašanja o teh Pogojih lahko pošljete na bookli.app.team@outlook.com.</p>
-    <p class="crosslink">Glejte tudi: <a href="/privacy/sl/">Bookli politika zasebnosti</a></p>
-  </div>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf7ed"><title>Pogoji uporabe Bookli</title><link rel="stylesheet" href="/assets/legal.css"></head>
+<body><main class="shell"><div class="toolbar"><a class="brand" href="/"><span class="mark">B</span><span>Bookli</span></a><select aria-label="Language" onchange="if(this.value) location.href=this.value;"><option value="/terms/">English</option><option value="/terms/hu/">Magyar</option><option value="/terms/de/">Deutsch</option><option value="/terms/fr/">Français</option><option value="/terms/it/">Italiano</option><option value="/terms/es/">Español</option><option value="/terms/nl/">Nederlands</option><option value="/terms/pt/">Português</option><option value="/terms/sv/">Svenska</option><option value="/terms/da/">Dansk</option><option value="/terms/no/">Norsk</option><option value="/terms/fi/">Suomi</option><option value="/terms/pl/">Polski</option><option value="/terms/ro/">Română</option><option value="/terms/cs/">Čeština</option><option value="/terms/sk/">Slovenčina</option><option value="/terms/hr/">Hrvatski</option><option value="/terms/sr/">Српски</option><option value="/terms/bg/">Български</option><option value="/terms/el/">Ελληνικά</option><option value="/terms/sl/" selected>Slovenščina</option><option value="/terms/et/">Eesti</option><option value="/terms/lv/">Latviešu</option><option value="/terms/lt/">Lietuvių</option><option value="/terms/uk/">Українська</option><option value="/terms/tr/">Türkçe</option><option value="/terms/hi/">हिन्दी</option><option value="/terms/zh-Hans/">简体中文</option><option value="/terms/ko/">한국어</option><option value="/terms/ja/">日本語</option><option value="/terms/ru/">Русский</option><option value="/terms/th/">ไทย</option></select></div><article class="card">
+<span class="eyebrow">Pogoji · aplikacija in spletno mesto</span><h1>Pogoji uporabe Bookli</h1><p class="updated">Zadnja posodobitev: 28. september 2026</p>
+<div class="identity"><strong>Kdo zagotavlja Bookli</strong><p>Bookli upravlja Zsolt Báthori kot fizična oseba. Ni ločeno podjetje ali pravna oseba in trenutno nima številke CVR. Kontakt: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p></div>
+<nav class="contents" aria-label="Na tej strani"><a href="#service">Storitev</a><a href="#accounts">Računi</a><a href="#clients">Stranke</a><a href="#business">Podjetja</a><a href="#payments">Plačila</a><a href="#content">Vsebina</a><a href="#ending">Prenehanje</a><a href="#law">Pravne določbe</a></nav>
+<h2 id="acceptance">1. Dogovor in obseg</h2><p>Ti pogoji veljajo, ko ustvarite ali uporabljate račun Bookli ali uporabljate spletno mesto Bookli. Z uporabo Booklija se strinjate s temi pogoji in s <a href="/privacy/sl/">Politiko zasebnosti</a>. Če Bookli uporabljate za podjetje, potrjujete, da ste pooblaščeni sprejeti te pogoje v njegovem imenu. Če se ne strinjate, ne ustvarite računa in ne uporabljajte storitve.</p>
+<h2 id="service">2. Kaj počne Bookli</h2><p>Bookli podjetjem zagotavlja digitalna orodja za objavo profila, predstavitev storitev, upravljanje razpoložljivosti, prejemanje zahtev za termine, urejanje podatkov o strankah in pregled evidenc. Stranke lahko najdejo sodelujoča podjetja ter opravijo ali zahtevajo rezervacije. Bookli ne izvaja storitev, ki jih ponuja podjetje, in ni stranka pogodbe med podjetjem in njegovo stranko.</p><p>Bookli je v aktivnem razvoju. Funkcija je lahko označena kot beta, preizkusna, načrtovana ali kmalu na voljo. Načrtovana cena ali funkcija na spletnem mestu sama po sebi ne ustvari naročnine ali obljube, da je funkcija že na voljo. Velja ponudba, prikazana v aplikaciji pred registracijo.</p>
+<h2 id="accounts">3. Pogoji za uporabo in računi</h2><p>Za uporabo Booklija morate biti stari vsaj 16 let. Podatke računa ohranjajte točne, zaščitite podatke za prijavo in se takoj obrnite name, če sumite na nepooblaščen dostop. Odgovorni ste za dejavnosti v svojem računu, razen če so posledica tega, da nisem sprejel razumnih varnostnih ukrepov, ki jih zahteva zakon.</p>
+<h2 id="clients">4. Stranke in termini</h2><p>Bookli strankam ne zaračuna ničesar za iskanje podjetja ali rezervacijo. Podjetje lahko zaračuna svoje storitve po pogojih, ki jih predstavi stranki. Ko je termin sprejet ali potrjen, je to dogovor neposredno med stranko in podjetjem. Podjetje je odgovorno za storitev, njen opis in ceno, spremembe terminov, odpovedi, vračila in vse pravice potrošnikov, ki veljajo za storitev. Glede termina se obrnite na podjetje; na Bookli se obrnite, če sama aplikacija ne deluje, kot je opisano.</p>
+<h2 id="business">5. Poslovni računi in osebni podatki</h2><p>Poslovni uporabniki so odgovorni za točnost svojih javnih vpisov, storitev in cen ter za spoštovanje zakonov, ki veljajo za njihovo poslovanje. Imeti morajo zakonito podlago za dodajanje podatkov o strankah v Bookli, strankam zagotoviti potrebne informacije o zasebnosti, zbirati samo tisto, kar je potrebno, in se izogibati občutljivim ali nepovezanim podatkom v zapiskih. Podjetje praviloma odloča, zakaj uporablja svoje evidence strank in rezervacij; odgovarjati mora na zahteve v zvezi z njimi in upoštevati <a href="/privacy/sl/">Politiko zasebnosti</a>. Preden podjetje doda osebne podatke svojih strank za obdelavo prek Booklija, morava s podjetjem skleniti pisno pogodbo o obdelavi podatkov. Če je aplikacija še ne ponuja, se obrnite name in ne dodajajte evidenc strank, dokler ni sklenjena.</p><p>Funkcije prihodkov in DDV v Bookliju so le organizacijska orodja; niso davčno, računovodsko ali pravno svetovanje. Še vedno ste odgovorni za preverjanje svojih evidenc in davčnih obveznosti.</p>
+<h2 id="payments">6. Poslovne naročnine, preizkusno obdobje in odpoved</h2><p>Načrtovana ponudba vsakemu novemu poslovnemu računu zagotavlja prvi mesec brezplačno. Nato je načrtovana mesečna cena 4,99 USD za upravičene zgodnje preizkuševalce v njihovem prvem letu ali 8,99 USD za standardni paket. Te cene na spletnem mestu so okvirne in niso veljavna ponudba ali pooblastilo za bremenitev. Pred sklenitvijo naročnine bo aplikacija prikazala veljavno preizkusno obdobje, pogoje upravičenosti, ceno, valuto, davke, datum prve bremenitve, podaljšanje in druge pogoje zaračunavanja, ki jih lahko pregledate in sprejmete. Če se ponudba v aplikaciji razlikuje od te strani, velja ponudba, prikazana v aplikaciji pred vašo potrditvijo.</p><p>Če sklenete naročnino, se ta podaljša vsak mesec, dokler je ne odpoveste. Če ste se naročili v aplikaciji za iPhone ali iPad, Apple prodaja in zaračunava naročnino prek vašega računa Apple po pogojih trgovine App Store: odpovejte jo v Nastavitvah → Upravljaj naročnino ali v nastavitvah naročnin svojega računa Apple, morebitno vračilo pa zahtevajte pri Applu. Če ste se naročili v sistemu Android ali na spletu, odpovejte prek možnosti Upravljaj naročnino v Nastavitvah, ki odpre portal za stranke Stripe. Odpoved ustavi prihodnja podaljšanja; dostop se običajno nadaljuje do konca že plačanega obdobja. Ta določba ne izključuje zakonskih pravic do odpovedi, odstopa, skladnosti in vračila, ki veljajo za vaš nakup. Apple in Stripe obdelujeta plačila po svojih pogojih; celotne številke vaše kartice ne prejmem in je ne shranjujem.</p><p>O bistveni spremembi cene ali naročnine vas bom obvestil v razumnem roku, preden začne veljati. Naročnino lahko odpoveste, preden začne veljati nova cena. Sprememba ne bo za nazaj povečala že izvedene bremenitve.</p>
+<h2 id="content">7. Profili, mnenja in druga vsebina</h2><p>Lastništvo vsebine, ki jo pošljete, ohranite. Dajete mi neizključno, svetovno in brezplačno dovoljenje, da to vsebino gostim, reproduciram, ji spreminjam velikost in jo prikazujem samo v obsegu, ki je potreben za delovanje in promocijo funkcij Booklija, ki jih izberete, vključno s prikazom profila podjetja ali mnenja uporabnikom aplikacije. Dovoljenje preneha, ko je vsebina odstranjena, razen omejenih kopij v varnostnih kopijah ali kadar hrambo zahteva zakon.</p><p>Pošiljajte samo vsebino, ki jo imate pravico uporabljati. Ne objavljajte nezakonite, zavajajoče, žaljive, diskriminatorne, klevetniške ali kršitvene vsebine, zasebnih podatkov o drugih brez pooblastila ali vsebine, ki ni povezana s storitvijo. Mnenja morajo odražati resnično izkušnjo. Vsebino, ki krši te pogoje, povzroča varnostno ali pravno težavo ali jo je treba odstraniti po zakonu, lahko omejim ali odstranim. Za prijavo vpisa ali mnenja pišite na <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a> s povezavo in kratko razlago.</p>
+<h2 id="acceptable">8. Sprejemljiva uporaba</h2><p>Bookli ne uporabljajte za nadlegovanje, grožnje, goljufanje ali škodovanje komurkoli; lažno predstavljanje kot druga oseba ali podjetje; zlorabo podatkov drugih; motenje aplikacije; preizkušanje ali obhajanje varnosti; pošiljanje neželene pošte; ali dostop do računov ali podatkov, ki niso vaši. Bookli ne uporabljajte v nujnih primerih in se nanj ne zanašajte kot na edini zapis o terminu ali poslovni transakciji.</p>
+<h2 id="thirdparty">9. Storitve tretjih oseb in razpoložljivost</h2><p>Bookli je odvisen od ponudnikov gostovanja, zemljevidov, sporočil in plačil. Njihove storitve imajo lahko lastne pogoje in so občasno nedostopne. Prizadevam si, da bi bil Bookli uporaben in varen, vendar ne morem obljubiti neprekinjenega dostopa. Funkcije lahko vzdržujem, posodabljam ali spreminjam; če sprememba bistveno vpliva na plačano naročnino, vas bom obvestil in zagotovil pravice, ki jih zahteva zakon.</p>
+<h2 id="ip">10. Intelektualna lastnina</h2><p>V razmerju med vami in mano sem lastnik imena in blagovne znamke Bookli, programske opreme, vmesnika, vizualne podobe, izvirnih besedil, grafik in drugih gradiv, ki jih ustvarim, razen gradiv tretjih oseb, ki pripadajo njihovim imetnikom pravic. Avtorske in druge pravice intelektualne lastnine ostanejo pri njihovih lastnikih. Ti pogoji vam dajejo omejeno, preklicno pravico do uporabe aplikacije za njen namen; ne prenašajo lastništva in vam ne dovoljujejo kopiranja, objavljanja, nadaljnje prodaje, prilagajanja ali povratnega inženiringa Booklija, razen kadar to dovoljuje veljavna zakonodaja. Bookli, njegovega logotipa in povezanih znakov ni dovoljeno uporabljati za namigovanje na priporočilo ali povezavo brez dovoljenja. Pravice do vsebine, ki jo pošljete, ohranite ob upoštevanju dovoljenja iz razdelka 7.</p>
+<h2 id="ending">11. Začasna ustavitev in prenehanje uporabe</h2><p>Bookli lahko prenehate uporabljati in svoj račun izbrišete v Nastavitvah. Dostop lahko začasno omejim, kadar je to razumno potrebno za zaščito uporabnikov, preiskavo suma goljufije ali zlorabe, odpravo varnostne težave, spoštovanje zakona ali odziv na resno kršitev teh pogojev. Kadar je mogoče, bom pojasnil razlog in vam omogočil, da me kontaktirate. Prenehanje računa ne razveljavi ločenega dogovora med podjetjem in njegovo stranko ter ne odstrani evidenc, ki jih je treba zakonito hraniti.</p>
+<h2 id="warranties">12. Jamstva in odgovornost</h2><p>Bookli zagotavljam z razumno skrbnostjo in strokovnostjo, vendar lahko funkcije v različici beta ali v razvoju vsebujejo napake ali so začasno nedostopne. Nič v teh pogojih ne izključuje potrošniškega jamstva, zakonskega pravnega sredstva za digitalne storitve ali druge pravice, ki je ni mogoče zakonito izključiti. Podjetje ostaja odgovorno za storitve, ki jih ponuja in izvaja.</p><p>V obsegu, ki ga dovoljuje zakon, nobena stranka ni odgovorna drugi za škodo, ki je ob sklenitvi zadevnega dogovora ni bilo mogoče razumno predvideti. Nič v teh pogojih ne izključuje odgovornosti za goljufijo, naklepno kršitev ali odgovornosti, ki je veljavna zakonodaja ne dovoljuje omejiti. Obvezne pravice potrošnikov imajo vedno prednost.</p>
+<h2 id="law">13. Veljavno pravo in spori</h2><p>Za te pogoje velja dansko pravo, ob upoštevanju obveznih pravil, ki varujejo potrošnike v državi njihovega prebivališča. Spor je mogoče predložiti sodišču, ki je pristojno po veljavni zakonodaji; ta določba potrošniku ne odvzame obvezne pravice do začetka postopka pred drugim pristojnim sodiščem.</p>
+<h2 id="changes">14. Spremembe teh pogojev</h2><p>Te pogoje lahko posodobim, ko se spremeni Bookli ali zakonodaja. Pri bistveni spremembi bom posodobil zgornji datum in vas, kadar je mogoče, obvestil v aplikaciji ali po e-pošti. Če spremembe ne sprejmete, prenehajte uporabljati zadevno funkcijo in odpovejte morebitno naročnino, preden sprememba začne veljati. Spremembe ne veljajo za nazaj za spor, ki je že nastal.</p>
+<h2 id="contact">15. Kontakt</h2><p>Vprašanja, zahteve za podporo in prijave vsebine: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p><p class="crosslink">Glejte tudi: <a href="/privacy/sl/">Politika zasebnosti Bookli</a>.</p>
+</article></main></body></html>

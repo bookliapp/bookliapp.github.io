@@ -1,110 +1,23 @@
 <!doctype html>
 <html lang="et">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookli kasutustingimused</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #FFF8E7; color: #1a1a1a; padding: 24px; box-sizing: border-box;
-    display: flex; justify-content: center;
-  }
-  .card {
-    max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
-  }
-  .toolbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    margin-bottom: 8px; flex-wrap: wrap;
-  }
-  select {
-    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
-    background: #fff; color: #1a1a1a;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
-  p { font-size: 15px; line-height: 1.6; color: #333; }
-  .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
-  a { color: #D97706; }
-  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="toolbar">
-      <a href="/">← Bookli</a>
-      <select onchange="if(this.value) location.href=this.value;">
-        <option value="/terms/">English</option>
-        <option value="/terms/hu/">Magyar</option>
-        <option value="/terms/de/">Deutsch</option>
-        <option value="/terms/fr/">Français</option>
-        <option value="/terms/it/">Italiano</option>
-        <option value="/terms/es/">Español</option>
-        <option value="/terms/nl/">Nederlands</option>
-        <option value="/terms/pt/">Português</option>
-        <option value="/terms/sv/">Svenska</option>
-        <option value="/terms/da/">Dansk</option>
-        <option value="/terms/no/">Norsk</option>
-        <option value="/terms/fi/">Suomi</option>
-        <option value="/terms/pl/">Polski</option>
-        <option value="/terms/ro/">Română</option>
-        <option value="/terms/cs/">Čeština</option>
-        <option value="/terms/sk/">Slovenčina</option>
-        <option value="/terms/hr/">Hrvatski</option>
-        <option value="/terms/sr/">Српски</option>
-        <option value="/terms/bg/">Български</option>
-        <option value="/terms/el/">Ελληνικά</option>
-        <option value="/terms/sl/">Slovenščina</option>
-        <option value="/terms/et/" selected>Eesti</option>
-        <option value="/terms/lv/">Latviešu</option>
-        <option value="/terms/lt/">Lietuvių</option>
-        <option value="/terms/uk/">Українська</option>
-        <option value="/terms/tr/">Türkçe</option>
-        <option value="/terms/zh-Hans/">简体中文</option>
-        <option value="/terms/ja/">日本語</option>
-        <option value="/terms/ko/">한국어</option>
-        <option value="/terms/th/">ไทย</option>
-        <option value="/terms/hi/">हिन्दी</option>
-        <option value="/terms/ru/">Русский</option>
-      </select>
-    </div>
-    <h1>📜 Bookli kasutustingimused</h1>
-    <p class="updated">Viimati uuendatud: September 15, 2026</p>
-    <h2>Nende Tingimuste aktsepteerimine</h2>
-    <p>Konto loomisega või Bookli kasutamisega nõustud nende kasutustingimuste ja meie privaatsuspoliitikaga. Kui sa ei nõustu, siis palun ära kasuta Booklit. Need Tingimused kehtivad kõigile, kes kasutavad rakendust, olgu siis kliendina, kes broneerib aja, või ettevõttena, kes seda haldab.</p>
-    <h2>Mis on Bookli</h2>
-    <p>Bookli on broneerimisplatvorm, mis ühendab väikeettevõtteid klientidega, kes soovivad nende teenuseid broneerida. Bookli ise on tehnoloogiapakkuja — ta ei ole osaline üheski selle kaudu tehtud broneeringus ning ei anna tööd, kontrolli ega juhi ühtegi sellel loetletud ettevõtet.</p>
-    <h2>Sobivus ja sinu konto</h2>
-    <p>Bookli kasutamiseks pead olema vähemalt 16-aastane. Vastutad registreerimisel esitatud teabe õigsuse eest ning oma sisselogimisandmete turvalisuse eest. Vastutad kõige eest, mis toimub sinu kontol.</p>
-    <h2>Bookli kasutamine kliendina</h2>
-    <p>Bookli kaudu broneerimine on ja jääb alati klientidele täiesti tasuta — sa ei maksa Booklile kunagi midagi ettevõtte leidmise või broneerimise eest. Aja broneerimisel sõlmid kokkuleppe otse selle ettevõttega, mitte Bookliga; ettevõte vastutab selle aja täitmise, ümberplaneerimise, või tühistamise eest ning Bookli ei ole selles osaline.</p>
-    <h2>Bookli kasutamine ettevõttena</h2>
-    <p>Ettevõtte kontod hõlmavad tasuta prooviperioodi, mille järel nõuab Bookli ettevõtte funktsioonide edasine kasutamine tasulist igakuist tellimust. Tellimusmakseid töötleb täielikult Stripe; Bookli ei näe ega salvesta kunagi sinu kaardiandmeid. Sinu tellimus uueneb automaatselt igal kuul, kuni sa selle tühistad Seadete valiku Halda tellimust kaudu, mis avab Stripe'i enda kliendiportaali — tühistamine peatab tulevased pikendused, kuid ei hüvita praegust arveldusperioodi. Võime tellimuste hindu muuta mõistliku etteteatamisajaga; Bookli ettevõtte funktsioonide edasine kasutamine pärast hinnamuutuse jõustumist tähendab, et nõustud uue hinnaga. Ettevõttena vastutad ainuisikuliselt oma kuulutuse õigsuse, pakutavate teenuste, küsitavate hindade, ning sinu suhtes kehtivate maksu-, tarbijakaitse- ja ettevõtluslubade seaduste järgimise eest — Bookli tulu- ja käibemaksutööriistad on mõeldud ainult mugavuse huvides ega kujuta endast maksu- ega õigusnõustamist.</p>
-    <h2>Sinu esitatud sisu</h2>
-    <p>Säilitad omandiõiguse igale arvustusele, fotole, või muule sisule, mille lisad Booklisse, kuid selle esitamisega annad Booklile litsentsi kuvada seda rakenduses inimestele, kellele see on mõeldud — näiteks kuvatakse arvustust kõigile, kes vaatavad selle ettevõtte profiili. Vastutad selle eest, mida avaldad: see ei tohi olla vale, laimav, ebaseaduslik, ega rikkuda kellegi teise õigusi. Võime eemaldada sisu, või peita arvustuse avalikust vaatest, mis seda rikub või mille eemaldamist meilt õigustatud põhjusel palutakse.</p>
-    <h2>Aktsepteeritav kasutamine</h2>
-    <p>Nõustud, et ei kasuta Booklit kellegi ahistamiseks, petmiseks, ega kahjustamiseks; teise isiku või ettevõtte esindamiseks; vale või eksitava teabe avaldamiseks; rakenduse normaalse toimimise häirimiseks; ega üritamiseks pääseda ligi teisele kontole või andmetele, mis pole sinu omad.</p>
-    <h2>Bookli roll vaidlustes</h2>
-    <p>Bookli on neutraalne platvorm, mis ühendab ettevõtteid ja kliente. Me ei vastuta mis tahes aja, teenuse, ega ettevõtte ja kliendi vahelise suhtluse kvaliteedi, ohutuse, seaduslikkuse, ega tulemuse eest ega vahenda nendevahelisi vaidlusi. Kui konkreetse ajaga läheb midagi valesti, on see asjaomase ettevõtte ja kliendi vaheline küsimus.</p>
-    <h2>Intellektuaalomand</h2>
-    <p>Bookli nimi, logo, ja rakendus ise kuuluvad Bookli haldajale. Miski nendes Tingimustes ei anna sulle õigust neid kasutada väljaspool rakenduse tavapärast kasutamist.</p>
-    <h2>Peatamine ja lõpetamine</h2>
-    <p>Võid Bookli kasutamise igal ajal lõpetada ja oma konto Seadetest kustutada. Võime peatada või lõpetada konto, mis rikub neid Tingimusi, tegeleb pettuse või kuritarvitamisega, või tekitab riski või õigusliku vastutuse Booklile või teistele kasutajatele, kas etteteatamisega või ilma, sõltuvalt olukorra tõsidusest.</p>
-    <h2>Vastutuse välistamised</h2>
-    <p>Bookli pakutakse "nagu on" ja "vastavalt saadavusele", ilma igasuguste garantiideta, otseste või kaudsete, sealhulgas mis tahes garantiita, et rakendus on katkematu, veatu, või sobiv konkreetsel eesmärgil. Teeme oma parima, et hoida Bookli usaldusväärse ja täpsena, kuid ei saa garanteerida, et see alati nii on.</p>
-    <h2>Vastutuse piiramine</h2>
-    <p>Seaduse poolt lubatud maksimaalses ulatuses ei vastuta Bookli ega selle haldaja mis tahes kaudsete, juhuslike, eriliste, ega tegevusest tulenevate kahjude eest, mis tulenevad sinu rakenduse kasutamisest, sealhulgas saamata jäänud kasum, kaotatud broneeringud, või kaotatud andmed. Meie koguvastutus mis tahes Bookliga seotud nõude eest on piiratud summaga, mille sa meile maksid, kui üldse, 12 kuu jooksul enne nõude tekkimist.</p>
-    <h2>Hüvitamine</h2>
-    <p>Nõustud hüvitama ja kaitsma Booklit ja selle haldajat mis tahes nõude, kahju, või kulu eest — sealhulgas mõistlikud õiguskulud — mis tuleneb sinu enda rikkumisest nende Tingimuste suhtes, sinu rakenduse väärkasutusest, või sinu avaldatud sisust.</p>
-    <h2>Kohaldatav õigus</h2>
-    <p>Neid Tingimusi reguleerib Taani õigus, arvestamata selle kollisiooninorme. Mis tahes vaidlus, mida ei saa lahendada mitteametlikult, kuulub Taani kohtute ainupädevusse.</p>
-    <h2>Muudatused nendes Tingimustes</h2>
-    <p>Võime neid Tingimusi aeg-ajalt uuendada. Kui teeme olulise muudatuse, kajastame seda siin koos uuendatud kuupäevaga selle lehe ülaosas; Bookli edasine kasutamine pärast muudatuse jõustumist tähendab, et nõustud uuendatud Tingimustega.</p>
-    <h2>Kontakt</h2>
-    <p>Küsimusi nende Tingimuste kohta saab saata aadressile bookli.app.team@outlook.com.</p>
-    <p class="crosslink">Vaata ka: <a href="/privacy/et/">Bookli privaatsuspoliitika</a></p>
-  </div>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf7ed"><title>Bookli kasutustingimused</title><link rel="stylesheet" href="/assets/legal.css"></head>
+<body><main class="shell"><div class="toolbar"><a class="brand" href="/"><span class="mark">B</span><span>Bookli</span></a><select aria-label="Language" onchange="if(this.value) location.href=this.value;"><option value="/terms/">English</option><option value="/terms/hu/">Magyar</option><option value="/terms/de/">Deutsch</option><option value="/terms/fr/">Français</option><option value="/terms/it/">Italiano</option><option value="/terms/es/">Español</option><option value="/terms/nl/">Nederlands</option><option value="/terms/pt/">Português</option><option value="/terms/sv/">Svenska</option><option value="/terms/da/">Dansk</option><option value="/terms/no/">Norsk</option><option value="/terms/fi/">Suomi</option><option value="/terms/pl/">Polski</option><option value="/terms/ro/">Română</option><option value="/terms/cs/">Čeština</option><option value="/terms/sk/">Slovenčina</option><option value="/terms/hr/">Hrvatski</option><option value="/terms/sr/">Српски</option><option value="/terms/bg/">Български</option><option value="/terms/el/">Ελληνικά</option><option value="/terms/sl/">Slovenščina</option><option value="/terms/et/" selected>Eesti</option><option value="/terms/lv/">Latviešu</option><option value="/terms/lt/">Lietuvių</option><option value="/terms/uk/">Українська</option><option value="/terms/tr/">Türkçe</option><option value="/terms/hi/">हिन्दी</option><option value="/terms/zh-Hans/">简体中文</option><option value="/terms/ko/">한국어</option><option value="/terms/ja/">日本語</option><option value="/terms/ru/">Русский</option><option value="/terms/th/">ไทย</option></select></div><article class="card">
+<span class="eyebrow">Tingimused · rakendus ja veebisait</span><h1>Bookli kasutustingimused</h1><p class="updated">Viimati uuendatud: 28. september 2026</p>
+<div class="identity"><strong>Kes Booklit pakub</strong><p>Booklit haldab Zsolt Báthori eraisikuna. See ei ole eraldi ettevõte ega juriidiline isik ning sellel pole praegu CVR-numbrit. Kontakt: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p></div>
+<nav class="contents" aria-label="Sellel lehel"><a href="#service">Teenus</a><a href="#accounts">Kontod</a><a href="#clients">Kliendid</a><a href="#business">Ettevõtted</a><a href="#payments">Maksed</a><a href="#content">Sisu</a><a href="#ending">Kasutamise lõpetamine</a><a href="#law">Õiguslikud tingimused</a></nav>
+<h2 id="acceptance">1. Kokkulepe ja kohaldamisala</h2><p>Neid tingimusi kohaldatakse, kui lood või kasutad Bookli kontot või kasutad Bookli veebisaiti. Booklit kasutades nõustud nende tingimuste ja <a href="/privacy/et/">privaatsuspoliitikaga</a>. Kui kasutad Booklit ettevõtte jaoks, kinnitad, et sul on õigus need tingimused ettevõtte nimel vastu võtta. Kui sa ei nõustu, ära loo kontot ega kasuta teenust.</p>
+<h2 id="service">2. Mida Bookli teeb</h2><p>Bookli pakub ettevõtetele digitaalseid tööriistu profiili avaldamiseks, teenuste loetlemiseks, saadavuse haldamiseks, ajataotluste vastuvõtmiseks, kliendiandmete korraldamiseks ja ärikirjete vaatamiseks. Kliendid saavad leida osalevaid ettevõtteid ning broneerida või broneeringut taotleda. Bookli ei osuta ettevõtte pakutavaid teenuseid ega ole ettevõtte ja tema kliendi vahelise teenuselepingu pool.</p><p>Booklit arendatakse aktiivselt. Funktsioon võib olla märgitud beetaversiooniks, prooviperioodiks, plaanituks või peagi saadaolevaks. Veebisaidil näidatud plaanitud hind või funktsioon ei loo iseenesest tellimust ega lubadust, et funktsioon on juba saadaval. Kehtib rakenduses enne registreerumist näidatud pakkumine.</p>
+<h2 id="accounts">3. Kasutamise tingimused ja kontod</h2><p>Bookli kasutamiseks pead olema vähemalt 16-aastane. Hoia oma kontoandmed täpsed, kaitse sisselogimisandmeid ja võta minuga viivitamata ühendust, kui kahtlustad volitamata juurdepääsu. Vastutad oma konto kaudu toimuva tegevuse eest, välja arvatud juhul, kui see tuleneb sellest, et ma ei rakendanud seadusega nõutud mõistlikke turvameetmeid.</p>
+<h2 id="clients">4. Kliendid ja broneeringud</h2><p>Bookli ei võta klientidelt tasu ettevõtte leidmise ega broneerimise eest. Ettevõte võib oma teenuste eest tasu võtta kliendile esitatud tingimuste alusel. Kui broneering on vastu võetud või kinnitatud, on see otsene kokkulepe kliendi ja ettevõtte vahel. Ettevõte vastutab teenuse, selle kirjelduse ja hinna, broneeringute muutmise, tühistamise, tagasimaksete ja kõigi teenusele kohaldatavate tarbijaõiguste eest. Broneeringu küsimuses pöördu ettevõtte poole; Bookli poole pöördu, kui rakendus ise ei tööta kirjeldatud viisil.</p>
+<h2 id="business">5. Ettevõttekontod ja isikuandmed</h2><p>Ettevõtte kasutajad vastutavad oma avalike kirjete, teenuste ja hindade õigsuse ning oma tegevusele kohaldatavate seaduste järgimise eest. Neil peab olema seaduslik alus kliendiandmete lisamiseks Booklisse, nad peavad andma klientidele vajaliku privaatsusteabe, koguma ainult vajalikku ja vältima tundlikku või asjasse mittepuutuvat teavet märkmetes. Ettevõte otsustab üldjuhul, miks ta oma kliendi- ja broneeringuandmeid kasutab; ta peab vastama nendega seotud taotlustele ja järgima <a href="/privacy/et/">privaatsuspoliitikat</a>. Enne kui ettevõte lisab oma klientide isikuandmed Bookli kaudu töötlemiseks, peame ettevõttega sõlmima kirjaliku andmetöötluslepingu. Kui rakendus seda veel ei paku, võta minuga ühendust ja ära lisa kliendiandmeid enne, kui leping on sõlmitud.</p><p>Bookli tulu- ja käibemaksufunktsioonid on ainult korraldusvahendid; need ei ole maksu-, raamatupidamis- ega õigusnõuanne. Vastutad ise oma andmete ja maksukohustuste kontrollimise eest.</p>
+<h2 id="payments">6. Ettevõtete tellimused, prooviperiood ja tühistamine</h2><p>Plaanitud pakkumine annab igale uuele ettevõttekontole esimese kuu tasuta. Seejärel on plaanitud kuuhind 4,99 USD tingimustele vastavatele varajastele testijatele nende esimesel aastal või 8,99 USD standardpaketi puhul. Need veebisaidi hinnad on soovituslikud, mitte kehtiv pakkumine ega luba tasu võtta. Enne tellimist näitab rakendus kehtivat prooviperioodi, tingimustele vastavust, hinda, valuutat, makse, esimest arvelduskuupäeva, pikendamist ja muid arveldustingimusi, mida saad üle vaadata ja kinnitada. Kui rakenduse pakkumine erineb sellest lehest, kehtib rakenduses enne sinu kinnitust näidatud pakkumine.</p><p>Kui tellid, uueneb tellimus iga kuu kuni tühistamiseni. Kui tellisid iPhone'i või iPadi rakenduses, müüb ja arveldab Apple tellimust sinu Apple'i konto kaudu App Store'i tingimuste alusel: tühista see jaotises Seaded → Halda tellimust või oma Apple'i konto tellimuste seadetes ning taotle võimalikku tagasimakset Apple'ilt. Kui tellisid Androidis või veebis, tühista seadete valiku Halda tellimust kaudu, mis avab Stripe'i kliendiportaali. Tühistamine peatab edasised uuendused; juurdepääs jätkub tavaliselt juba makstud perioodi lõpuni. See säte ei välista sinu ostule kohaldatavaid seadusjärgseid tühistamis-, taganemis-, lepingutingimustele vastavuse ja tagasimakse õigusi. Apple ja Stripe töötlevad makseid oma tingimuste alusel; ma ei saa ega salvesta sinu kaardi täisnumbrit.</p><p>Teavitan mõistliku aja ette enne, kui oluline hinna- või tellimusemuudatus jõustub. Saad tellimuse tühistada enne uue hinna kehtima hakkamist. Muudatus ei suurenda tagasiulatuvalt juba tehtud makset.</p>
+<h2 id="content">7. Profiilid, arvustused ja muu sisu</h2><p>Säilitad omandiõiguse sisule, mille esitad. Annad mulle mitteainuõigusliku, ülemaailmse ja tasuta loa seda sisu majutada, reprodutseerida, suurust muuta ja kuvada ainult ulatuses, mis on vajalik sinu valitud Bookli funktsioonide toimimiseks ja tutvustamiseks, sealhulgas ettevõtteprofiili või arvustuse kuvamiseks rakenduse kasutajatele. Luba lõpeb, kui sisu eemaldatakse, välja arvatud varukoopiatesse jäävad piiratud koopiad või juhud, kui seadus nõuab säilitamist.</p><p>Esita ainult sisu, mida sul on õigus kasutada. Ära avalda ebaseaduslikku, eksitavat, solvavat, diskrimineerivat, laimavat või õigusi rikkuvat sisu, teiste isikute eraandmeid ilma loata ega teenusega mitteseotud sisu. Arvustused peavad kajastama tegelikku kogemust. Võin piirata või eemaldada sisu, mis rikub neid tingimusi, tekitab turva- või õigusprobleemi või tuleb seaduse alusel eemaldada. Kirje või arvustuse teatamiseks kirjuta aadressile <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>, lisades lingi ja lühikese selgituse.</p>
+<h2 id="acceptable">8. Lubatud kasutus</h2><p>Ära kasuta Booklit kellegi ahistamiseks, ähvardamiseks, petmiseks või kahjustamiseks; teise isiku või ettevõttena esinemiseks; teiste andmete väärkasutamiseks; rakenduse töö segamiseks; turvalisuse testimiseks või mööda hiilimiseks; rämpsposti saatmiseks; ega sinule mittekuuluvatele kontodele või andmetele juurdepääsuks. Ära kasuta Booklit hädaolukordades ega toetu sellele kui ainsale broneeringu või äritehingu kirjele.</p>
+<h2 id="thirdparty">9. Kolmandate osapoolte teenused ja kättesaadavus</h2><p>Bookli sõltub majutuse, kaartide, sõnumite ja maksete teenusepakkujatest. Nende teenustel võivad olla oma tingimused ja need võivad aeg-ajalt kättesaamatud olla. Püüan hoida Bookli kasulikuna ja turvalisena, kuid ei saa lubada katkematut juurdepääsu. Võin funktsioone hooldada, uuendada või muuta; kui muudatus mõjutab oluliselt tasulist tellimust, teavitan sellest ja tagan seadusega nõutud õigused.</p>
+<h2 id="ip">10. Intellektuaalomand</h2><p>Sinu ja minu vahel kuuluvad mulle Bookli nimi ja kaubamärk, tarkvara, kasutajaliides, visuaalne kujundus, originaaltekstid, graafika ja muud minu loodud materjalid, välja arvatud kolmandate osapoolte materjalid, mis kuuluvad nende õiguste omajatele. Autoriõigus ja muud intellektuaalomandi õigused jäävad nende omanikele. Need tingimused annavad sulle piiratud ja tagasivõetava õiguse kasutada rakendust ettenähtud otstarbel; need ei anna üle omandiõigust ega luba Booklit kopeerida, avaldada, edasi müüa, kohandada ega pöördprojekteerida, välja arvatud juhul, kui kohaldatav õigus seda lubab. Booklit, selle logo ja seotud tähiseid ei tohi ilma loata kasutada soovituse või seotuse vihjamiseks. Säilitad õigused esitatud sisule, arvestades punkti 7 luba.</p>
+<h2 id="ending">11. Peatamine ja kasutamise lõpetamine</h2><p>Saad Bookli kasutamise lõpetada ja oma konto seadetes kustutada. Võin juurdepääsu ajutiselt piirata, kui see on mõistlikult vajalik kasutajate kaitsmiseks, kahtlustatava pettuse või kuritarvitamise uurimiseks, turvaprobleemi lahendamiseks, seaduse järgimiseks või nende tingimuste raske rikkumise korral. Võimaluse korral selgitan põhjust ja annan sulle võimaluse minuga ühendust võtta. Konto lõpetamine ei tühista ettevõtte ja tema kliendi vahelist eraldi kokkulepet ega eemalda andmeid, mida tuleb seaduse järgi säilitada.</p>
+<h2 id="warranties">12. Garantiid ja vastutus</h2><p>Pakun Booklit mõistliku hoolsuse ja oskusega, kuid beetaversiooni või arendusjärgus funktsioonid võivad sisaldada vigu või olla ajutiselt kättesaamatud. Miski nendes tingimustes ei välista tarbijagarantiid, digiteenuste seadusjärgset õiguskaitsevahendit ega muud õigust, mida ei saa seaduslikult välistada. Ettevõte vastutab jätkuvalt enda pakutavate ja osutatavate teenuste eest.</p><p>Seadusega lubatud ulatuses ei vastuta kumbki pool teise ees kahju eest, mida ei olnud asjaomase kokkuleppe sõlmimisel mõistlikult ette näha. Miski nendes tingimustes ei välista vastutust pettuse, tahtliku rikkumise või sellise vastutuse eest, mille piiramist kohaldatav õigus ei luba. Kohustuslikud tarbijaõigused on alati ülimuslikud.</p>
+<h2 id="law">13. Kohaldatav õigus ja vaidlused</h2><p>Nendele tingimustele kohaldatakse Taani õigust, arvestades kohustuslikke norme, mis kaitsevad tarbijaid nende elukohariigis. Vaidluse võib lahendamiseks esitada kohaldatava õiguse kohaselt pädevale kohtule; see säte ei võta tarbijalt kohustuslikku õigust pöörduda muu pädeva kohtu poole.</p>
+<h2 id="changes">14. Tingimuste muudatused</h2><p>Võin neid tingimusi uuendada, kui Bookli või seadus muutub. Olulise muudatuse korral uuendan ülal olevat kuupäeva ja teavitan võimaluse korral rakenduses või e-posti teel. Kui sa muudatusega ei nõustu, lõpeta asjaomase funktsiooni kasutamine ja tühista tellimus enne muudatuse jõustumist. Muudatusi ei kohaldata tagasiulatuvalt juba tekkinud vaidlusele.</p>
+<h2 id="contact">15. Kontakt</h2><p>Küsimused, tugipäringud ja sisuga seotud teated: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p><p class="crosslink">Vaata ka: <a href="/privacy/et/">Bookli privaatsuspoliitika</a>.</p>
+</article></main></body></html>
