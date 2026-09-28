@@ -1,102 +1,28 @@
 <!doctype html>
 <html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookli Privacybeleid</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #FFF8E7; color: #1a1a1a; padding: 24px; box-sizing: border-box;
-    display: flex; justify-content: center;
-  }
-  .card {
-    max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
-  }
-  .toolbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    margin-bottom: 8px; flex-wrap: wrap;
-  }
-  select {
-    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
-    background: #fff; color: #1a1a1a;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
-  p { font-size: 15px; line-height: 1.6; color: #333; }
-  .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
-  a { color: #D97706; }
-  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="toolbar">
-      <a href="/">← Bookli</a>
-      <select onchange="if(this.value) location.href=this.value;">
-        <option value="/privacy/">English</option>
-        <option value="/privacy/hu/">Magyar</option>
-        <option value="/privacy/de/">Deutsch</option>
-        <option value="/privacy/fr/">Français</option>
-        <option value="/privacy/it/">Italiano</option>
-        <option value="/privacy/es/">Español</option>
-        <option value="/privacy/nl/" selected>Nederlands</option>
-        <option value="/privacy/pt/">Português</option>
-        <option value="/privacy/sv/">Svenska</option>
-        <option value="/privacy/da/">Dansk</option>
-        <option value="/privacy/no/">Norsk</option>
-        <option value="/privacy/fi/">Suomi</option>
-        <option value="/privacy/pl/">Polski</option>
-        <option value="/privacy/ro/">Română</option>
-        <option value="/privacy/cs/">Čeština</option>
-        <option value="/privacy/sk/">Slovenčina</option>
-        <option value="/privacy/hr/">Hrvatski</option>
-        <option value="/privacy/sr/">Српски</option>
-        <option value="/privacy/bg/">Български</option>
-        <option value="/privacy/el/">Ελληνικά</option>
-        <option value="/privacy/sl/">Slovenščina</option>
-        <option value="/privacy/et/">Eesti</option>
-        <option value="/privacy/lv/">Latviešu</option>
-        <option value="/privacy/lt/">Lietuvių</option>
-        <option value="/privacy/uk/">Українська</option>
-        <option value="/privacy/tr/">Türkçe</option>
-        <option value="/privacy/zh-Hans/">简体中文</option>
-        <option value="/privacy/ja/">日本語</option>
-        <option value="/privacy/ko/">한국어</option>
-        <option value="/privacy/th/">ไทย</option>
-        <option value="/privacy/hi/">हिन्दी</option>
-        <option value="/privacy/ru/">Русский</option>
-      </select>
-    </div>
-    <h1>🔒 Bookli Privacybeleid</h1>
-    <p class="updated">Laatst bijgewerkt: September 15, 2026</p>
-    <h2>Wie wij zijn</h2>
-    <p>Bookli ("wij") is een afsprakenapp die kleine bedrijven verbindt met hun klanten. Bookli wordt beheerd door Zsolt Báthori. Dit beleid legt uit welke informatie we verzamelen, waarom we die verzamelen, en hoe je er toegang toe kunt krijgen, deze kunt corrigeren of verwijderen.</p>
-    <h2>Informatie die we verzamelen</h2>
-    <p>We verzamelen het e-mailadres en de weergavenaam waarmee je je registreert; als je Bookli als bedrijf gebruikt, de naam, categorie, adres, telefoonnummer, diensten, prijzen, openingstijden van je bedrijf, en eventuele foto's die je uploadt; wanneer een afspraak wordt gemaakt, de naam, het telefoonnummer en e-mailadres van de klant zodat het bedrijf hen kan identificeren en contacteren; elke beoordeling, recensietekst en optionele foto die je toevoegt bij het beoordelen van een bedrijf; het bericht en de optionele foto die je verstuurt via het feedbackformulier in de app; een apparaattoken dat wordt gebruikt om pushmeldingen te bezorgen; en, alleen met jouw toestemming, je geschatte apparaatlocatie voor de optionele sortering "In de buurt" in Ontdekken, die nooit wordt opgeslagen of gedeeld.</p>
-    <h2>Hoe we deze informatie gebruiken</h2>
-    <p>We gebruiken deze informatie om de kernfuncties van Bookli te laten werken — boekingen, planningen, omzetregistratie en communicatie tussen een bedrijf en zijn klanten —, om boekingsgerelateerde pushmeldingen te bezorgen, om de abonnementsbetaling van een bedrijf aan Bookli via Stripe te verwerken, en om te reageren op feedback en supportverzoeken. We verkopen je persoonlijke gegevens niet en gebruiken ze niet voor advertenties.</p>
-    <h2>Rechtsgrondslag voor verwerking</h2>
-    <p>We verwerken je informatie omdat dit noodzakelijk is om de dienst te leveren waarvoor je je hebt aangemeld, omdat je ons toestemming hebt gegeven (bijvoorbeeld locatietoegang of een optionele foto), of omdat we een gerechtvaardigd belang hebben om Bookli veilig en correct werkend te houden.</p>
-    <h2>Met wie we het delen</h2>
-    <p>Bookli maakt gebruik van een klein aantal serviceproviders, die elk alleen ontvangen wat ze nodig hebben om hun taak uit te voeren: Supabase host onze database, authenticatie en bestandsopslag; Google (Firebase Cloud Messaging en Google Maps) levert pushmeldingen en verzorgt de kaart- en adresfuncties; en Stripe verwerkt de abonnementsbetaling van een bedrijf aan Bookli en deelt jouw kaartgegevens nooit met ons. De naam, het telefoonnummer en e-mailadres van een klant worden alleen gedeeld met het specifieke bedrijf waarbij ze boeken; het openbare profiel van een bedrijf — naam, diensten, foto's en recensies — is zichtbaar voor iedereen die de app of een gedeelde link bekijkt, aangezien dat is hoe ontdekking en boeken werken.</p>
-    <h2>Gegevensbewaring</h2>
-    <p>We bewaren je informatie zolang je account actief is. Als je je account verwijdert, worden je bedrijf, boekingen, omzetposten en klantnotities onmiddellijk permanent verwijderd; een boeking die je als klant bij een ander bedrijf hebt gemaakt, kan door dat bedrijf worden bewaard voor eigen administratie, waarbij de koppeling met je account wordt verwijderd. We kunnen bepaalde informatie langer bewaren wanneer de wet dit vereist, zoals financiële gegevens die een bedrijf wettelijk verplicht is te bewaren.</p>
-    <h2>Internationale overdrachten</h2>
-    <p>Onze serviceproviders kunnen je informatie verwerken in andere landen dan het jouwe, waaronder de Verenigde Staten. Elk van hen hanteert eigen waarborgen voor de verwerking van persoonsgegevens; we kiezen providers die gegevensbescherming serieus nemen en alleen delen wat elk daadwerkelijk nodig heeft.</p>
-    <h2>Jouw rechten</h2>
-    <p>Je kunt je bedrijfsprofiel, diensten en foto's op elk moment bewerken of verwijderen in Instellingen. Je kunt je account — inclusief je bedrijf, boekingen, omzetposten en klantnotities — permanent verwijderen via Instellingen → Account verwijderen; dit is onmiddellijk en onomkeerbaar. Je kunt locatietoegang en pushmeldingen op elk moment uitschakelen in de instellingen van je apparaat, en de app blijft ook zonder deze functies werken. Afhankelijk van waar je woont, heb je mogelijk ook het recht om een kopie van je gegevens op te vragen, ons te vragen deze te corrigeren, of bezwaar te maken tegen het gebruik ervan — neem hiervoor contact met ons op via onderstaand adres.</p>
-    <h2>Beveiliging</h2>
-    <p>Gegevens die tussen de app en onze serviceproviders worden verzonden, zijn versleuteld (HTTPS/TLS). Voor opgeslagen gegevens vertrouwen we op de eigen beveiligingspraktijken van onze providers, en nemen we redelijke maatregelen om de toegang te beperken tot wat elk deel van het systeem daadwerkelijk nodig heeft.</p>
-    <h2>Privacy van kinderen</h2>
-    <p>Bookli is niet gericht op kinderen, en we verzamelen niet bewust informatie van iemand onder de 16 jaar. Als je denkt dat een kind ons persoonlijke informatie heeft verstrekt, neem dan contact met ons op en we zullen deze verwijderen.</p>
-    <h2>Wijzigingen in dit beleid</h2>
-    <p>We kunnen dit beleid van tijd tot tijd bijwerken. Materiële wijzigingen worden hier weergegeven met een bijgewerkte datum bovenaan deze pagina.</p>
-    <h2>Contact</h2>
-    <p>Vragen over dit beleid of je gegevens kunnen worden gestuurd naar bookli.app.team@outlook.com.</p>
-    <p class="crosslink">Zie ook: <a href="/terms/nl/">Bookli Gebruiksvoorwaarden</a></p>
-  </div>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf7ed"><title>Privacybeleid van Bookli</title><link rel="stylesheet" href="/assets/legal.css"></head>
+<body><main class="shell"><div class="toolbar"><a class="brand" href="/"><span class="mark">B</span><span>Bookli</span></a><select aria-label="Language" onchange="if(this.value) location.href=this.value;"><option value="/privacy/">English</option><option value="/privacy/hu/">Magyar</option><option value="/privacy/de/">Deutsch</option><option value="/privacy/fr/">Français</option><option value="/privacy/it/">Italiano</option><option value="/privacy/es/">Español</option><option value="/privacy/nl/" selected>Nederlands</option><option value="/privacy/pt/">Português</option><option value="/privacy/sv/">Svenska</option><option value="/privacy/da/">Dansk</option><option value="/privacy/no/">Norsk</option><option value="/privacy/fi/">Suomi</option><option value="/privacy/pl/">Polski</option><option value="/privacy/ro/">Română</option><option value="/privacy/cs/">Čeština</option><option value="/privacy/sk/">Slovenčina</option><option value="/privacy/hr/">Hrvatski</option><option value="/privacy/sr/">Српски</option><option value="/privacy/bg/">Български</option><option value="/privacy/el/">Ελληνικά</option><option value="/privacy/sl/">Slovenščina</option><option value="/privacy/et/">Eesti</option><option value="/privacy/lv/">Latviešu</option><option value="/privacy/lt/">Lietuvių</option><option value="/privacy/uk/">Українська</option><option value="/privacy/tr/">Türkçe</option><option value="/privacy/hi/">हिन्दी</option><option value="/privacy/zh-Hans/">简体中文</option><option value="/privacy/ko/">한국어</option><option value="/privacy/ja/">日本語</option><option value="/privacy/ru/">Русский</option><option value="/privacy/th/">ไทย</option></select></div><article class="card">
+<span class="eyebrow">Privacy · persoonsgegevens</span><h1>Privacybeleid van Bookli</h1><p class="updated">Laatst bijgewerkt: 28 september 2026</p>
+<div class="identity"><strong>Wie Bookli beheert</strong><p>Bookli is een productnaam die wordt gebruikt door Zsolt Báthori als particulier. Het is geen afzonderlijk bedrijf of rechtspersoon en heeft geen CVR-nummer. Contact: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p></div>
+<nav class="contents" aria-label="Op deze pagina"><a href="#controller">Verwerkingsverantwoordelijke en rollen</a><a href="#data">Gegevens en doelen</a><a href="#sharing">Delen</a><a href="#retention">Bewaartermijn</a><a href="#rights">Je rechten</a><a href="#contact">Contact</a></nav>
+<h2 id="controller">1. Verwerkingsverantwoordelijke en rollen</h2><p>Ik, Zsolt Báthori, beheer Bookli en bepaal hoe persoonsgegevens worden gebruikt om het platform te laten werken, accounts te beheren, openbare bedrijfsprofielen en beoordelingen bij te houden, ondersteuning te bieden, de dienst veilig te houden en abonnementen te beheren. Voor die activiteiten ben ik de verwerkingsverantwoordelijke.</p><p>Wanneer een bedrijf Bookli gebruikt om boekingen, contactgegevens, bezoekgeschiedenis of notities van zijn klanten op te slaan, bepaalt dat bedrijf waarom het die gegevens nodig heeft en is het daarvoor meestal de verwerkingsverantwoordelijke. Ik verwerk ze in opdracht van het bedrijf om boekings- en beheerfuncties te bieden. Neem bij vragen over een bepaalde afspraak of over de gegevens van een bedrijf eerst contact op met dat bedrijf. Als ik persoonsgegevens namens een bedrijf verwerk, moeten het bedrijf en ik een schriftelijke verwerkersovereenkomst hebben gesloten voordat die gegevens aan Bookli worden toegevoegd.</p>
+<h2 id="data">2. Welke gegevens ik gebruik en waarom</h2><p>Welke gegevens worden gebruikt, hangt af van de functies die je gebruikt. Ik gebruik ze om de gevraagde functie te leveren, Bookli werkend en veilig te houden en je te antwoorden.</p><div class="table-wrap"><table><thead><tr><th>Gegevens</th><th>Doel en gebruikelijke rechtsgrond</th></tr></thead><tbody>
+<tr><td>Accountnaam, e-mailadres en inloggegevens</td><td>Je account aanmaken en beveiligen en de gevraagde dienst leveren (overeenkomst, artikel 6, lid 1, onder b, AVG); de dienst beschermen tegen misbruik (gerechtvaardigd belang, artikel 6, lid 1, onder f).</td></tr>
+<tr><td>Naam, categorie, adres, contactgegevens, diensten, prijzen, openingstijden en gekozen foto's van een bedrijf</td><td>Het gevraagde bedrijfsprofiel instellen en tonen, zodat klanten het bedrijf kunnen vinden en contacteren (overeenkomst).</td></tr>
+<tr><td>Boekingen, contactgegevens van klanten, bedrijfsnotities, planning en omzetboekingen</td><td>Boekings- en bedrijfsbeheerfuncties bieden. Voor de klantgegevens van een bedrijf is meestal het bedrijf verantwoordelijk en verwerkt Bookli ze in opdracht daarvan.</td></tr>
+<tr><td>Beoordelingen, reviewtekst en optionele foto's</td><td>Een beoordeling tonen die je wilt publiceren en de ontdekfunctie laten werken (de dienstovereenkomst en jouw keuze om te publiceren). Openbare beoordelingen zijn zichtbaar voor iedereen die het bedrijfsprofiel bekijkt.</td></tr>
+<tr><td>Feedbackbericht en optionele bijlage</td><td>Je feedback of ondersteuningsverzoek lezen en beantwoorden.</td></tr>
+<tr><td>Apparaattoken voor pushmeldingen</td><td>Meldingen die je inschakelt naar je apparaat sturen. Je kunt meldingen uitzetten in de instellingen van je apparaat.</td></tr>
+<tr><td>Globale locatie van het apparaat (optioneel)</td><td>Bedrijven in de buurt sorteren wanneer je de functie inschakelt. De app gebruikt deze locatie momenteel alleen voor die sortering; ze wordt niet in je Bookli-account opgeslagen en niet naar de servers van Bookli gestuurd.</td></tr>
+<tr><td>Abonnements- en betalingsstatus</td><td>Een bedrijfsabonnement en de bijbehorende administratie beheren. Abonnementen die in de iPhone- of iPad-app worden afgesloten, worden door Apple verkocht en gefactureerd via de App Store (in-app-aankoop); op Android en op het web verwerkt Stripe de betaling. Ik ontvang of bewaar je volledige kaartnummer niet.</td></tr>
+</tbody></table></div><p>Als gegevens nodig zijn voor een functie die je vraagt, is de gebruikelijke rechtsgrond de overeenkomst. Beperkte gegevens gebruik ik voor beveiliging en ondersteuning op basis van gerechtvaardigd belang. Locatie is optioneel en hangt af van de toestemming op je apparaat. Ik bewaar gegevens als de wet dat vereist. Als je de vereiste accountgegevens niet verstrekt, kan ik het account mogelijk niet aanmaken of de boeking niet afronden.</p>
+<h2 id="public">3. Openbare informatie</h2><p>Een bedrijfsprofiel is bedoeld om gevonden te worden. Het bedrijf kiest welke gegevens het publiceert, zoals naam, locatie, diensten, openingstijden, foto's en beoordelingen. Iedereen die Ontdekken of een gedeelde profiellink gebruikt, kan ze zien. Contactgegevens van een boeking worden gedeeld met het bedrijf dat die boeking afhandelt; ze maken geen deel uit van een openbaar profiel.</p>
+<h2 id="sharing">4. Dienstverleners en andere ontvangers</h2><ul><li><strong>Supabase</strong> levert authenticatie, database en bestandsopslag.</li><li><strong>Google</strong> levert inloggen met Google en, in de Android-app, Firebase Cloud Messaging voor pushmeldingen en Google Maps voor kaart- en adresfuncties.</li><li><strong>Apple</strong> levert Inloggen met Apple en, in de iPhone- en iPad-app, de App Store en in-app-aankopen voor bedrijfsabonnementen, pushmeldingen (Apple Push Notification service) en Apple Kaarten voor kaart- en adresfuncties.</li><li><strong>Stripe</strong> verwerkt betalingen voor bedrijfsabonnementen die op Android of het web worden afgesloten en biedt zijn betaal-/klantportaal.</li><li><strong>Microsoft Outlook</strong> levert de e-mailinbox voor ondersteuning.</li><li><strong>GitHub Pages</strong> host deze openbare informatiewebsite en kan daarbij basale technische verzoekgegevens verwerken.</li><li>Een bedrijf ontvangt de boekings- en klantgegevens die het nodig heeft om afspraken bij dat bedrijf af te handelen. Openbare profiel- en beoordelingsgegevens zijn zichtbaar zoals hierboven beschreven.</li></ul><p>Ik verkoop geen persoonsgegevens en gebruik ze niet voor advertenties. Dienstverleners kunnen gegevens verwerken onder hun eigen voorwaarden en, waar van toepassing, schriftelijke verwerkersafspraken.</p>
+<h2 id="transfers">5. Internationale doorgifte</h2><p>Sommige dienstverleners kunnen gegevens buiten de Europese Economische Ruimte verwerken, ook in de Verenigde Staten. De locatie en het doorgiftemechanisme hangen af van de dienstverlener en de projectconfiguratie. Als een doorgifte waarborgen vereist, moet die gebaseerd zijn op een rechtmatig mechanisme, zoals een adequaatheidsbesluit of standaardcontractbepalingen. Neem contact met me op voor details over de waarborgen die voor jouw gegevens gelden.</p>
+<h2 id="retention">6. Hoe lang gegevens worden bewaard</h2><p>Accountgegevens worden bewaard zolang het account actief is. Je kunt het verwijderen van je account starten in de Instellingen van de app. Verwijdering haalt account- en bedrijfsgegevens uit de actieve dienst; beperkte kopieën kunnen tijdelijk blijven bestaan in back-ups of beveiligingslogboeken van dienstverleners tot hun normale bewaarcyclus afloopt. Ik kan bepaalde gegevens bewaren zolang nodig is om aan een wettelijke verplichting te voldoen, een geschil op te lossen of de dienst te beschermen. Een bedrijf kan boekingsgegevens waarvoor het verantwoordelijk is, na verwijdering van je Bookli-account bewaren voor zijn eigen rechtmatige administratie.</p>
+<h2 id="rights">7. Je keuzes en rechten</h2><p>Je kunt je profiel, diensten en foto's in Instellingen bewerken of verwijderen, je account verwijderen en locatietoegang of meldingen uitzetten in de instellingen van je apparaat. Afhankelijk van het toepasselijke recht en de omstandigheden kun je ook om inzage, rectificatie, verwijdering, beperking of overdraagbaarheid vragen; bezwaar maken tegen verwerking op basis van gerechtvaardigd belang; en toestemming intrekken als die de grondslag is. Neem per e-mail contact met me op om deze rechten uit te oefenen. Als ik gegevens voor een bedrijf verwerk, moet ik het verzoek mogelijk naar dat bedrijf doorsturen en het helpen reageren.</p><p>Je kunt een klacht indienen bij de toezichthouder in het land waar je woont of werkt. In Denemarken is dat de <a href="https://www.datatilsynet.dk/english/file-a-complaint" rel="noopener">Deense toezichthouder voor gegevensbescherming (Datatilsynet)</a>.</p>
+<h2 id="security">8. Beveiliging</h2><p>Gegevens die tussen de app en haar dienstverleners worden verzonden, zijn tijdens het transport beschermd met HTTPS/TLS. Ik gebruik de toegangscontroles van dienstverleners en neem redelijke maatregelen om de toegang te beperken tot wat nodig is om Bookli te laten werken. Geen enkele online dienst kan absolute veiligheid beloven.</p>
+<h2 id="children">9. Kinderen</h2><p>Bookli is niet bedoeld voor personen jonger dan 16 jaar, en de Voorwaarden vereisen dat gebruikers minstens 16 jaar oud zijn. Als je denkt dat iemand jonger dan 16 een account heeft aangemaakt, neem dan contact met me op zodat ik het kan controleren en zo nodig verwijderen.</p>
+<h2 id="website">10. Website en wijzigingen</h2><p>Deze statische informatiewebsite bevat momenteel geen advertentie- of analysetags in de paginacode. De host kan wel technische verbindingsgegevens verwerken. Ik kan dit beleid bijwerken wanneer de app, de dienstverleners of wettelijke vereisten veranderen; de datum bovenaan toont de laatste versie.</p>
+<h2 id="contact">11. Contact</h2><p>Voor privacyvragen of verzoeken over je rechten kun je mailen naar <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p><p class="crosslink">Zie ook: <a href="/terms/nl/">Gebruiksvoorwaarden van Bookli</a>.</p>
+</article></main></body></html>

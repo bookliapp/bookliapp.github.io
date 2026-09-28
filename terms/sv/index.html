@@ -1,110 +1,23 @@
 <!doctype html>
 <html lang="sv">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Booklis användarvillkor</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #FFF8E7; color: #1a1a1a; padding: 24px; box-sizing: border-box;
-    display: flex; justify-content: center;
-  }
-  .card {
-    max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
-  }
-  .toolbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    margin-bottom: 8px; flex-wrap: wrap;
-  }
-  select {
-    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
-    background: #fff; color: #1a1a1a;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
-  p { font-size: 15px; line-height: 1.6; color: #333; }
-  .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
-  a { color: #D97706; }
-  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="toolbar">
-      <a href="/">← Bookli</a>
-      <select onchange="if(this.value) location.href=this.value;">
-        <option value="/terms/">English</option>
-        <option value="/terms/hu/">Magyar</option>
-        <option value="/terms/de/">Deutsch</option>
-        <option value="/terms/fr/">Français</option>
-        <option value="/terms/it/">Italiano</option>
-        <option value="/terms/es/">Español</option>
-        <option value="/terms/nl/">Nederlands</option>
-        <option value="/terms/pt/">Português</option>
-        <option value="/terms/sv/" selected>Svenska</option>
-        <option value="/terms/da/">Dansk</option>
-        <option value="/terms/no/">Norsk</option>
-        <option value="/terms/fi/">Suomi</option>
-        <option value="/terms/pl/">Polski</option>
-        <option value="/terms/ro/">Română</option>
-        <option value="/terms/cs/">Čeština</option>
-        <option value="/terms/sk/">Slovenčina</option>
-        <option value="/terms/hr/">Hrvatski</option>
-        <option value="/terms/sr/">Српски</option>
-        <option value="/terms/bg/">Български</option>
-        <option value="/terms/el/">Ελληνικά</option>
-        <option value="/terms/sl/">Slovenščina</option>
-        <option value="/terms/et/">Eesti</option>
-        <option value="/terms/lv/">Latviešu</option>
-        <option value="/terms/lt/">Lietuvių</option>
-        <option value="/terms/uk/">Українська</option>
-        <option value="/terms/tr/">Türkçe</option>
-        <option value="/terms/zh-Hans/">简体中文</option>
-        <option value="/terms/ja/">日本語</option>
-        <option value="/terms/ko/">한국어</option>
-        <option value="/terms/th/">ไทย</option>
-        <option value="/terms/hi/">हिन्दी</option>
-        <option value="/terms/ru/">Русский</option>
-      </select>
-    </div>
-    <h1>📜 Booklis användarvillkor</h1>
-    <p class="updated">Senast uppdaterad: September 15, 2026</p>
-    <h2>Godkännande av dessa Villkor</h2>
-    <p>Genom att skapa ett konto eller använda Bookli godkänner du dessa Användarvillkor och vår Integritetspolicy. Om du inte godkänner dem, vänligen använd inte Bookli. Dessa Villkor gäller alla som använder appen, oavsett om det är som kund som bokar en tid eller ett företag som hanterar en.</p>
-    <h2>Vad Bookli är</h2>
-    <p>Bookli är en bokningsplattform som kopplar samman småföretag med kunder som vill boka deras tjänster. Bookli är i sig en teknikleverantör — det är inte part i någon bokning som görs genom det, och anställer, kontrollerar eller övervakar inte något företag som listas på det.</p>
-    <h2>Behörighet och ditt konto</h2>
-    <p>Du måste vara minst 16 år för att använda Bookli. Du ansvarar för riktigheten i den information du lämnar vid registrering, och för att hålla dina inloggningsuppgifter säkra. Du ansvarar för allt som händer under ditt konto.</p>
-    <h2>Använda Bookli som kund</h2>
-    <p>Att boka med Bookli är, och kommer alltid att förbli, helt gratis för kunder — du betalar aldrig något till Bookli för att hitta eller boka ett företag. När du bokar en tid ingår du ett avtal direkt med det företaget, inte med Bookli; företaget ansvarar för att hålla, boka om, eller avboka den tiden, och Bookli är inte part i det.</p>
-    <h2>Använda Bookli som företag</h2>
-    <p>Företagskonton inkluderar en gratis provperiod, efter vilken fortsatt användning av Booklis företagsfunktioner kräver en betald månadsprenumeration. Prenumerationsbetalningar behandlas helt av Stripe; Bookli ser eller lagrar aldrig dina kortuppgifter. Din prenumeration förnyas automatiskt varje månad tills du avbryter den via alternativet Hantera prenumeration i Inställningar, som öppnar Stripes egen kundportal — att avbryta stoppar framtida förnyelser men återbetalar inte den aktuella faktureringsperioden. Vi kan ändra prenumerationspriser med rimligt förhandsbesked; att fortsätta använda Booklis företagsfunktioner efter att en prisändring träder i kraft innebär att du accepterar det nya priset. Som företag ansvarar du ensam för riktigheten i din annons, tjänsterna du erbjuder, priserna du tar ut, och efterlevnad av vilka skatte-, konsumentskydds- och näringstillståndslagar som gäller för dig — Booklis intäkts- och momsverktyg tillhandahålls endast för bekvämlighet och utgör inte skatte- eller juridisk rådgivning.</p>
-    <h2>Innehåll du tillhandahåller</h2>
-    <p>Du behåller äganderätten till alla recensioner, foton eller annat innehåll du lägger till i Bookli, men genom att skicka in det ger du Bookli en licens att visa det inom appen för de personer det är avsett för — till exempel visas en recension för alla som ser det företagets profil. Du ansvarar för det du publicerar: det får inte vara falskt, ärekränkande, olagligt, eller inkräkta på någon annans rättigheter. Vi kan ta bort innehåll, eller dölja en recension från offentlig visning, som bryter mot detta eller vars borttagning vi ombeds göra av en legitim anledning.</p>
-    <h2>Godtagbar användning</h2>
-    <p>Du samtycker till att inte använda Bookli för att trakassera, lura eller skada någon; utge dig för att vara en annan person eller företag; publicera falsk eller vilseledande information; störa appens normala funktion; eller försöka få tillgång till ett annat konto eller data som inte är dina.</p>
-    <h2>Booklis roll i tvister</h2>
-    <p>Bookli är en neutral plattform som kopplar samman företag och kunder. Vi ansvarar inte för kvaliteten, säkerheten, lagligheten, eller resultatet av någon bokning, tjänst, eller interaktion mellan ett företag och en kund, och vi medlar inte i tvister mellan dem. Om något går fel med en specifik bokning är det en fråga mellan det berörda företaget och kunden.</p>
-    <h2>Immateriella rättigheter</h2>
-    <p>Namnet Bookli, logotypen, och appen i sig ägs av Booklis operatör. Inget i dessa Villkor ger dig någon rätt att använda dem utanför normal användning av appen.</p>
-    <h2>Avstängning och uppsägning</h2>
-    <p>Du kan när som helst sluta använda Bookli och radera ditt konto från Inställningar. Vi kan stänga av eller säga upp ett konto som bryter mot dessa Villkor, ägnar sig åt bedrägeri eller missbruk, eller skapar risk eller juridisk exponering för Bookli eller andra användare, med eller utan förvarning beroende på situationens allvar.</p>
-    <h2>Ansvarsfriskrivningar</h2>
-    <p>Bookli tillhandahålls "i befintligt skick" och "i mån av tillgänglighet", utan garantier av något slag, uttryckliga eller underförstådda, inklusive någon garanti att appen kommer att vara oavbruten, felfri, eller lämplig för ett visst ändamål. Vi gör vårt bästa för att hålla Bookli tillförlitlig och korrekt, men vi kan inte garantera att den alltid kommer att vara det.</p>
-    <h2>Ansvarsbegränsning</h2>
-    <p>I den utsträckning som lagen tillåter är Bookli och dess operatör inte ansvariga för några indirekta, tillfälliga, särskilda, eller följdskador som uppstår från din användning av appen, inklusive förlorad vinst, förlorade bokningar, eller förlorad data. Vårt totala ansvar för alla krav relaterade till Bookli är begränsat till det belopp du betalat oss, om något, under de 12 månaderna innan kravet uppstod.</p>
-    <h2>Skadeersättning</h2>
-    <p>Du samtycker till att hålla Bookli och dess operatör skadeslösa från alla krav, förluster, eller kostnader — inklusive rimliga juridiska avgifter — som uppstår från ditt eget brott mot dessa Villkor, ditt missbruk av appen, eller innehåll du publicerar.</p>
-    <h2>Tillämplig lag</h2>
-    <p>Dessa Villkor styrs av Danmarks lagar, utan hänsyn till dess lagvalsprinciper. Alla tvister som inte kan lösas informellt kommer att omfattas av dansk domstols exklusiva jurisdiktion.</p>
-    <h2>Ändringar av dessa Villkor</h2>
-    <p>Vi kan uppdatera dessa Villkor från tid till annan. Om vi gör en väsentlig ändring kommer vi att återspegla det här med ett uppdaterat datum högst upp på denna sida; att fortsätta använda Bookli efter att en ändring träder i kraft innebär att du accepterar de uppdaterade Villkoren.</p>
-    <h2>Kontakt</h2>
-    <p>Frågor om dessa Villkor kan skickas till bookli.app.team@outlook.com.</p>
-    <p class="crosslink">Se även: <a href="/privacy/sv/">Bookli Integritetspolicy</a></p>
-  </div>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf7ed"><title>Booklis användarvillkor</title><link rel="stylesheet" href="/assets/legal.css"></head>
+<body><main class="shell"><div class="toolbar"><a class="brand" href="/"><span class="mark">B</span><span>Bookli</span></a><select aria-label="Language" onchange="if(this.value) location.href=this.value;"><option value="/terms/">English</option><option value="/terms/hu/">Magyar</option><option value="/terms/de/">Deutsch</option><option value="/terms/fr/">Français</option><option value="/terms/it/">Italiano</option><option value="/terms/es/">Español</option><option value="/terms/nl/">Nederlands</option><option value="/terms/pt/">Português</option><option value="/terms/sv/" selected>Svenska</option><option value="/terms/da/">Dansk</option><option value="/terms/no/">Norsk</option><option value="/terms/fi/">Suomi</option><option value="/terms/pl/">Polski</option><option value="/terms/ro/">Română</option><option value="/terms/cs/">Čeština</option><option value="/terms/sk/">Slovenčina</option><option value="/terms/hr/">Hrvatski</option><option value="/terms/sr/">Српски</option><option value="/terms/bg/">Български</option><option value="/terms/el/">Ελληνικά</option><option value="/terms/sl/">Slovenščina</option><option value="/terms/et/">Eesti</option><option value="/terms/lv/">Latviešu</option><option value="/terms/lt/">Lietuvių</option><option value="/terms/uk/">Українська</option><option value="/terms/tr/">Türkçe</option><option value="/terms/hi/">हिन्दी</option><option value="/terms/zh-Hans/">简体中文</option><option value="/terms/ko/">한국어</option><option value="/terms/ja/">日本語</option><option value="/terms/ru/">Русский</option><option value="/terms/th/">ไทย</option></select></div><article class="card">
+<span class="eyebrow">Villkor · app och webbplats</span><h1>Booklis användarvillkor</h1><p class="updated">Senast uppdaterad: 28 september 2026</p>
+<div class="identity"><strong>Vem som tillhandahåller Bookli</strong><p>Bookli drivs av Zsolt Báthori som privatperson. Det är inget separat företag eller någon separat juridisk person och har för närvarande inget CVR-nummer. Kontakt: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p></div>
+<nav class="contents" aria-label="På den här sidan"><a href="#service">Tjänst</a><a href="#accounts">Konton</a><a href="#clients">Kunder</a><a href="#business">Företag</a><a href="#payments">Betalningar</a><a href="#content">Innehåll</a><a href="#ending">Avslutning</a><a href="#law">Juridiska villkor</a></nav>
+<h2 id="acceptance">1. Avtal och tillämpningsområde</h2><p>Dessa villkor gäller när du skapar eller använder ett Bookli-konto eller använder Booklis webbplats. Genom att använda Bookli godkänner du dessa villkor och <a href="/privacy/sv/">integritetspolicyn</a>. Om du använder Bookli för ett företag bekräftar du att du har behörighet att godkänna villkoren för företaget. Om du inte godkänner dem ska du inte skapa ett konto eller använda tjänsten.</p>
+<h2 id="service">2. Vad Bookli gör</h2><p>Bookli ger företag digitala verktyg för att publicera en profil, lista tjänster, hantera tillgänglighet, ta emot bokningsförfrågningar, organisera kunduppgifter och se sina register. Kunder kan hitta anslutna företag och göra eller begära bokningar. Bookli tillhandahåller inte de tjänster som ett företag erbjuder och är inte part i avtalet mellan ett företag och dess kund.</p><p>Bookli utvecklas aktivt. En funktion kan vara märkt som beta, provperiod, planerad eller kommer snart. Ett planerat pris eller en planerad funktion på webbplatsen utgör inte i sig en prenumeration eller ett löfte om att funktionen redan finns. Det erbjudande som visas i appen före registreringen gäller.</p>
+<h2 id="accounts">3. Behörighet och konton</h2><p>Du måste vara minst 16 år för att använda Bookli. Håll dina kontouppgifter korrekta, skydda dina inloggningsuppgifter och kontakta mig direkt om du misstänker obehörig åtkomst. Du ansvarar för aktivitet på ditt konto, om den inte beror på att jag har underlåtit att vidta rimliga säkerhetsåtgärder som krävs enligt lag.</p>
+<h2 id="clients">4. Kunder och bokningar</h2><p>Bookli tar inte betalt av kunder för att hitta ett företag eller boka. Ett företag kan ta betalt för sina egna tjänster enligt de villkor det presenterar för kunden. När en bokning har godkänts eller bekräftats är den en överenskommelse direkt mellan kunden och företaget. Företaget ansvarar för tjänsten, dess beskrivning och pris, ändringar, avbokningar, återbetalningar och alla konsumenträttigheter som gäller för tjänsten. Kontakta företaget om en bokning; kontakta Bookli om själva appen inte fungerar som beskrivet.</p>
+<h2 id="business">5. Företagskonton och personuppgifter</h2><p>Företagsanvändare ansvarar för att deras offentliga uppgifter, tjänster och priser är korrekta och för att följa de lagar som gäller för deras verksamhet. De måste ha en laglig grund för att lägga in kunduppgifter i Bookli, ge kunderna den integritetsinformation som krävs, bara samla in det som behövs och undvika känsliga eller ovidkommande uppgifter i anteckningar. Företaget bestämmer i regel varför det använder sina kund- och bokningsuppgifter; det måste svara på förfrågningar om dem och följa <a href="/privacy/sv/">integritetspolicyn</a>. Innan ett företag lägger in personuppgifter om sina kunder för behandling i Bookli måste företaget och jag ingå ett skriftligt personuppgiftsbiträdesavtal. Om appen ännu inte erbjuder ett sådant avtal, kontakta mig och lägg inte in kunduppgifter förrän det har ingåtts.</p><p>Booklis intäkts- och momsfunktioner är endast organisatoriska verktyg; de utgör inte skatte-, redovisnings- eller juridisk rådgivning. Du ansvarar själv för att kontrollera dina register och skatteförpliktelser.</p>
+<h2 id="payments">6. Företagsprenumerationer, provperiod och uppsägning</h2><p>Det planerade erbjudandet ger varje nytt företagskonto den första månaden gratis. Därefter är det planerade månadspriset 4,99 USD för behöriga tidiga testare under deras första år, eller 8,99 USD för standardplanen. Dessa priser på webbplatsen är vägledande och inget aktuellt erbjudande eller tillstånd att debitera. Innan du prenumererar visar appen gällande provperiod, behörighet, pris, valuta, skatter, första debiteringsdatum, förnyelse och övriga faktureringsvillkor för dig att granska och godkänna. Om erbjudandet i appen skiljer sig från denna sida gäller erbjudandet som visas i appen innan du bekräftar.</p><p>Om du prenumererar förnyas prenumerationen varje månad tills den sägs upp. Om du prenumererade i appen för iPhone eller iPad säljer och fakturerar Apple prenumerationen via ditt Apple-konto enligt App Stores villkor: säg upp den under Inställningar → Hantera prenumeration eller i prenumerationsinställningarna för ditt Apple-konto, och begär eventuell återbetalning från Apple. Om du prenumererade på Android eller webben säger du upp via Hantera prenumeration i Inställningar, som öppnar Stripes kundportal. Uppsägning stoppar framtida förnyelser; åtkomsten fortsätter normalt till slutet av den redan betalda perioden. Lagstadgade rättigheter till uppsägning, ångerrätt, avtalsenlighet och återbetalning som gäller för ditt köp påverkas inte av denna bestämmelse. Apple och Stripe hanterar betalningar enligt sina egna villkor; jag tar inte emot och lagrar inte ditt fullständiga kortnummer.</p><p>Jag meddelar i rimlig tid innan en väsentlig pris- eller prenumerationsändring träder i kraft. Du kan säga upp innan det nya priset gäller. En ändring höjer inte i efterhand en debitering som redan gjorts.</p>
+<h2 id="content">7. Profiler, omdömen och annat innehåll</h2><p>Du behåller äganderätten till det innehåll du skickar in. Du ger mig en icke-exklusiv, världsomfattande och avgiftsfri rätt att lagra, kopiera, ändra storlek på och visa innehållet endast i den mån det behövs för att driva och marknadsföra de Bookli-funktioner du väljer, inklusive att visa en företagsprofil eller ett omdöme för appens användare. Rätten upphör när innehållet tas bort, utom för begränsade kopior i säkerhetskopior eller när lagring krävs enligt lag.</p><p>Skicka bara in innehåll som du har rätt att använda. Publicera inte olagligt, vilseledande, kränkande, diskriminerande, ärekränkande eller intrångsgörande innehåll, privata uppgifter om andra utan tillstånd eller innehåll som saknar koppling till tjänsten. Omdömen ska återspegla en verklig upplevelse. Jag kan begränsa eller ta bort innehåll som bryter mot villkoren, skapar ett säkerhets- eller rättsligt problem eller måste tas bort enligt lag. För att anmäla en profil eller ett omdöme, mejla <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a> med länken och en kort förklaring.</p>
+<h2 id="acceptable">8. Godtagbar användning</h2><p>Använd inte Bookli för att trakassera, hota, bedra eller skada någon; utge dig för att vara en annan person eller ett annat företag; missbruka andras uppgifter; störa appen; testa eller kringgå säkerheten; skicka skräppost; eller komma åt konton eller uppgifter som inte är dina. Använd inte Bookli i nödsituationer och förlita dig inte på det som enda registrering av en bokning eller affärstransaktion.</p>
+<h2 id="thirdparty">9. Tredjepartstjänster och tillgänglighet</h2><p>Bookli är beroende av leverantörer av webbhotell, kartor, meddelanden och betalningar. Deras tjänster kan ha egna villkor och ibland vara otillgängliga. Jag arbetar för att hålla Bookli användbart och säkert men kan inte lova oavbruten åtkomst. Jag kan underhålla, uppdatera eller ändra funktioner; om en ändring väsentligt påverkar en betald prenumeration meddelar jag detta och ger de rättigheter som krävs enligt lag.</p>
+<h2 id="ip">10. Immateriella rättigheter</h2><p>Mellan dig och mig äger jag namnet och varumärket Bookli, programvaran, gränssnittet, den visuella designen, originaltexter, grafik och annat material som jag skapar, med undantag för tredjepartsmaterial som tillhör respektive rättighetshavare. Upphovsrätt och andra immateriella rättigheter stannar hos sina ägare. Dessa villkor ger dig en begränsad, återkallelig rätt att använda appen för dess avsedda ändamål; de överför inte äganderätt och tillåter dig inte att kopiera, publicera, sälja vidare, anpassa eller dekompilera Bookli, utom där tillämplig lag tillåter det. Bookli, dess logotyp och tillhörande varumärken får inte användas för att antyda rekommendation eller samröre utan tillstånd. Du behåller rättigheterna till innehåll du skickar in, med förbehåll för rätten i avsnitt 7.</p>
+<h2 id="ending">11. Avstängning och avslutad användning</h2><p>Du kan sluta använda Bookli och radera ditt konto i Inställningar. Jag kan tillfälligt begränsa åtkomsten när det är rimligt nödvändigt för att skydda användare, utreda misstänkt bedrägeri eller missbruk, åtgärda ett säkerhetsproblem, följa lag eller reagera på ett allvarligt brott mot dessa villkor. När det är möjligt förklarar jag skälet och ger dig ett sätt att kontakta mig. Att avsluta ett konto upphäver inte ett separat avtal mellan ett företag och dess kund och tar inte bort uppgifter som måste sparas enligt lag.</p>
+<h2 id="warranties">12. Garantier och ansvar</h2><p>Jag tillhandahåller Bookli med rimlig omsorg och skicklighet, men beta- eller utvecklingsfunktioner kan innehålla fel eller tillfälligt vara otillgängliga. Inget i dessa villkor utesluter en konsumentgaranti, en lagstadgad påföljd för digitala tjänster eller någon annan rättighet som inte lagligen kan uteslutas. Företaget ansvarar för de tjänster det erbjuder och utför.</p><p>I den mån lagen tillåter ansvarar ingen part gentemot den andra för förlust som inte rimligen kunde förutses när avtalet ingicks. Inget i dessa villkor utesluter ansvar för bedrägeri, uppsåtligt handlande eller ansvar som tillämplig lag inte tillåter att begränsa. Tvingande konsumenträttigheter har alltid företräde.</p>
+<h2 id="law">13. Tillämplig lag och tvister</h2><p>Dansk lag gäller för dessa villkor, med förbehåll för tvingande regler som skyddar konsumenter i deras hemland. En tvist kan prövas av en domstol som är behörig enligt tillämplig lag; denna bestämmelse tar inte ifrån en konsument den tvingande rätten att väcka talan vid en annan behörig domstol.</p>
+<h2 id="changes">14. Ändringar av villkoren</h2><p>Jag kan uppdatera dessa villkor när Bookli eller lagen ändras. Vid en väsentlig ändring uppdaterar jag datumet ovan och meddelar i appen eller via e-post när det är möjligt. Om du inte godtar en ändring, sluta använda den berörda funktionen och säg upp eventuell prenumeration innan ändringen träder i kraft. Ändringar gäller inte retroaktivt för en tvist som redan har uppstått.</p>
+<h2 id="contact">15. Kontakt</h2><p>Frågor, supportförfrågningar och anmälningar av innehåll: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p><p class="crosslink">Se även: <a href="/privacy/sv/">Booklis integritetspolicy</a>.</p>
+</article></main></body></html>
