@@ -1,102 +1,28 @@
 <!doctype html>
 <html lang="cs">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zásady ochrany osobních údajů Bookli</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #FFF8E7; color: #1a1a1a; padding: 24px; box-sizing: border-box;
-    display: flex; justify-content: center;
-  }
-  .card {
-    max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
-  }
-  .toolbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    margin-bottom: 8px; flex-wrap: wrap;
-  }
-  select {
-    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
-    background: #fff; color: #1a1a1a;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
-  p { font-size: 15px; line-height: 1.6; color: #333; }
-  .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
-  a { color: #D97706; }
-  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="toolbar">
-      <a href="/">← Bookli</a>
-      <select onchange="if(this.value) location.href=this.value;">
-        <option value="/privacy/">English</option>
-        <option value="/privacy/hu/">Magyar</option>
-        <option value="/privacy/de/">Deutsch</option>
-        <option value="/privacy/fr/">Français</option>
-        <option value="/privacy/it/">Italiano</option>
-        <option value="/privacy/es/">Español</option>
-        <option value="/privacy/nl/">Nederlands</option>
-        <option value="/privacy/pt/">Português</option>
-        <option value="/privacy/sv/">Svenska</option>
-        <option value="/privacy/da/">Dansk</option>
-        <option value="/privacy/no/">Norsk</option>
-        <option value="/privacy/fi/">Suomi</option>
-        <option value="/privacy/pl/">Polski</option>
-        <option value="/privacy/ro/">Română</option>
-        <option value="/privacy/cs/" selected>Čeština</option>
-        <option value="/privacy/sk/">Slovenčina</option>
-        <option value="/privacy/hr/">Hrvatski</option>
-        <option value="/privacy/sr/">Српски</option>
-        <option value="/privacy/bg/">Български</option>
-        <option value="/privacy/el/">Ελληνικά</option>
-        <option value="/privacy/sl/">Slovenščina</option>
-        <option value="/privacy/et/">Eesti</option>
-        <option value="/privacy/lv/">Latviešu</option>
-        <option value="/privacy/lt/">Lietuvių</option>
-        <option value="/privacy/uk/">Українська</option>
-        <option value="/privacy/tr/">Türkçe</option>
-        <option value="/privacy/zh-Hans/">简体中文</option>
-        <option value="/privacy/ja/">日本語</option>
-        <option value="/privacy/ko/">한국어</option>
-        <option value="/privacy/th/">ไทย</option>
-        <option value="/privacy/hi/">हिन्दी</option>
-        <option value="/privacy/ru/">Русский</option>
-      </select>
-    </div>
-    <h1>🔒 Zásady ochrany osobních údajů Bookli</h1>
-    <p class="updated">Naposledy aktualizováno: September 15, 2026</p>
-    <h2>Kdo jsme</h2>
-    <p>Bookli ("my") je aplikace pro rezervaci termínů, která propojuje malé firmy s jejich klienty. Bookli provozuje Zsolt Báthori. Tyto zásady vysvětlují, jaké informace shromažďujeme, proč je shromažďujeme a jak k nim můžete přistupovat, opravovat je nebo je mazat.</p>
-    <h2>Informace, které shromažďujeme</h2>
-    <p>Shromažďujeme e-mailovou adresu a zobrazované jméno, se kterými se registrujete; pokud používáte Bookli jako firma, název, kategorii, adresu, telefonní číslo, služby, ceny a otevírací dobu vaší firmy a jakékoli fotografie, které se rozhodnete nahrát; při vytvoření rezervace jméno, telefonní číslo a e-mailovou adresu klienta, aby ho firma mohla identifikovat a kontaktovat; jakékoli hodnocení, text recenze a volitelnou fotografii, kterou přiložíte při hodnocení firmy; zprávu a volitelnou fotografii, kterou odešlete prostřednictvím formuláře zpětné vazby v aplikaci; token zařízení používaný k doručování push notifikací; a pouze s vaším svolením přibližnou polohu vašeho zařízení pro volitelné řazení "V okolí" v sekci Objevit, která se nikdy neukládá ani nesdílí.</p>
-    <h2>Jak tyto informace používáme</h2>
-    <p>Tyto informace používáme k provozu základních funkcí Bookli — rezervace, rozvrhy, sledování příjmů a komunikace mezi firmou a jejími klienty —, k doručování push notifikací souvisejících s rezervacemi, ke zpracování platby předplatného firmy Bookli prostřednictvím Stripe a k reagování na zpětnou vazbu a žádosti o podporu. Vaše osobní údaje neprodáváme ani je nepoužíváme k reklamě.</p>
-    <h2>Právní základ zpracování</h2>
-    <p>Vaše informace zpracováváme, protože je to nezbytné k poskytnutí služby, ke které jste se zaregistrovali, protože jste nám k tomu dali svolení (například přístup k poloze nebo volitelnou fotografii), nebo protože máme oprávněný zájem udržovat Bookli bezpečnou a správně fungující.</p>
-    <h2>S kým je sdílíme</h2>
-    <p>Bookli využívá malý počet poskytovatelů služeb, z nichž každý dostává pouze to, co potřebuje k plnění svého úkolu: Supabase hostuje naši databázi, autentizaci a ukládání souborů; Google (Firebase Cloud Messaging a Google Maps) doručuje push notifikace a pohání funkce mapy a adresy; a Stripe zpracovává platbu předplatného firmy Bookli a nikdy s námi nesdílí údaje o vaší kartě. Jméno, telefonní číslo a e-mail klienta jsou sdíleny pouze s konkrétní firmou, u které rezervuje; veřejný profil firmy — název, služby, fotografie a recenze — je viditelný pro kohokoli, kdo prochází aplikaci nebo sdílený odkaz, protože takto funguje objevování a rezervace.</p>
-    <h2>Uchovávání údajů</h2>
-    <p>Vaše informace uchováváme, dokud je váš účet aktivní. Pokud svůj účet smažete, vaše firma, rezervace, záznamy o příjmech a poznámky o klientech jsou okamžitě trvale odstraněny; rezervaci, kterou jste jako klient provedli u jiné firmy, si může tato firma ponechat pro vlastní evidenci, přičemž propojení s vaším účtem bude odstraněno. Některé informace můžeme uchovávat déle, pokud to vyžaduje zákon, například finanční záznamy, které je firma ze zákona povinna uchovávat.</p>
-    <h2>Mezinárodní přenosy</h2>
-    <p>Naši poskytovatelé služeb mohou zpracovávat vaše informace v jiných zemích než ve vaší vlastní, včetně Spojených států. Každý z nich uplatňuje vlastní záruky pro nakládání s osobními údaji; vybíráme poskytovatele, kteří berou ochranu údajů vážně a sdílejí pouze to, co každý z nich skutečně potřebuje.</p>
-    <h2>Vaše práva</h2>
-    <p>Svůj firemní profil, služby a fotografie můžete kdykoli upravit nebo odstranit v Nastavení. Svůj účet — včetně firmy, rezervací, záznamů o příjmech a poznámek o klientech — můžete trvale smazat z Nastavení → Smazat účet; toto je okamžité a nevratné. Přístup k poloze a push notifikace můžete kdykoli vypnout ve vlastním nastavení svého zařízení a aplikace bude bez nich dále fungovat. V závislosti na tom, kde žijete, můžete mít také právo požádat o kopii svých údajů, požádat nás o jejich opravu, nebo vznést námitku proti způsobu jejich použití — kontaktujte nás na níže uvedené adrese ohledně čehokoli z toho.</p>
-    <h2>Zabezpečení</h2>
-    <p>Data přenášená mezi aplikací a našimi poskytovateli služeb jsou šifrována (HTTPS/TLS). Pro uložená data spoléháme na vlastní bezpečnostní postupy našich poskytovatelů a podnikáme přiměřené kroky k omezení přístupu na to, co skutečně potřebuje každá část systému.</p>
-    <h2>Ochrana soukromí dětí</h2>
-    <p>Bookli není určena dětem a vědomě neshromažďujeme informace od nikoho mladšího 16 let. Pokud se domníváte, že nám dítě poskytlo osobní údaje, kontaktujte nás a my je odstraníme.</p>
-    <h2>Změny těchto zásad</h2>
-    <p>Tyto zásady můžeme čas od času aktualizovat. Podstatné změny budou zde uvedeny s aktualizovaným datem v horní části této stránky.</p>
-    <h2>Kontakt</h2>
-    <p>Dotazy týkající se těchto zásad nebo vašich údajů lze zaslat na bookli.app.team@outlook.com.</p>
-    <p class="crosslink">Viz také: <a href="/terms/cs/">Podmínky použití Bookli</a></p>
-  </div>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf7ed"><title>Zásady ochrany osobních údajů Bookli</title><link rel="stylesheet" href="/assets/legal.css"></head>
+<body><main class="shell"><div class="toolbar"><a class="brand" href="/"><span class="mark">B</span><span>Bookli</span></a><select aria-label="Language" onchange="if(this.value) location.href=this.value;"><option value="/privacy/">English</option><option value="/privacy/hu/">Magyar</option><option value="/privacy/de/">Deutsch</option><option value="/privacy/fr/">Français</option><option value="/privacy/it/">Italiano</option><option value="/privacy/es/">Español</option><option value="/privacy/nl/">Nederlands</option><option value="/privacy/pt/">Português</option><option value="/privacy/sv/">Svenska</option><option value="/privacy/da/">Dansk</option><option value="/privacy/no/">Norsk</option><option value="/privacy/fi/">Suomi</option><option value="/privacy/pl/">Polski</option><option value="/privacy/ro/">Română</option><option value="/privacy/cs/" selected>Čeština</option><option value="/privacy/sk/">Slovenčina</option><option value="/privacy/hr/">Hrvatski</option><option value="/privacy/sr/">Српски</option><option value="/privacy/bg/">Български</option><option value="/privacy/el/">Ελληνικά</option><option value="/privacy/sl/">Slovenščina</option><option value="/privacy/et/">Eesti</option><option value="/privacy/lv/">Latviešu</option><option value="/privacy/lt/">Lietuvių</option><option value="/privacy/uk/">Українська</option><option value="/privacy/tr/">Türkçe</option><option value="/privacy/hi/">हिन्दी</option><option value="/privacy/zh-Hans/">简体中文</option><option value="/privacy/ko/">한국어</option><option value="/privacy/ja/">日本語</option><option value="/privacy/ru/">Русский</option><option value="/privacy/th/">ไทย</option></select></div><article class="card">
+<span class="eyebrow">Soukromí · osobní údaje</span><h1>Zásady ochrany osobních údajů Bookli</h1><p class="updated">Poslední aktualizace: 28. září 2026</p>
+<div class="identity"><strong>Kdo provozuje Bookli</strong><p>Bookli je název produktu, který používá Zsolt Báthori jako fyzická osoba. Nejde o samostatnou společnost ani právnickou osobu a nemá číslo CVR. Kontakt: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p></div>
+<nav class="contents" aria-label="Na této stránce"><a href="#controller">Správce a role</a><a href="#data">Údaje a účely</a><a href="#sharing">Sdílení</a><a href="#retention">Uchovávání</a><a href="#rights">Vaše práva</a><a href="#contact">Kontakt</a></nav>
+<h2 id="controller">1. Správce a role</h2><p>Já, Zsolt Báthori, provozuji Bookli a rozhoduji o tom, jak se osobní údaje používají k provozu platformy, správě účtů, udržování veřejných profilů podniků a recenzí, poskytování podpory, zabezpečení služby a správě předplatného. Pro tyto činnosti jsem správcem.</p><p>Když podnik používá Bookli k ukládání rezervací, kontaktů, historie návštěv nebo poznámek svých klientů, rozhoduje tento podnik o tom, proč tyto údaje potřebuje, a obvykle je jejich správcem. Zpracovávám je podle pokynů podniku, abych poskytoval nástroje pro rezervace a správu. S dotazy ke konkrétní rezervaci nebo k záznamům podniku se nejprve obraťte na daný podnik. Pokud zpracovávám osobní údaje jménem podniku, musíme spolu s podnikem uzavřít písemnou smlouvu o zpracování osobních údajů dříve, než budou tyto údaje do Bookli vloženy.</p>
+<h2 id="data">2. Jaké údaje používám a proč</h2><p>Údaje závisí na funkcích, které používáte. Používám je k poskytnutí požadované funkce, k zajištění fungování a bezpečnosti Bookli a k odpovědím na vaše dotazy.</p><div class="table-wrap"><table><thead><tr><th>Údaje</th><th>Účel a obvyklý právní základ</th></tr></thead><tbody>
+<tr><td>Název účtu, e-mailová adresa a přihlašovací údaje</td><td>Vytvoření a zabezpečení účtu a poskytnutí požadované služby (smlouva, čl. 6 odst. 1 písm. b) GDPR); ochrana služby před zneužitím (oprávněné zájmy, čl. 6 odst. 1 písm. f)).</td></tr>
+<tr><td>Název, kategorie, adresa, kontakty, služby, ceny, otevírací doba a vybrané fotografie podniku</td><td>Vytvoření a zobrazení požadovaného profilu podniku, aby jej klienti mohli najít a kontaktovat (smlouva).</td></tr>
+<tr><td>Rezervace, kontakty klientů, poznámky podniku, rozvrh a záznamy o příjmech</td><td>Poskytování funkcí rezervací a správy podniku. U klientských záznamů podniku je správcem obvykle podnik a Bookli je zpracovává podle jeho pokynů.</td></tr>
+<tr><td>Hodnocení, text recenzí a volitelné fotografie</td><td>Zobrazení recenze, kterou se rozhodnete zveřejnit, a provoz služby objevování (smlouva o službě a vaše rozhodnutí zveřejnit). Veřejné recenze uvidí každý, kdo si prohlíží profil podniku.</td></tr>
+<tr><td>Zpráva se zpětnou vazbou a volitelná příloha</td><td>Přečtení vaší zpětné vazby nebo žádosti o podporu a odpověď na ni.</td></tr>
+<tr><td>Token zařízení pro push oznámení</td><td>Doručování oznámení, která zapnete, do vašeho zařízení. Oznámení můžete vypnout v nastavení zařízení.</td></tr>
+<tr><td>Přibližná poloha zařízení (volitelné)</td><td>Řazení podniků v okolí, pokud funkci zapnete. Aplikace v současné podobě používá polohu jen k tomuto řazení; neukládá se do vašeho účtu Bookli ani se neodesílá na servery Bookli.</td></tr>
+<tr><td>Stav předplatného a plateb</td><td>Správa předplatného podniku a souvisejících záznamů. Předplatné zakoupené v aplikaci pro iPhone nebo iPad prodává a účtuje Apple prostřednictvím App Storu (nákup v aplikaci); v systému Android a na webu platbu zpracovává Stripe. Celé číslo vaší karty nedostávám ani neukládám.</td></tr>
+</tbody></table></div><p>Pokud jsou údaje potřebné k poskytnutí funkce, o kterou žádáte, obvyklým základem je smlouva. Omezené údaje používám k zabezpečení služby a podpoře na základě oprávněných zájmů. Poloha je volitelná a závisí na oprávnění vašeho zařízení. Údaje uchovávám, pokud to vyžaduje zákon. Pokud neposkytnete požadované údaje účtu, nemusím být schopen účet vytvořit nebo dokončit rezervaci.</p>
+<h2 id="public">3. Veřejné informace</h2><p>Profil podniku je určen k tomu, aby byl nalezen. Podnik si vybírá, které údaje zveřejní, například název, polohu, služby, otevírací dobu, fotografie a recenze. Kdokoli, kdo používá Objevit nebo sdílený odkaz na profil, je může vidět. Kontaktní údaje z rezervace se sdílejí s podnikem, který rezervaci vyřizuje; nejsou součástí veřejného profilu.</p>
+<h2 id="sharing">4. Poskytovatelé služeb a další příjemci</h2><ul><li><strong>Supabase</strong> poskytuje ověřování, databázi a úložiště souborů.</li><li><strong>Google</strong> poskytuje přihlášení přes Google a v aplikaci pro Android Firebase Cloud Messaging pro push oznámení a Mapy Google pro funkce map a adres.</li><li><strong>Apple</strong> poskytuje funkci Přihlásit se přes Apple a v aplikaci pro iPhone a iPad App Store a nákupy v aplikaci pro předplatné podniků, push oznámení (Apple Push Notification service) a Mapy Apple pro funkce map a adres.</li><li><strong>Stripe</strong> zpracovává platby za předplatné podniků provedené v systému Android nebo na webu a poskytuje svůj platební/zákaznický portál.</li><li><strong>Microsoft Outlook</strong> poskytuje e-mailovou schránku podpory.</li><li><strong>GitHub Pages</strong> hostuje tento veřejný informační web a v rámci hostingu může zpracovávat základní technické údaje o požadavcích.</li><li>Podnik dostává údaje o rezervacích a klientech, které potřebuje k vyřízení rezervací u něj. Veřejné údaje profilu a recenzí jsou viditelné, jak je popsáno výše.</li></ul><p>Osobní údaje neprodávám ani je nepoužívám k reklamě. Poskytovatelé služeb mohou údaje zpracovávat podle svých vlastních podmínek a případně podle písemných smluv o zpracování.</p>
+<h2 id="transfers">5. Mezinárodní předávání</h2><p>Někteří poskytovatelé mohou zpracovávat údaje mimo Evropský hospodářský prostor, včetně Spojených států. Místo a mechanismus předání závisí na poskytovateli a konfiguraci projektu. Pokud předání vyžaduje záruky, musí být kryto zákonným mechanismem, například rozhodnutím o odpovídající ochraně nebo standardními smluvními doložkami. Podrobnosti o zárukách pro vaše údaje vám sdělím na požádání.</p>
+<h2 id="retention">6. Jak dlouho se údaje uchovávají</h2><p>Údaje účtu se uchovávají, dokud je účet aktivní. Smazání účtu můžete zahájit v Nastavení aplikace. Smazání odstraní údaje účtu a podniku z aktivní služby; omezené kopie mohou dočasně zůstat v zálohách nebo bezpečnostních záznamech poskytovatelů, dokud neuplyne jejich běžná doba uchovávání. Určité záznamy mohu uchovávat tak dlouho, jak je nutné ke splnění právní povinnosti, vyřešení sporu nebo ochraně služby. Podnik si může po smazání vašeho účtu Bookli ponechat údaje o rezervacích, za které odpovídá, ve svých zákonných záznamech.</p>
+<h2 id="rights">7. Vaše volby a práva</h2><p>Svůj profil, služby a fotografie můžete upravit nebo odstranit v Nastavení, smazat účet a vypnout přístup k poloze nebo oznámení v nastavení zařízení. V závislosti na platném právu a okolnostech můžete také požádat o přístup, opravu, výmaz, omezení nebo přenositelnost; vznést námitku proti zpracování na základě oprávněných zájmů; a odvolat souhlas, pokud je základem zpracování. Pro uplatnění těchto práv mě kontaktujte e-mailem. Pokud údaje zpracovávám pro podnik, mohu žádost předat tomuto podniku a pomoci mu s odpovědí.</p><p>Můžete podat stížnost u dozorového úřadu v místě bydliště nebo práce. V Dánsku je to <a href="https://www.datatilsynet.dk/english/file-a-complaint" rel="noopener">dánský úřad pro ochranu osobních údajů (Datatilsynet)</a>.</p>
+<h2 id="security">8. Zabezpečení</h2><p>Údaje přenášené mezi aplikací a jejími poskytovateli jsou při přenosu chráněny pomocí HTTPS/TLS. Využívám řízení přístupu poskytovatelů a přijímám přiměřená opatření k omezení přístupu na to, co je nezbytné k provozu Bookli. Žádná online služba nemůže slíbit absolutní bezpečnost.</p>
+<h2 id="children">9. Děti</h2><p>Bookli není určeno osobám mladším 16 let a Podmínky vyžadují, aby uživatelé měli alespoň 16 let. Pokud se domníváte, že účet vytvořila osoba mladší 16 let, kontaktujte mě, abych jej mohl prověřit a případně odstranit.</p>
+<h2 id="website">10. Web a změny</h2><p>Tento statický informační web v současnosti neobsahuje v kódu stránek žádné reklamní ani analytické značky. Jeho hostingový poskytovatel však může zpracovávat technické údaje o připojení. Tyto zásady mohu aktualizovat, když se změní aplikace, poskytovatelé nebo právní požadavky; datum výše uvádí poslední revizi.</p>
+<h2 id="contact">11. Kontakt</h2><p>S dotazy k ochraně soukromí nebo žádostmi o uplatnění práv pište na <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p><p class="crosslink">Viz také: <a href="/terms/cs/">Podmínky služby Bookli</a>.</p>
+</article></main></body></html>
