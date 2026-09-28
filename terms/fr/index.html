@@ -1,110 +1,23 @@
 <!doctype html>
 <html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Conditions d'utilisation de Bookli</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #FFF8E7; color: #1a1a1a; padding: 24px; box-sizing: border-box;
-    display: flex; justify-content: center;
-  }
-  .card {
-    max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
-  }
-  .toolbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    margin-bottom: 8px; flex-wrap: wrap;
-  }
-  select {
-    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
-    background: #fff; color: #1a1a1a;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
-  p { font-size: 15px; line-height: 1.6; color: #333; }
-  .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
-  a { color: #D97706; }
-  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="toolbar">
-      <a href="/">← Bookli</a>
-      <select onchange="if(this.value) location.href=this.value;">
-        <option value="/terms/">English</option>
-        <option value="/terms/hu/">Magyar</option>
-        <option value="/terms/de/">Deutsch</option>
-        <option value="/terms/fr/" selected>Français</option>
-        <option value="/terms/it/">Italiano</option>
-        <option value="/terms/es/">Español</option>
-        <option value="/terms/nl/">Nederlands</option>
-        <option value="/terms/pt/">Português</option>
-        <option value="/terms/sv/">Svenska</option>
-        <option value="/terms/da/">Dansk</option>
-        <option value="/terms/no/">Norsk</option>
-        <option value="/terms/fi/">Suomi</option>
-        <option value="/terms/pl/">Polski</option>
-        <option value="/terms/ro/">Română</option>
-        <option value="/terms/cs/">Čeština</option>
-        <option value="/terms/sk/">Slovenčina</option>
-        <option value="/terms/hr/">Hrvatski</option>
-        <option value="/terms/sr/">Српски</option>
-        <option value="/terms/bg/">Български</option>
-        <option value="/terms/el/">Ελληνικά</option>
-        <option value="/terms/sl/">Slovenščina</option>
-        <option value="/terms/et/">Eesti</option>
-        <option value="/terms/lv/">Latviešu</option>
-        <option value="/terms/lt/">Lietuvių</option>
-        <option value="/terms/uk/">Українська</option>
-        <option value="/terms/tr/">Türkçe</option>
-        <option value="/terms/zh-Hans/">简体中文</option>
-        <option value="/terms/ja/">日本語</option>
-        <option value="/terms/ko/">한국어</option>
-        <option value="/terms/th/">ไทย</option>
-        <option value="/terms/hi/">हिन्दी</option>
-        <option value="/terms/ru/">Русский</option>
-      </select>
-    </div>
-    <h1>📜 Conditions d'utilisation de Bookli</h1>
-    <p class="updated">Dernière mise à jour: September 15, 2026</p>
-    <h2>Acceptation des présentes Conditions</h2>
-    <p>En créant un compte ou en utilisant Bookli, vous acceptez les présentes Conditions d'utilisation et notre Politique de confidentialité. Si vous n'êtes pas d'accord, veuillez ne pas utiliser Bookli. Ces Conditions s'appliquent à toute personne utilisant l'application, que ce soit en tant que client réservant un rendez-vous ou en tant qu'entreprise en gérant un.</p>
-    <h2>Ce qu'est Bookli</h2>
-    <p>Bookli est une plateforme de réservation qui met en relation de petites entreprises avec des clients souhaitant réserver leurs services. Bookli est elle-même un fournisseur de technologie — elle n'est partie à aucun rendez-vous conclu par son intermédiaire, et n'emploie, ne contrôle, ni ne supervise aucune entreprise répertoriée sur celle-ci.</p>
-    <h2>Admissibilité et votre compte</h2>
-    <p>Vous devez avoir au moins 16 ans pour utiliser Bookli. Vous êtes responsable de l'exactitude des informations que vous fournissez lors de l'inscription, et de la sécurité de vos identifiants de connexion. Vous êtes responsable de tout ce qui se passe sous votre compte.</p>
-    <h2>Utiliser Bookli en tant que client</h2>
-    <p>Réserver avec Bookli est, et restera toujours, entièrement gratuit pour les clients — vous ne payez jamais rien à Bookli pour trouver ou réserver une entreprise. Lorsque vous réservez un rendez-vous, vous concluez un accord directement avec cette entreprise, et non avec Bookli ; l'entreprise est responsable d'honorer, de reprogrammer ou d'annuler ce rendez-vous, et Bookli n'y est pas partie.</p>
-    <h2>Utiliser Bookli en tant qu'entreprise</h2>
-    <p>Les comptes professionnels incluent une période d'essai gratuite, après laquelle continuer à utiliser les fonctionnalités professionnelles de Bookli nécessite un abonnement mensuel payant. Les paiements d'abonnement sont entièrement traités par Stripe ; Bookli ne voit ni ne stocke jamais les détails de votre carte. Votre abonnement se renouvelle automatiquement chaque mois jusqu'à ce que vous l'annuliez via l'option Gérer l'abonnement dans les Paramètres, qui ouvre le Portail Client de Stripe — l'annulation arrête les renouvellements futurs mais ne rembourse pas la période de facturation en cours. Nous pouvons modifier les prix des abonnements avec un préavis raisonnable ; continuer à utiliser les fonctionnalités professionnelles de Bookli après l'entrée en vigueur d'un changement de prix signifie que vous acceptez le nouveau prix. En tant qu'entreprise, vous êtes seul responsable de l'exactitude de votre fiche, des services que vous proposez, des prix que vous facturez, et du respect des lois fiscales, de protection des consommateurs et de licence commerciale qui vous sont applicables — les outils de revenus et de TVA de Bookli sont fournis uniquement à titre pratique et ne constituent pas un conseil fiscal ou juridique.</p>
-    <h2>Contenu que vous fournissez</h2>
-    <p>Vous conservez la propriété de tout avis, photo ou autre contenu que vous ajoutez à Bookli, mais en le soumettant, vous accordez à Bookli une licence pour l'afficher au sein de l'application aux personnes auxquelles il est destiné — par exemple, un avis est affiché à quiconque consulte le profil de cette entreprise. Vous êtes responsable de ce que vous publiez : cela ne doit pas être faux, diffamatoire, illégal, ou porter atteinte aux droits d'autrui. Nous pouvons supprimer du contenu, ou masquer un avis de la vue publique, qui viole cette règle ou dont on nous demande le retrait pour un motif légitime.</p>
-    <h2>Utilisation acceptable</h2>
-    <p>Vous acceptez de ne pas utiliser Bookli pour harceler, escroquer ou nuire à quiconque ; usurper l'identité d'une autre personne ou entreprise ; publier des informations fausses ou trompeuses ; interférer avec le fonctionnement normal de l'application ; ou tenter d'accéder à un autre compte ou à des données qui ne sont pas les vôtres.</p>
-    <h2>Le rôle de Bookli dans les litiges</h2>
-    <p>Bookli est une plateforme neutre reliant entreprises et clients. Nous ne sommes pas responsables de la qualité, de la sécurité, de la légalité, ou du résultat d'un rendez-vous, d'un service, ou d'une interaction entre une entreprise et un client, et nous ne servons pas de médiateur dans les litiges entre eux. Si quelque chose ne va pas avec un rendez-vous particulier, cela relève de l'entreprise et du client concernés.</p>
-    <h2>Propriété intellectuelle</h2>
-    <p>Le nom Bookli, le logo, et l'application elle-même sont la propriété de l'exploitant de Bookli. Rien dans les présentes Conditions ne vous confère de droit de les utiliser en dehors de l'usage normal de l'application.</p>
-    <h2>Suspension et résiliation</h2>
-    <p>Vous pouvez cesser d'utiliser Bookli et supprimer votre compte à tout moment depuis les Paramètres. Nous pouvons suspendre ou résilier un compte qui viole les présentes Conditions, se livre à la fraude ou à des abus, ou crée un risque ou une exposition juridique pour Bookli ou d'autres utilisateurs, avec ou sans préavis selon la gravité de la situation.</p>
-    <h2>Avertissements</h2>
-    <p>Bookli est fourni "tel quel" et "selon disponibilité", sans garantie d'aucune sorte, expresse ou implicite, y compris toute garantie que l'application sera ininterrompue, exempte d'erreurs, ou adaptée à un usage particulier. Nous faisons de notre mieux pour garder Bookli fiable et exact, mais nous ne pouvons pas garantir qu'elle le sera toujours.</p>
-    <h2>Limitation de responsabilité</h2>
-    <p>Dans toute la mesure permise par la loi, Bookli et son exploitant ne sont pas responsables des dommages indirects, accessoires, spéciaux ou consécutifs découlant de votre utilisation de l'application, y compris la perte de profits, la perte de réservations, ou la perte de données. Notre responsabilité totale pour toute réclamation relative à Bookli est limitée au montant que vous nous avez payé, le cas échéant, au cours des 12 mois précédant la survenance de la réclamation.</p>
-    <h2>Indemnisation</h2>
-    <p>Vous acceptez d'indemniser et de dégager de toute responsabilité Bookli et son exploitant contre toute réclamation, perte, ou dépense — y compris les honoraires d'avocat raisonnables — découlant de votre propre violation des présentes Conditions, de votre mauvaise utilisation de l'application, ou du contenu que vous publiez.</p>
-    <h2>Droit applicable</h2>
-    <p>Les présentes Conditions sont régies par les lois du Danemark, sans égard à ses principes de conflits de lois. Tout litige qui ne peut être résolu à l'amiable sera soumis à la compétence exclusive des tribunaux danois.</p>
-    <h2>Modifications des présentes Conditions</h2>
-    <p>Nous pouvons mettre à jour les présentes Conditions de temps à autre. Si nous apportons un changement important, nous le refléterons ici avec une date de mise à jour en haut de cette page ; continuer à utiliser Bookli après l'entrée en vigueur d'un changement signifie que vous acceptez les Conditions mises à jour.</p>
-    <h2>Contact</h2>
-    <p>Les questions concernant les présentes Conditions peuvent être envoyées à bookli.app.team@outlook.com.</p>
-    <p class="crosslink">Voir aussi: <a href="/privacy/fr/">Politique de confidentialité de Bookli</a></p>
-  </div>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf7ed"><title>Conditions d’utilisation de Bookli</title><link rel="stylesheet" href="/assets/legal.css"></head>
+<body><main class="shell"><div class="toolbar"><a class="brand" href="/"><span class="mark">B</span><span>Bookli</span></a><select aria-label="Language" onchange="if(this.value) location.href=this.value;"><option value="/terms/">English</option><option value="/terms/hu/">Magyar</option><option value="/terms/de/">Deutsch</option><option value="/terms/fr/" selected>Français</option><option value="/terms/it/">Italiano</option><option value="/terms/es/">Español</option><option value="/terms/nl/">Nederlands</option><option value="/terms/pt/">Português</option><option value="/terms/sv/">Svenska</option><option value="/terms/da/">Dansk</option><option value="/terms/no/">Norsk</option><option value="/terms/fi/">Suomi</option><option value="/terms/pl/">Polski</option><option value="/terms/ro/">Română</option><option value="/terms/cs/">Čeština</option><option value="/terms/sk/">Slovenčina</option><option value="/terms/hr/">Hrvatski</option><option value="/terms/sr/">Српски</option><option value="/terms/bg/">Български</option><option value="/terms/el/">Ελληνικά</option><option value="/terms/sl/">Slovenščina</option><option value="/terms/et/">Eesti</option><option value="/terms/lv/">Latviešu</option><option value="/terms/lt/">Lietuvių</option><option value="/terms/uk/">Українська</option><option value="/terms/tr/">Türkçe</option><option value="/terms/hi/">हिन्दी</option><option value="/terms/zh-Hans/">简体中文</option><option value="/terms/ko/">한국어</option><option value="/terms/ja/">日本語</option><option value="/terms/ru/">Русский</option><option value="/terms/th/">ไทย</option></select></div><article class="card">
+<span class="eyebrow">Conditions · application et site web</span><h1>Conditions d’utilisation de Bookli</h1><p class="updated">Dernière mise à jour : 28 septembre 2026</p>
+<div class="identity"><strong>Qui fournit Bookli</strong><p>Bookli est exploité par Zsolt Báthori à titre individuel. Ce n’est pas une société ni une entité juridique distincte, et il n’a actuellement pas de numéro CVR. Contact : <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p></div>
+<nav class="contents" aria-label="Sur cette page"><a href="#service">Service</a><a href="#accounts">Comptes</a><a href="#clients">Clients</a><a href="#business">Entreprises</a><a href="#payments">Paiements</a><a href="#content">Contenu</a><a href="#ending">Fin d’utilisation</a><a href="#law">Mentions juridiques</a></nav>
+<h2 id="acceptance">1. Accord et champ d’application</h2><p>Les présentes Conditions s’appliquent lorsque vous créez ou utilisez un compte Bookli ou utilisez le site web de Bookli. En utilisant Bookli, vous acceptez ces Conditions et la <a href="/privacy/fr/">Politique de confidentialité</a>. Si vous utilisez Bookli pour une entreprise, vous confirmez être autorisé à accepter ces Conditions pour cette entreprise. Si vous n’êtes pas d’accord, ne créez pas de compte et n’utilisez pas le service.</p>
+<h2 id="service">2. Ce que fait Bookli</h2><p>Bookli fournit aux entreprises des outils numériques pour publier un profil, présenter des services, gérer leurs disponibilités, recevoir des demandes de rendez-vous, organiser les informations clients et consulter leurs registres. Les clients peuvent trouver les entreprises participantes et effectuer ou demander des réservations. Bookli ne fournit pas les services proposés par une entreprise et n’est pas partie au contrat de service entre une entreprise et son client.</p><p>Bookli est en développement actif. Une fonctionnalité peut être indiquée comme bêta, essai, prévue ou bientôt disponible. Un prix ou une fonctionnalité prévus sur le site web ne créent pas en eux-mêmes un abonnement ni la promesse que la fonctionnalité est déjà disponible. L’offre affichée dans l’application avant l’inscription prévaut.</p>
+<h2 id="accounts">3. Conditions d’accès et comptes</h2><p>Vous devez avoir au moins 16 ans pour utiliser Bookli. Maintenez vos informations de compte exactes, protégez vos identifiants et contactez-moi rapidement si vous soupçonnez un accès non autorisé. Vous êtes responsable de l’activité de votre compte, sauf si elle résulte de mon manquement à prendre les mesures de sécurité raisonnables exigées par la loi.</p>
+<h2 id="clients">4. Clients et rendez-vous</h2><p>Bookli ne facture rien aux clients pour découvrir une entreprise ou réserver. Une entreprise peut facturer ses propres services selon les conditions qu’elle présente au client. Une fois accepté ou confirmé, un rendez-vous est un accord directement conclu entre ce client et cette entreprise. L’entreprise est responsable du service, de sa description et de son prix, des modifications de rendez-vous, des annulations, des remboursements et de tout droit des consommateurs applicable à ce service. Contactez l’entreprise au sujet d’un rendez-vous ; contactez Bookli si l’application elle-même ne fonctionne pas comme décrit.</p>
+<h2 id="business">5. Comptes d’entreprise et données personnelles</h2><p>Les utilisateurs professionnels sont responsables de l’exactitude de leurs annonces publiques, services et prix, ainsi que du respect des lois applicables à leur activité. Ils doivent disposer d’un motif légal pour ajouter des informations clients à Bookli, fournir aux clients les informations de confidentialité requises, ne collecter que le nécessaire et éviter de mettre des informations sensibles ou sans rapport dans les notes. L’entreprise décide généralement de l’usage de ses dossiers clients et de réservation ; elle doit répondre aux demandes les concernant et respecter la <a href="/privacy/fr/">Politique de confidentialité</a>. Avant qu’une entreprise ajoute des données personnelles de ses clients pour les traiter via Bookli, l’entreprise et moi devons conclure un accord écrit de traitement des données. Si l’application ne le propose pas encore, contactez-moi et n’ajoutez pas de dossiers clients avant qu’il soit conclu.</p><p>Les fonctions de chiffre d’affaires et de TVA de Bookli sont uniquement des outils d’organisation ; elles ne constituent pas un conseil fiscal, comptable ou juridique. Vous restez responsable de la vérification de vos registres et de vos obligations fiscales.</p>
+<h2 id="payments">6. Abonnements d’entreprise, période d’essai et résiliation</h2><p>L’offre prévue accorde à chaque nouveau compte d’entreprise un premier mois gratuit. Ensuite, le prix mensuel prévu est de 4,99 $ pour les premiers testeurs éligibles durant leur première année, ou de 8,99 $ pour la formule standard. Ces prix affichés sur le site sont indicatifs ; ils ne constituent ni une offre actuelle ni une autorisation de prélèvement. Avant la souscription, l’application affichera l’essai applicable, l’éligibilité, le prix, la devise, les taxes, la première date de facturation, le renouvellement et les autres conditions de facturation, que vous pourrez examiner et accepter. Si l’offre de l’application diffère de cette page, l’offre affichée avant votre confirmation dans l’application prévaut.</p><p>Si vous vous abonnez, l’abonnement se renouvelle chaque mois jusqu’à sa résiliation. Si vous vous êtes abonné dans l’application iPhone ou iPad, Apple vend et facture l’abonnement via votre compte Apple selon les conditions de l’App Store : résiliez-le dans Réglages → Gérer l’abonnement ou dans les réglages d’abonnement de votre compte Apple, et demandez tout remboursement à Apple. Si vous vous êtes abonné sur Android ou sur le web, résiliez via « Gérer l’abonnement » dans les Réglages, qui ouvre le portail client de Stripe. La résiliation met fin aux renouvellements futurs ; l’accès se poursuit généralement jusqu’à la fin de la période déjà payée. Les droits légaux d’annulation, de rétractation, de conformité et de remboursement applicables à votre achat ne sont pas supprimés par cette clause. Apple et Stripe traitent les paiements selon leurs propres conditions ; je ne reçois ni ne conserve votre numéro de carte complet.</p><p>Je donnerai un préavis raisonnable avant toute modification importante de prix ou d’abonnement. Vous pouvez résilier avant l’application du nouveau prix. Une modification n’augmente pas rétroactivement un montant déjà prélevé.</p>
+<h2 id="content">7. Profils, avis et autres contenus</h2><p>Vous restez propriétaire des contenus que vous soumettez. Vous m’accordez une autorisation non exclusive, mondiale et gratuite d’héberger, reproduire, redimensionner et afficher ces contenus uniquement dans la mesure nécessaire pour exploiter et promouvoir les fonctionnalités de Bookli que vous choisissez, notamment l’affichage d’un profil d’entreprise ou d’un avis aux utilisateurs de l’application. Cette autorisation prend fin lorsque le contenu est supprimé, sauf pour des copies limitées subsistant dans des sauvegardes ou lorsque la loi impose leur conservation.</p><p>Ne soumettez que des contenus que vous avez le droit d’utiliser. Ne publiez pas de contenus illicites, trompeurs, injurieux, discriminatoires, diffamatoires ou contrefaisants, d’informations privées sur autrui sans autorisation, ni de contenus sans rapport avec le service. Les avis doivent refléter une expérience réelle. Je peux restreindre ou supprimer un contenu qui enfreint ces Conditions, pose un problème de sécurité ou juridique, ou doit être supprimé en vertu de la loi. Pour signaler une annonce ou un avis, écrivez à <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a> avec le lien et une brève explication.</p>
+<h2 id="acceptable">8. Utilisation acceptable</h2><p>N’utilisez pas Bookli pour harceler, menacer, escroquer ou nuire à quiconque ; usurper l’identité d’une personne ou d’une entreprise ; utiliser abusivement les données d’autrui ; perturber l’application ; sonder ou contourner la sécurité ; envoyer du spam ; ou accéder à des comptes ou informations qui ne sont pas les vôtres. N’utilisez pas Bookli en cas d’urgence et ne vous y fiez pas comme seule trace d’un rendez-vous ou d’une transaction commerciale.</p>
+<h2 id="thirdparty">9. Services tiers et disponibilité</h2><p>Bookli dépend de prestataires d’hébergement, de cartographie, de messagerie et de paiement. Leurs services peuvent avoir leurs propres conditions et être parfois indisponibles. Je m’efforce de garder Bookli utile et sûr, mais je ne peux pas promettre un accès ininterrompu. Je peux entretenir, mettre à jour ou modifier des fonctionnalités ; lorsqu’une modification affecte de manière importante un abonnement payant, j’en informerai et accorderai les droits exigés par la loi.</p>
+<h2 id="ip">10. Propriété intellectuelle</h2><p>Entre vous et moi, je suis propriétaire du nom et de la marque Bookli, du logiciel, de l’interface, du design visuel, des textes originaux, des graphismes et des autres éléments que je crée, à l’exception des éléments tiers qui appartiennent à leurs titulaires respectifs. Les droits d’auteur et autres droits de propriété intellectuelle restent à leurs titulaires. Ces Conditions vous accordent un droit limité et révocable d’utiliser l’application conformément à sa destination ; elles ne transfèrent aucune propriété et ne vous autorisent pas à copier, publier, revendre, adapter ou décompiler Bookli, sauf lorsque la loi applicable le permet. Bookli, son logo et les signes associés ne peuvent pas être utilisés pour suggérer une approbation ou une affiliation sans autorisation. Vous conservez vos droits sur les contenus que vous soumettez, sous réserve de l’autorisation prévue à la section 7.</p>
+<h2 id="ending">11. Suspension et fin d’utilisation</h2><p>Vous pouvez cesser d’utiliser Bookli et supprimer votre compte dans les Réglages. Je peux restreindre temporairement l’accès lorsque cela est raisonnablement nécessaire pour protéger les utilisateurs, enquêter sur une fraude ou un abus présumés, traiter un problème de sécurité, respecter la loi ou réagir à une violation grave de ces Conditions. Dans la mesure du possible, j’en expliquerai la raison et vous donnerai un moyen de me contacter. La fermeture d’un compte n’annule pas un accord distinct entre une entreprise et son client et ne supprime pas les registres qui doivent légalement être conservés.</p>
+<h2 id="warranties">12. Garanties et responsabilité</h2><p>Je fournis Bookli avec un soin et une compétence raisonnables, mais les fonctionnalités bêta ou en développement peuvent contenir des erreurs ou être temporairement indisponibles. Rien dans ces Conditions n’exclut une garantie légale des consommateurs, un recours légal relatif aux services numériques ou tout autre droit qui ne peut être légalement exclu. L’entreprise reste responsable des services qu’elle propose et fournit.</p><p>Dans la mesure permise par la loi, aucune partie n’est responsable envers l’autre d’un dommage qui n’était pas raisonnablement prévisible lors de la conclusion de l’accord concerné. Rien dans ces Conditions n’exclut la responsabilité en cas de fraude, de faute intentionnelle ou toute responsabilité que la loi applicable ne permet pas de limiter. Les droits impératifs des consommateurs prévalent toujours.</p>
+<h2 id="law">13. Droit applicable et litiges</h2><p>Ces Conditions sont régies par le droit danois, sous réserve des règles impératives protégeant les consommateurs dans leur pays de résidence. Un litige peut être porté devant un tribunal compétent selon la loi applicable ; cette clause ne prive pas un consommateur de son droit impératif d’agir devant un autre tribunal compétent.</p>
+<h2 id="changes">14. Modifications des présentes Conditions</h2><p>Je peux mettre à jour ces Conditions lorsque Bookli ou la loi évolue. En cas de modification importante, je mettrai à jour la date ci-dessus et vous en informerai dans l’application ou par e-mail lorsque cela est possible. Si vous n’acceptez pas une modification, cessez d’utiliser la fonctionnalité concernée et résiliez tout abonnement avant son entrée en vigueur. Les modifications ne s’appliquent pas rétroactivement à un litige déjà né.</p>
+<h2 id="contact">15. Contact</h2><p>Questions, demandes d’assistance et signalements de contenu : <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p><p class="crosslink">Voir aussi : <a href="/privacy/fr/">Politique de confidentialité de Bookli</a>.</p>
+</article></main></body></html>
