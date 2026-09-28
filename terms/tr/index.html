@@ -1,110 +1,23 @@
 <!doctype html>
 <html lang="tr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookli Hizmet Şartları</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #FFF8E7; color: #1a1a1a; padding: 24px; box-sizing: border-box;
-    display: flex; justify-content: center;
-  }
-  .card {
-    max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
-  }
-  .toolbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    margin-bottom: 8px; flex-wrap: wrap;
-  }
-  select {
-    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
-    background: #fff; color: #1a1a1a;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
-  p { font-size: 15px; line-height: 1.6; color: #333; }
-  .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
-  a { color: #D97706; }
-  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="toolbar">
-      <a href="/">← Bookli</a>
-      <select onchange="if(this.value) location.href=this.value;">
-        <option value="/terms/">English</option>
-        <option value="/terms/hu/">Magyar</option>
-        <option value="/terms/de/">Deutsch</option>
-        <option value="/terms/fr/">Français</option>
-        <option value="/terms/it/">Italiano</option>
-        <option value="/terms/es/">Español</option>
-        <option value="/terms/nl/">Nederlands</option>
-        <option value="/terms/pt/">Português</option>
-        <option value="/terms/sv/">Svenska</option>
-        <option value="/terms/da/">Dansk</option>
-        <option value="/terms/no/">Norsk</option>
-        <option value="/terms/fi/">Suomi</option>
-        <option value="/terms/pl/">Polski</option>
-        <option value="/terms/ro/">Română</option>
-        <option value="/terms/cs/">Čeština</option>
-        <option value="/terms/sk/">Slovenčina</option>
-        <option value="/terms/hr/">Hrvatski</option>
-        <option value="/terms/sr/">Српски</option>
-        <option value="/terms/bg/">Български</option>
-        <option value="/terms/el/">Ελληνικά</option>
-        <option value="/terms/sl/">Slovenščina</option>
-        <option value="/terms/et/">Eesti</option>
-        <option value="/terms/lv/">Latviešu</option>
-        <option value="/terms/lt/">Lietuvių</option>
-        <option value="/terms/uk/">Українська</option>
-        <option value="/terms/tr/" selected>Türkçe</option>
-        <option value="/terms/zh-Hans/">简体中文</option>
-        <option value="/terms/ja/">日本語</option>
-        <option value="/terms/ko/">한국어</option>
-        <option value="/terms/th/">ไทย</option>
-        <option value="/terms/hi/">हिन्दी</option>
-        <option value="/terms/ru/">Русский</option>
-      </select>
-    </div>
-    <h1>📜 Bookli Hizmet Şartları</h1>
-    <p class="updated">Son güncelleme: September 15, 2026</p>
-    <h2>Bu Şartların Kabulü</h2>
-    <p>Bir hesap oluşturarak veya Bookli'yi kullanarak, bu Hizmet Şartlarını ve Gizlilik Politikamızı kabul etmiş olursunuz. Kabul etmiyorsanız, lütfen Bookli'yi kullanmayın. Bu Şartlar, bir randevu alan müşteri olarak veya bir randevuyu yöneten işletme olarak, uygulamayı kullanan herkes için geçerlidir.</p>
-    <h2>Bookli nedir</h2>
-    <p>Bookli, küçük işletmeleri hizmetlerini rezerve etmek isteyen müşterilerle buluşturan bir rezervasyon platformudur. Bookli'nin kendisi bir teknoloji sağlayıcısıdır — onun aracılığıyla yapılan hiçbir randevunun tarafı değildir ve üzerinde listelenen hiçbir işletmeyi istihdam etmez, kontrol etmez veya denetlemez.</p>
-    <h2>Uygunluk ve hesabınız</h2>
-    <p>Bookli'yi kullanmak için en az 16 yaşında olmalısınız. Kayıt sırasında sağladığınız bilgilerin doğruluğundan ve giriş bilgilerinizin güvenliğini sağlamaktan siz sorumlusunuz. Hesabınız altında gerçekleşen her şeyden siz sorumlusunuz.</p>
-    <h2>Bookli'yi müşteri olarak kullanma</h2>
-    <p>Bookli ile rezervasyon yapmak müşteriler için tamamen ücretsizdir ve her zaman öyle kalacaktır — bir işletmeyi bulmak veya rezerve etmek için Bookli'ye asla bir ödeme yapmazsınız. Bir randevu rezerve ettiğinizde, doğrudan o işletmeyle bir anlaşma yaparsınız, Bookli ile değil; işletme o randevuya uymaktan, yeniden planlamaktan veya iptal etmekten sorumludur ve Bookli buna taraf değildir.</p>
-    <h2>Bookli'yi işletme olarak kullanma</h2>
-    <p>İşletme hesapları, ücretsiz bir deneme süresi içerir; bu sürenin ardından Bookli'nin işletme özelliklerini kullanmaya devam etmek ücretli bir aylık abonelik gerektirir. Abonelik ödemeleri tamamen Stripe tarafından işlenir; Bookli kart bilgilerinizi asla görmez veya saklamaz. Aboneliğiniz, Stripe'ın kendi Müşteri Portalını açan Ayarlar'daki Aboneliği Yönet seçeneği aracılığıyla iptal edene kadar her ay otomatik olarak yenilenir — iptal etmek gelecekteki yenilemeleri durdurur ancak mevcut faturalandırma dönemini iade etmez. Abonelik fiyatlarını makul bir ön bildirimle değiştirebiliriz; bir fiyat değişikliği yürürlüğe girdikten sonra Bookli'nin işletme özelliklerini kullanmaya devam etmek yeni fiyatı kabul ettiğiniz anlamına gelir. İşletme olarak, listenizin doğruluğundan, sunduğunuz hizmetlerden, uyguladığınız fiyatlardan ve size uygulanan her türlü vergi, tüketici koruma ve işletme lisanslama yasalarına uymaktan yalnızca siz sorumlusunuz — Bookli'nin gelir ve KDV araçları yalnızca kolaylık sağlamak amacıyla sunulur ve vergi veya hukuki tavsiye niteliği taşımaz.</p>
-    <h2>Sağladığınız içerik</h2>
-    <p>Bookli'ye eklediğiniz herhangi bir yorum, fotoğraf veya başka bir içeriğin mülkiyetini elinde tutarsınız, ancak bunu göndererek Bookli'ye bunu uygulama içinde amaçlandığı kişilere gösterme lisansı verirsiniz — örneğin, bir yorum o işletmenin profilini görüntüleyen herkese gösterilir. Yayınladığınız şeyden siz sorumlusunuz: yanlış, karalayıcı, yasa dışı olmamalı veya başkasının haklarını ihlal etmemelidir. Bunu ihlal eden veya makul bir nedenden dolayı kaldırılması istenen içeriği kaldırabilir veya bir yorumu kamuya açık görünümden gizleyebiliriz.</p>
-    <h2>Kabul edilebilir kullanım</h2>
-    <p>Bookli'yi kimseyi taciz etmek, dolandırmak veya zarar vermek için; başka bir kişi veya işletme kimliğine bürünmek için; yanlış veya yanıltıcı bilgi yayınlamak için; uygulamanın normal işleyişine müdahale etmek için; veya size ait olmayan başka bir hesaba veya verilere erişmeye çalışmak için kullanmamayı kabul edersiniz.</p>
-    <h2>Bookli'nin anlaşmazlıklardaki rolü</h2>
-    <p>Bookli, işletmeleri ve müşterileri birbirine bağlayan tarafsız bir platformdur. Bir işletme ile müşteri arasındaki herhangi bir randevunun, hizmetin, veya etkileşimin kalitesinden, güvenliğinden, yasallığından, veya sonucundan sorumlu değiliz ve aralarındaki anlaşmazlıklara arabuluculuk yapmayız. Belirli bir randevuda bir şeyler ters giderse, bu ilgili işletme ile müşteri arasındaki bir meseledir.</p>
-    <h2>Fikri mülkiyet</h2>
-    <p>Bookli adı, logosu, ve uygulamanın kendisi Bookli işletmecisinin mülkiyetindedir. Bu Şartlarda hiçbir şey, bunları uygulamanın normal kullanımı dışında kullanma hakkı vermez.</p>
-    <h2>Askıya alma ve fesih</h2>
-    <p>Bookli kullanımını istediğiniz zaman durdurabilir ve hesabınızı Ayarlar'dan silebilirsiniz. Durumun ciddiyetine bağlı olarak bildirimli veya bildirimsiz olarak, bu Şartları ihlal eden, dolandırıcılık veya kötüye kullanım yapan, veya Bookli veya diğer kullanıcılar için risk veya hukuki maruziyet yaratan bir hesabı askıya alabilir veya feshedebiliriz.</p>
-    <h2>Sorumluluk reddi</h2>
-    <p>Bookli, uygulamanın kesintisiz, hatasız, veya belirli bir amaca uygun olacağına dair herhangi bir garanti dahil olmak üzere, açık veya zımni herhangi bir garanti olmaksızın "olduğu gibi" ve "mevcut olduğu şekliyle" sağlanır. Bookli'yi güvenilir ve doğru tutmak için elimizden geleni yaparız, ancak her zaman öyle olacağını garanti edemeyiz.</p>
-    <h2>Sorumluluğun sınırlandırılması</h2>
-    <p>Yasanın izin verdiği azami ölçüde, Bookli ve işletmecisi, kaybedilen kâr, kaybedilen rezervasyonlar, veya kaybedilen veriler dahil olmak üzere, uygulamayı kullanımınızdan kaynaklanan herhangi bir dolaylı, arızi, özel, veya sonuç niteliğindeki zarardan sorumlu değildir. Bookli ile ilgili herhangi bir talep için toplam sorumluluğumuz, talebin ortaya çıkmasından önceki 12 ay içinde bize ödediğiniz tutarla (varsa) sınırlıdır.</p>
-    <h2>Tazminat</h2>
-    <p>Bu Şartların kendi ihlalinizden, uygulamayı kötüye kullanmanızdan, veya yayınladığınız içerikten kaynaklanan makul yasal ücretler dahil her türlü talep, kayıp, veya masraftan Bookli'yi ve işletmecisini tazmin etmeyi ve zarar görmesini önlemeyi kabul edersiniz.</p>
-    <h2>Geçerli hukuk</h2>
-    <p>Bu Şartlar, kanunlar ihtilafı ilkeleri dikkate alınmaksızın Danimarka yasalarına tabidir. Gayri resmi olarak çözülemeyen herhangi bir anlaşmazlık, Danimarka mahkemelerinin münhasır yargı yetkisine tabi olacaktır.</p>
-    <h2>Bu Şartlardaki değişiklikler</h2>
-    <p>Bu Şartları zaman zaman güncelleyebiliriz. Önemli bir değişiklik yaparsak, bunu bu sayfanın en üstünde güncellenmiş bir tarihle burada yansıtacağız; bir değişiklik yürürlüğe girdikten sonra Bookli'yi kullanmaya devam etmek, güncellenmiş Şartları kabul ettiğiniz anlamına gelir.</p>
-    <h2>İletişim</h2>
-    <p>Bu Şartlarla ilgili sorular bookli.app.team@outlook.com adresine gönderilebilir.</p>
-    <p class="crosslink">Ayrıca bakın: <a href="/privacy/tr/">Bookli Gizlilik Politikası</a></p>
-  </div>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf7ed"><title>Bookli Hizmet Koşulları</title><link rel="stylesheet" href="/assets/legal.css"></head>
+<body><main class="shell"><div class="toolbar"><a class="brand" href="/"><span class="mark">B</span><span>Bookli</span></a><select aria-label="Language" onchange="if(this.value) location.href=this.value;"><option value="/terms/">English</option><option value="/terms/hu/">Magyar</option><option value="/terms/de/">Deutsch</option><option value="/terms/fr/">Français</option><option value="/terms/it/">Italiano</option><option value="/terms/es/">Español</option><option value="/terms/nl/">Nederlands</option><option value="/terms/pt/">Português</option><option value="/terms/sv/">Svenska</option><option value="/terms/da/">Dansk</option><option value="/terms/no/">Norsk</option><option value="/terms/fi/">Suomi</option><option value="/terms/pl/">Polski</option><option value="/terms/ro/">Română</option><option value="/terms/cs/">Čeština</option><option value="/terms/sk/">Slovenčina</option><option value="/terms/hr/">Hrvatski</option><option value="/terms/sr/">Српски</option><option value="/terms/bg/">Български</option><option value="/terms/el/">Ελληνικά</option><option value="/terms/sl/">Slovenščina</option><option value="/terms/et/">Eesti</option><option value="/terms/lv/">Latviešu</option><option value="/terms/lt/">Lietuvių</option><option value="/terms/uk/">Українська</option><option value="/terms/tr/" selected>Türkçe</option><option value="/terms/hi/">हिन्दी</option><option value="/terms/zh-Hans/">简体中文</option><option value="/terms/ko/">한국어</option><option value="/terms/ja/">日本語</option><option value="/terms/ru/">Русский</option><option value="/terms/th/">ไทย</option></select></div><article class="card">
+<span class="eyebrow">Koşullar · uygulama ve web sitesi</span><h1>Bookli Hizmet Koşulları</h1><p class="updated">Son güncelleme: 28 Eylül 2026</p>
+<div class="identity"><strong>Bookli'yi kim sağlıyor</strong><p>Bookli, Zsolt Báthori tarafından gerçek kişi olarak işletilmektedir. Ayrı bir şirket veya tüzel kişi değildir ve şu anda CVR numarası yoktur. İletişim: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p></div>
+<nav class="contents" aria-label="Bu sayfada"><a href="#service">Hizmet</a><a href="#accounts">Hesaplar</a><a href="#clients">Müşteriler</a><a href="#business">İşletmeler</a><a href="#payments">Ödemeler</a><a href="#content">İçerik</a><a href="#ending">Kullanımın sona ermesi</a><a href="#law">Hukuki koşullar</a></nav>
+<h2 id="acceptance">1. Sözleşme ve kapsam</h2><p>Bu Koşullar, bir Bookli hesabı oluşturduğunuzda veya kullandığınızda ya da Bookli web sitesini kullandığınızda geçerlidir. Bookli'yi kullanarak bu Koşulları ve <a href="/privacy/tr/">Gizlilik Politikası</a>'nı kabul etmiş olursunuz. Bookli'yi bir işletme için kullanıyorsanız, bu Koşulları o işletme adına kabul etmeye yetkili olduğunuzu onaylarsınız. Kabul etmiyorsanız hesap oluşturmayın ve hizmeti kullanmayın.</p>
+<h2 id="service">2. Bookli ne yapar</h2><p>Bookli, işletmelere profil yayınlamak, hizmetleri listelemek, müsaitliği yönetmek, randevu talepleri almak, müşteri bilgilerini düzenlemek ve işletme kayıtlarını görüntülemek için dijital araçlar sunar. Müşteriler katılımcı işletmeleri bulabilir ve rezervasyon yapabilir veya talep edebilir. Bookli, bir işletmenin sunduğu hizmetleri sağlamaz ve işletme ile müşterisi arasındaki hizmet sözleşmesinin tarafı değildir.</p><p>Bookli aktif olarak geliştirilmektedir. Bir özellik beta, deneme, planlanan veya yakında olarak işaretlenmiş olabilir. Web sitesindeki planlanan bir fiyat veya özellik tek başına bir abonelik oluşturmaz veya özelliğin zaten mevcut olduğu vaadi anlamına gelmez. Kayıttan önce uygulamada gösterilen teklif geçerlidir.</p>
+<h2 id="accounts">3. Uygunluk ve hesaplar</h2><p>Bookli'yi kullanmak için en az 16 yaşında olmalısınız. Hesap bilgilerinizi doğru tutun, oturum açma bilgilerinizi koruyun ve yetkisiz erişimden şüphelenirseniz hemen benimle iletişime geçin. Hesabınızdaki etkinlikten, kanunun gerektirdiği makul güvenlik önlemlerini almamamdan kaynaklanmadıkça siz sorumlusunuz.</p>
+<h2 id="clients">4. Müşteriler ve randevular</h2><p>Bookli, müşterilerden bir işletmeyi keşfetmek veya rezervasyon yapmak için ücret almaz. Bir işletme, müşteriye sunduğu koşullara göre kendi hizmetleri için ücret alabilir. Kabul edilen veya onaylanan bir randevu, doğrudan müşteri ile işletme arasındaki bir anlaşmadır. İşletme; hizmetten, açıklamasından ve fiyatından, randevu değişikliklerinden, iptallerden, iadelerden ve hizmete uygulanan tüm tüketici haklarından sorumludur. Randevu hakkında işletmeyle iletişime geçin; uygulamanın kendisi açıklandığı gibi çalışmıyorsa Bookli ile iletişime geçin.</p>
+<h2 id="business">5. İşletme hesapları ve kişisel veriler</h2><p>İşletme kullanıcıları, herkese açık kayıtlarının, hizmetlerinin ve fiyatlarının doğruluğundan ve işlerine uygulanan yasalara uymaktan sorumludur. Müşteri bilgilerini Bookli'ye eklemek için hukuka uygun bir nedenleri olmalı, müşterilere gerekli gizlilik bilgilerini vermeli, yalnızca gerekeni toplamalı ve notlara hassas veya ilgisiz bilgiler koymaktan kaçınmalıdırlar. İşletme, müşteri ve rezervasyon kayıtlarını neden kullandığına genellikle kendisi karar verir; bu kayıtlarla ilgili taleplere yanıt vermeli ve <a href="/privacy/tr/">Gizlilik Politikası</a>'na uymalıdır. Bir işletme, müşterilerinin kişisel verilerini Bookli üzerinden işlenmek üzere eklemeden önce, işletme ile aramızda yazılı bir veri işleme sözleşmesi yapılmalıdır. Uygulama henüz böyle bir sözleşme sunmuyorsa benimle iletişime geçin ve sözleşme yapılana kadar müşteri kaydı eklemeyin.</p><p>Bookli'nin gelir ve KDV özellikleri yalnızca düzenleme araçlarıdır; vergi, muhasebe veya hukuki danışmanlık değildir. Kayıtlarınızı ve vergi yükümlülüklerinizi kontrol etmek sizin sorumluluğunuzdadır.</p>
+<h2 id="payments">6. İşletme abonelikleri, deneme süresi ve iptal</h2><p>Planlanan teklif, her yeni işletme hesabına ilk ayı ücretsiz verir. Sonrasında planlanan aylık fiyat, uygun erken test kullanıcıları için ilk yıllarında 4,99 USD, standart planda ise 8,99 USD'dir. Web sitesindeki bu fiyatlar yol göstericidir; güncel bir teklif veya ücretlendirme yetkisi değildir. Abone olmadan önce uygulama; geçerli deneme süresini, uygunluk koşullarını, fiyatı, para birimini, vergileri, ilk ödeme tarihini, yenilemeyi ve diğer faturalandırma koşullarını incelemeniz ve kabul etmeniz için gösterir. Uygulamadaki teklif bu sayfadan farklıysa, onayınızdan önce uygulamada gösterilen teklif geçerlidir.</p><p>Abone olursanız abonelik, iptal edilene kadar her ay yenilenir. iPhone veya iPad uygulamasında abone olduysanız, abonelik App Store koşulları kapsamında Apple tarafından Apple Hesabınız üzerinden satılır ve faturalandırılır: Ayarlar → Aboneliği yönet bölümünden veya Apple Hesabınızın abonelik ayarlarından iptal edin ve olası iadeleri Apple'dan talep edin. Android'de veya web'de abone olduysanız, Ayarlar'daki Aboneliği yönet seçeneğiyle iptal edin; bu seçenek Stripe müşteri portalını açar. İptal, gelecekteki yenilemeleri durdurur; erişim genellikle zaten ödenmiş dönemin sonuna kadar devam eder. Bu madde, satın alımınız için geçerli yasal iptal, cayma, ayıplı mal/hizmet ve iade haklarını ortadan kaldırmaz. Apple ve Stripe ödemeleri kendi koşullarına göre işler; kartınızın tam numarasını almam ve saklamam.</p><p>Önemli bir fiyat veya abonelik değişikliği yürürlüğe girmeden önce makul bir süre önceden bildirimde bulunurum. Yeni fiyat uygulanmadan önce iptal edebilirsiniz. Bir değişiklik, önceden alınmış bir ödemeyi geriye dönük olarak artırmaz.</p>
+<h2 id="content">7. Profiller, yorumlar ve diğer içerikler</h2><p>Gönderdiğiniz içeriğin sahipliği sizde kalır. Bana bu içeriği yalnızca seçtiğiniz Bookli özelliklerini çalıştırmak ve tanıtmak için gerektiği ölçüde barındırma, çoğaltma, yeniden boyutlandırma ve gösterme konusunda münhasır olmayan, dünya çapında ve ücretsiz bir izin verirsiniz; buna bir işletme profilinin veya yorumun uygulama kullanıcılarına gösterilmesi dahildir. Bu izin, içerik kaldırıldığında sona erer; yedeklerde kalan sınırlı kopyalar veya saklamanın kanunen zorunlu olduğu durumlar hariçtir.</p><p>Yalnızca kullanma hakkınız olan içerikleri gönderin. Hukuka aykırı, yanıltıcı, taciz edici, ayrımcı, iftira niteliğinde veya hak ihlali içeren içerikler, başkalarına ait özel bilgileri izinsiz olarak veya hizmetle ilgisi olmayan içerikleri yayınlamayın. Yorumlar gerçek bir deneyimi yansıtmalıdır. Bu Koşulları ihlal eden, güvenlik veya hukuki sorun yaratan ya da kanunen kaldırılması gereken içerikleri kısıtlayabilir veya kaldırabilirim. Bir kaydı veya yorumu bildirmek için bağlantıyı ve kısa bir açıklamayı <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a> adresine gönderin.</p>
+<h2 id="acceptable">8. Kabul edilebilir kullanım</h2><p>Bookli'yi kimseyi taciz etmek, tehdit etmek, dolandırmak veya zarar vermek; başka bir kişi veya işletmeymiş gibi davranmak; başkalarının verilerini kötüye kullanmak; uygulamaya müdahale etmek; güvenliği yoklamak veya atlatmak; istenmeyen ileti göndermek; ya da size ait olmayan hesaplara veya bilgilere erişmek için kullanmayın. Bookli'yi acil durumlarda kullanmayın ve bir randevunun veya ticari işlemin tek kaydı olarak ona güvenmeyin.</p>
+<h2 id="thirdparty">9. Üçüncü taraf hizmetleri ve erişilebilirlik</h2><p>Bookli; barındırma, harita, mesajlaşma ve ödeme sağlayıcılarına bağlıdır. Hizmetlerinin ayrı koşulları olabilir ve zaman zaman kullanılamayabilirler. Bookli'yi yararlı ve güvenli tutmak için çalışırım ancak kesintisiz erişim vaat edemem. Özellikleri bakımını yapabilir, güncelleyebilir veya değiştirebilirim; bir değişiklik ücretli bir aboneliği önemli ölçüde etkilediğinde bildirimde bulunur ve kanunun gerektirdiği hakları tanırım.</p>
+<h2 id="ip">10. Fikri mülkiyet</h2><p>Sizinle benim aramda; Bookli adı ve markası, yazılımı, arayüzü, görsel tasarımı, özgün metinleri, grafikleri ve oluşturduğum diğer materyaller bana aittir; ilgili hak sahiplerine ait üçüncü taraf materyalleri hariçtir. Telif hakları ve diğer fikri mülkiyet hakları sahiplerinde kalır. Bu Koşullar size uygulamayı amacına uygun kullanmanız için sınırlı ve geri alınabilir bir hak verir; mülkiyeti devretmez ve geçerli hukukun izin verdiği durumlar dışında Bookli'yi kopyalamanıza, yayınlamanıza, yeniden satmanıza, uyarlamanıza veya tersine mühendislik yapmanıza izin vermez. Bookli, logosu ve ilgili marka unsurları izinsiz olarak bir tavsiye veya bağlantı ima etmek için kullanılamaz. Gönderdiğiniz içerik üzerindeki haklarınız, 7. bölümdeki izin saklı kalmak kaydıyla sizde kalır.</p>
+<h2 id="ending">11. Askıya alma ve kullanımın sona ermesi</h2><p>Bookli'yi kullanmayı bırakabilir ve hesabınızı Ayarlar'dan silebilirsiniz. Kullanıcıları korumak, şüpheli dolandırıcılık veya kötüye kullanımı araştırmak, bir güvenlik sorununu gidermek, yasalara uymak veya bu Koşulların ciddi bir ihlaline karşılık vermek için makul ölçüde gerekli olduğunda erişimi geçici olarak kısıtlayabilirim. Mümkün olduğunda nedenini açıklar ve bana ulaşmanız için bir yol sunarım. Bir hesabın sona ermesi, bir işletme ile müşterisi arasındaki ayrı bir anlaşmayı iptal etmez veya yasal olarak saklanması gereken kayıtları kaldırmaz.</p>
+<h2 id="warranties">12. Garantiler ve sorumluluk</h2><p>Bookli'yi makul özen ve beceriyle sunarım; ancak beta veya geliştirme aşamasındaki özellikler hata içerebilir ya da geçici olarak kullanılamayabilir. Bu Koşullardaki hiçbir şey, bir tüketici garantisini, dijital hizmetlere ilişkin yasal bir çözüm yolunu veya hukuken hariç tutulamayan başka bir hakkı ortadan kaldırmaz. İşletme, sunduğu ve sağladığı hizmetlerden sorumlu olmaya devam eder.</p><p>Kanunun izin verdiği ölçüde, taraflardan hiçbiri ilgili anlaşma yapıldığında makul olarak öngörülemeyen kayıplardan diğerine karşı sorumlu değildir. Bu Koşullardaki hiçbir şey dolandırıcılık, kasıtlı kusur veya geçerli hukukun sınırlandırılmasına izin vermediği sorumluluğu ortadan kaldırmaz. Zorunlu tüketici hakları her zaman önceliklidir.</p>
+<h2 id="law">13. Uygulanacak hukuk ve uyuşmazlıklar</h2><p>Bu Koşullar, tüketicileri ikamet ettikleri ülkede koruyan zorunlu kurallar saklı kalmak kaydıyla Danimarka hukukuna tabidir. Bir uyuşmazlık, geçerli hukuka göre yetkili bir mahkemeye götürülebilir; bu madde, tüketicinin başka bir yetkili mahkemede dava açma yönündeki zorunlu hakkını ortadan kaldırmaz.</p>
+<h2 id="changes">14. Bu Koşullardaki değişiklikler</h2><p>Bookli veya yasalar değiştiğinde bu Koşulları güncelleyebilirim. Önemli bir değişiklikte yukarıdaki tarihi günceller ve mümkün olduğunda uygulamada veya e-postayla bildiririm. Bir değişikliği kabul etmiyorsanız, değişiklik yürürlüğe girmeden önce ilgili özelliği kullanmayı bırakın ve varsa aboneliğinizi iptal edin. Değişiklikler, zaten ortaya çıkmış bir uyuşmazlığa geriye dönük olarak uygulanmaz.</p>
+<h2 id="contact">15. İletişim</h2><p>Sorular, destek talepleri ve içerik bildirimleri: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p><p class="crosslink">Ayrıca bkz.: <a href="/privacy/tr/">Bookli Gizlilik Politikası</a>.</p>
+</article></main></body></html>

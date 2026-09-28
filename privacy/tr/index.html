@@ -1,102 +1,28 @@
 <!doctype html>
 <html lang="tr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookli Gizlilik Politikası</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #FFF8E7; color: #1a1a1a; padding: 24px; box-sizing: border-box;
-    display: flex; justify-content: center;
-  }
-  .card {
-    max-width: 720px; width: 100%; background: #fff; border-radius: 20px; padding: 40px 32px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 24px 0;
-  }
-  .toolbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    margin-bottom: 8px; flex-wrap: wrap;
-  }
-  select {
-    font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #e5c98a;
-    background: #fff; color: #1a1a1a;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; color: #D97706; }
-  p { font-size: 15px; line-height: 1.6; color: #333; }
-  .updated { font-size: 13px; color: #999; margin: 0 0 24px; }
-  a { color: #D97706; }
-  .crosslink { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 14px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="toolbar">
-      <a href="/">← Bookli</a>
-      <select onchange="if(this.value) location.href=this.value;">
-        <option value="/privacy/">English</option>
-        <option value="/privacy/hu/">Magyar</option>
-        <option value="/privacy/de/">Deutsch</option>
-        <option value="/privacy/fr/">Français</option>
-        <option value="/privacy/it/">Italiano</option>
-        <option value="/privacy/es/">Español</option>
-        <option value="/privacy/nl/">Nederlands</option>
-        <option value="/privacy/pt/">Português</option>
-        <option value="/privacy/sv/">Svenska</option>
-        <option value="/privacy/da/">Dansk</option>
-        <option value="/privacy/no/">Norsk</option>
-        <option value="/privacy/fi/">Suomi</option>
-        <option value="/privacy/pl/">Polski</option>
-        <option value="/privacy/ro/">Română</option>
-        <option value="/privacy/cs/">Čeština</option>
-        <option value="/privacy/sk/">Slovenčina</option>
-        <option value="/privacy/hr/">Hrvatski</option>
-        <option value="/privacy/sr/">Српски</option>
-        <option value="/privacy/bg/">Български</option>
-        <option value="/privacy/el/">Ελληνικά</option>
-        <option value="/privacy/sl/">Slovenščina</option>
-        <option value="/privacy/et/">Eesti</option>
-        <option value="/privacy/lv/">Latviešu</option>
-        <option value="/privacy/lt/">Lietuvių</option>
-        <option value="/privacy/uk/">Українська</option>
-        <option value="/privacy/tr/" selected>Türkçe</option>
-        <option value="/privacy/zh-Hans/">简体中文</option>
-        <option value="/privacy/ja/">日本語</option>
-        <option value="/privacy/ko/">한국어</option>
-        <option value="/privacy/th/">ไทย</option>
-        <option value="/privacy/hi/">हिन्दी</option>
-        <option value="/privacy/ru/">Русский</option>
-      </select>
-    </div>
-    <h1>🔒 Bookli Gizlilik Politikası</h1>
-    <p class="updated">Son güncelleme: September 15, 2026</p>
-    <h2>Biz kimiz</h2>
-    <p>Bookli ("biz"), küçük işletmeleri müşterileriyle buluşturan bir randevu uygulamasıdır. Bookli, Zsolt Báthori tarafından işletilmektedir. Bu politika, hangi bilgileri topladığımızı, neden topladığımızı ve bunlara nasıl erişebileceğinizi, düzeltebileceğinizi veya silebileceğinizi açıklar.</p>
-    <h2>Topladığımız bilgiler</h2>
-    <p>Kayıt olurken kullandığınız e-posta adresini ve görünen adı; Bookli'yi işletme olarak kullanıyorsanız işletmenizin adını, kategorisini, adresini, telefon numarasını, hizmetlerini, fiyatlarını, çalışma saatlerini ve yüklemeyi tercih ettiğiniz fotoğrafları; bir randevu oluşturulduğunda, işletmenin müşteriyi tanımlayıp iletişime geçebilmesi için müşterinin adını, telefon numarasını ve e-posta adresini; bir işletmeyi değerlendirirken eklediğiniz herhangi bir puan, yorum metni ve isteğe bağlı fotoğrafı; uygulama içi geri bildirim formu aracılığıyla gönderdiğiniz mesajı ve isteğe bağlı fotoğrafı; push bildirimlerini iletmek için kullanılan bir cihaz belirteci; ve yalnızca izninizle, hiçbir zaman saklanmayan veya paylaşılmayan, Keşfet'teki isteğe bağlı "Yakınımdakiler" sıralaması için yaklaşık cihaz konumunuzu topluyoruz.</p>
-    <h2>Bu bilgileri nasıl kullanıyoruz</h2>
-    <p>Bu bilgileri Bookli'nin temel özelliklerini işletmek — randevular, programlar, gelir takibi ve bir işletme ile müşterileri arasındaki iletişim —, randevuyla ilgili push bildirimleri iletmek, bir işletmenin Bookli'ye olan abonelik ödemesini Stripe aracılığıyla işlemek ve geri bildirim ile destek taleplerine yanıt vermek için kullanıyoruz. Kişisel bilgilerinizi satmıyoruz ve reklam amacıyla kullanmıyoruz.</p>
-    <h2>İşlemenin yasal dayanağı</h2>
-    <p>Bilgilerinizi, kaydolduğunuz hizmeti sunmak için gerekli olduğu için, bize izin verdiğiniz için (örneğin konum erişimi veya isteğe bağlı bir fotoğraf) veya Bookli'yi güvenli ve doğru şekilde çalışır tutmakta meşru bir menfaatimiz olduğu için işliyoruz.</p>
-    <h2>Kimlerle paylaşıyoruz</h2>
-    <p>Bookli, her biri yalnızca görevini yerine getirmek için ihtiyaç duyduğu bilgiyi alan az sayıda hizmet sağlayıcı kullanır: Supabase veritabanımızı, kimlik doğrulamamızı ve dosya depolamamızı barındırır; Google (Firebase Cloud Messaging ve Google Maps) push bildirimlerini iletir ve harita ile adres özelliklerini destekler; Stripe ise bir işletmenin Bookli'ye olan abonelik ödemesini işler ve kart bilgilerinizi bizimle asla paylaşmaz. Bir müşterinin adı, telefon numarası ve e-postası yalnızca randevu aldığı belirli işletmeyle paylaşılır; bir işletmenin genel profili — adı, hizmetleri, fotoğrafları ve yorumları — uygulamaya veya paylaşılan bir bağlantıya göz atan herkes tarafından görülebilir, çünkü keşif ve randevu alma bu şekilde çalışır.</p>
-    <h2>Veri saklama</h2>
-    <p>Bilgilerinizi hesabınız aktif olduğu sürece saklarız. Hesabınızı silerseniz, işletmeniz, randevularınız, gelir kayıtlarınız ve müşteri notlarınız hemen kalıcı olarak kaldırılır; başka bir işletmede müşteri olarak yaptığınız bir randevu, hesabınızla bağlantısı kaldırılarak o işletme tarafından kendi kayıtları için tutulabilir. Bir işletmenin yasal olarak saklamakla yükümlü olduğu mali kayıtlar gibi, yasanın gerektirdiği durumlarda bazı bilgileri daha uzun süre saklayabiliriz.</p>
-    <h2>Uluslararası aktarımlar</h2>
-    <p>Hizmet sağlayıcılarımız bilgilerinizi Amerika Birleşik Devletleri dahil olmak üzere kendi ülkeniz dışındaki ülkelerde işleyebilir. Her biri kişisel verilerin işlenmesi için kendi güvencelerini uygular; veri korumasını ciddiye alan ve yalnızca her birinin gerçekten ihtiyaç duyduğunu paylaşan sağlayıcıları seçiyoruz.</p>
-    <h2>Haklarınız</h2>
-    <p>İşletme profilinizi, hizmetlerinizi ve fotoğraflarınızı istediğiniz zaman Ayarlar'dan düzenleyebilir veya kaldırabilirsiniz. Hesabınızı — işletmeniz, randevularınız, gelir kayıtlarınız ve müşteri notlarınız dahil — Ayarlar → Hesabı Sil'den kalıcı olarak silebilirsiniz; bu işlem anında gerçekleşir ve geri alınamaz. Konum erişimini ve push bildirimlerini cihazınızın kendi ayarlarından istediğiniz zaman kapatabilirsiniz ve uygulama bunlar olmadan da çalışmaya devam eder. Yaşadığınız yere bağlı olarak, verilerinizin bir kopyasını talep etme, bunları düzeltmemizi isteme veya kullanım şekline itiraz etme hakkına da sahip olabilirsiniz — bunlardan herhangi biri için aşağıdaki adresten bizimle iletişime geçin.</p>
-    <h2>Güvenlik</h2>
-    <p>Uygulama ile hizmet sağlayıcılarımız arasında aktarılan veriler şifrelenir (HTTPS/TLS). Depolanan veriler için sağlayıcılarımızın kendi güvenlik uygulamalarına güveniyoruz ve erişimi sistemin her bir parçasının gerçekten ihtiyaç duyduğu şeyle sınırlamak için makul adımlar atıyoruz.</p>
-    <h2>Çocukların gizliliği</h2>
-    <p>Bookli çocuklara yönelik değildir ve bilerek 16 yaşın altındaki hiç kimseden bilgi toplamıyoruz. Bir çocuğun bize kişisel bilgi verdiğini düşünüyorsanız, bizimle iletişime geçin, bu bilgileri kaldıracağız.</p>
-    <h2>Bu politikadaki değişiklikler</h2>
-    <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikler, bu sayfanın en üstünde güncellenmiş bir tarihle burada yansıtılacaktır.</p>
-    <h2>İletişim</h2>
-    <p>Bu politika veya verileriniz hakkındaki sorular bookli.app.team@outlook.com adresine gönderilebilir.</p>
-    <p class="crosslink">Ayrıca bakın: <a href="/terms/tr/">Bookli Hizmet Şartları</a></p>
-  </div>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf7ed"><title>Bookli Gizlilik Politikası</title><link rel="stylesheet" href="/assets/legal.css"></head>
+<body><main class="shell"><div class="toolbar"><a class="brand" href="/"><span class="mark">B</span><span>Bookli</span></a><select aria-label="Language" onchange="if(this.value) location.href=this.value;"><option value="/privacy/">English</option><option value="/privacy/hu/">Magyar</option><option value="/privacy/de/">Deutsch</option><option value="/privacy/fr/">Français</option><option value="/privacy/it/">Italiano</option><option value="/privacy/es/">Español</option><option value="/privacy/nl/">Nederlands</option><option value="/privacy/pt/">Português</option><option value="/privacy/sv/">Svenska</option><option value="/privacy/da/">Dansk</option><option value="/privacy/no/">Norsk</option><option value="/privacy/fi/">Suomi</option><option value="/privacy/pl/">Polski</option><option value="/privacy/ro/">Română</option><option value="/privacy/cs/">Čeština</option><option value="/privacy/sk/">Slovenčina</option><option value="/privacy/hr/">Hrvatski</option><option value="/privacy/sr/">Српски</option><option value="/privacy/bg/">Български</option><option value="/privacy/el/">Ελληνικά</option><option value="/privacy/sl/">Slovenščina</option><option value="/privacy/et/">Eesti</option><option value="/privacy/lv/">Latviešu</option><option value="/privacy/lt/">Lietuvių</option><option value="/privacy/uk/">Українська</option><option value="/privacy/tr/" selected>Türkçe</option><option value="/privacy/hi/">हिन्दी</option><option value="/privacy/zh-Hans/">简体中文</option><option value="/privacy/ko/">한국어</option><option value="/privacy/ja/">日本語</option><option value="/privacy/ru/">Русский</option><option value="/privacy/th/">ไทย</option></select></div><article class="card">
+<span class="eyebrow">Gizlilik · kişisel veriler</span><h1>Bookli Gizlilik Politikası</h1><p class="updated">Son güncelleme: 28 Eylül 2026</p>
+<div class="identity"><strong>Bookli'yi kim işletiyor</strong><p>Bookli, Zsolt Báthori'nin gerçek kişi olarak kullandığı bir ürün adıdır. Ayrı bir şirket veya tüzel kişi değildir ve CVR numarası yoktur. İletişim: <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a>.</p></div>
+<nav class="contents" aria-label="Bu sayfada"><a href="#controller">Veri sorumlusu ve roller</a><a href="#data">Veriler ve amaçlar</a><a href="#sharing">Paylaşım</a><a href="#retention">Saklama</a><a href="#rights">Haklarınız</a><a href="#contact">İletişim</a></nav>
+<h2 id="controller">1. Veri sorumlusu ve roller</h2><p>Ben, Zsolt Báthori, Bookli'yi işletiyor ve kişisel verilerin platformun çalışması, hesapların yönetimi, herkese açık işletme profilleri ile yorumların sürdürülmesi, destek sağlanması, hizmetin güvenliği ve aboneliklerin yönetimi için nasıl kullanılacağına karar veriyorum. Bu faaliyetler bakımından veri sorumlusu benim.</p><p>Bir işletme, müşterilerinin rezervasyonlarını, iletişim bilgilerini, ziyaret geçmişini veya notlarını saklamak için Bookli'yi kullandığında, bu verilere neden ihtiyaç duyduğuna o işletme karar verir ve genellikle bu verilerin sorumlusudur. Rezervasyon ve yönetim araçları sağlamak için bunları işletmenin talimatlarına göre işlerim. Belirli bir randevu veya bir işletmenin kayıtlarıyla ilgili sorularınız için önce o işletmeyle iletişime geçin. Bir işletme adına kişisel veri işlediğimde, bu veriler Bookli'ye eklenmeden önce işletme ile aramızda yazılı bir veri işleme sözleşmesi bulunmalıdır.</p>
+<h2 id="data">2. Hangi bilgileri neden kullanıyorum</h2><p>Bilgiler, kullandığınız özelliklere bağlıdır. Bunları, istediğiniz özelliği sunmak, Bookli'yi çalışır ve güvenli tutmak ve size yanıt vermek için kullanırım.</p><div class="table-wrap"><table><thead><tr><th>Bilgi</th><th>Amaç ve olağan hukuki dayanak</th></tr></thead><tbody>
+<tr><td>Hesap adı, e-posta adresi ve oturum açma bilgileri</td><td>Hesabınızı oluşturmak ve korumak ve istenen hizmeti sunmak (sözleşme, GDPR madde 6(1)(b)); hizmeti kötüye kullanıma karşı korumak (meşru menfaatler, madde 6(1)(f)).</td></tr>
+<tr><td>Bir işletmenin adı, kategorisi, adresi, iletişim bilgileri, hizmetleri, fiyatları, çalışma saatleri ve seçilen fotoğrafları</td><td>İstediğiniz işletme profilini oluşturmak ve göstermek, müşterilerin işletmeyi bulup iletişime geçmesini sağlamak (sözleşme).</td></tr>
+<tr><td>Rezervasyonlar, müşteri iletişim bilgileri, işletme notları, program ve gelir kayıtları</td><td>Rezervasyon ve işletme yönetimi özelliklerini sunmak. Bir işletmenin müşteri kayıtlarında veri sorumlusu genellikle işletmedir ve Bookli bunları onun talimatlarına göre işler.</td></tr>
+<tr><td>Puanlar, yorum metni ve isteğe bağlı fotoğraflar</td><td>Yayınlamayı seçtiğiniz yorumu göstermek ve keşif hizmetini sürdürmek (hizmet sözleşmesi ve yayınlama tercihiniz). Herkese açık yorumlar işletme profilini görüntüleyen herkes tarafından görülebilir.</td></tr>
+<tr><td>Geri bildirim mesajı ve isteğe bağlı ek</td><td>Gönderdiğiniz geri bildirimi veya destek talebini okumak ve yanıtlamak.</td></tr>
+<tr><td>Anlık bildirimler için cihaz belirteci</td><td>Açtığınız bildirimleri cihazınıza iletmek. Bildirimleri cihaz ayarlarından kapatabilirsiniz.</td></tr>
+<tr><td>Yaklaşık cihaz konumu (isteğe bağlı)</td><td>Özelliği açtığınızda yakındaki işletmeleri sıralamak. Uygulama mevcut tasarımında bu konumu yalnızca bu sıralama için kullanır; konum Bookli hesabınızda saklanmaz ve Bookli sunucularına gönderilmez.</td></tr>
+<tr><td>Abonelik ve ödeme durumu</td><td>Bir işletmenin aboneliğini ve ilgili kayıtları yönetmek. iPhone veya iPad uygulamasında satın alınan abonelikler Apple tarafından App Store üzerinden satılır ve faturalandırılır (uygulama içi satın alma); Android'de ve web'de ödemeyi Stripe işler. Kartınızın tam numarasını almam ve saklamam.</td></tr>
+</tbody></table></div><p>Bilgiler istediğiniz bir özellik için gerekli olduğunda olağan dayanak sözleşmedir. Hizmet güvenliği ve destek için sınırlı bilgileri meşru menfaatlere dayanarak kullanırım. Konum isteğe bağlıdır ve cihaz izninize bağlıdır. Kanun gerektirdiğinde bilgileri saklarım. Gerekli hesap bilgilerini vermezseniz hesabı oluşturamayabilir veya rezervasyonu tamamlayamayabilirim.</p>
+<h2 id="public">3. Herkese açık bilgiler</h2><p>Bir işletme profili bulunabilir olması için tasarlanmıştır. İşletme; adı, konumu, hizmetleri, çalışma saatleri, fotoğrafları ve yorumları gibi hangi bilgileri yayınlayacağını seçer. Keşfet'i veya paylaşılan bir profil bağlantısını kullanan herkes bunları görebilir. Bir rezervasyonun iletişim bilgileri, o rezervasyonu yürüten işletmeyle paylaşılır; herkese açık profilin parçası değildir.</p>
+<h2 id="sharing">4. Hizmet sağlayıcılar ve diğer alıcılar</h2><ul><li><strong>Supabase</strong> kimlik doğrulama, veritabanı ve dosya depolama hizmetleri sağlar.</li><li><strong>Google</strong> Google ile oturum açmayı ve Android uygulamasında anlık bildirimler için Firebase Cloud Messaging'i ve harita ile adres özellikleri için Google Haritalar'ı sağlar.</li><li><strong>Apple</strong> Apple ile Giriş Yap özelliğini ve iPhone ile iPad uygulamasında işletme abonelikleri için App Store'u ve uygulama içi satın almayı, anlık bildirimleri (Apple Push Notification service) ve harita ile adres özellikleri için Apple Haritalar'ı sağlar.</li><li><strong>Stripe</strong> Android'de veya web'de yapılan işletme aboneliği ödemelerini işler ve ödeme/müşteri portalını sağlar.</li><li><strong>Microsoft Outlook</strong> destek e-posta kutusunu sağlar.</li><li><strong>GitHub Pages</strong> bu herkese açık bilgi sitesini barındırır ve barındırma kapsamında isteklerle ilgili temel teknik bilgileri işleyebilir.</li><li>Bir işletme, kendisinde alınan randevuları yürütmek için ihtiyaç duyduğu rezervasyon ve müşteri bilgilerini alır. Herkese açık profil ve yorum bilgileri yukarıda açıklandığı şekilde görünür.</li></ul><p>Kişisel verileri satmam veya reklam için kullanmam. Hizmet sağlayıcılar bilgileri kendi koşullarına ve uygun olduğunda yazılı veri işleme sözleşmelerine göre işleyebilir.</p>
+<h2 id="transfers">5. Uluslararası aktarımlar</h2><p>Bazı sağlayıcılar bilgileri Avrupa Ekonomik Alanı dışında, Amerika Birleşik Devletleri dahil, işleyebilir. Konum ve aktarım mekanizması sağlayıcıya ve proje yapılandırmasına bağlıdır. Bir aktarım güvence gerektirdiğinde, yeterlilik kararı veya standart sözleşme maddeleri gibi hukuka uygun bir mekanizmaya dayanmalıdır. Verilerinize uygulanan güvenceler hakkında ayrıntı için benimle iletişime geçin.</p>
+<h2 id="retention">6. Bilgiler ne kadar süre saklanır</h2><p>Hesap bilgileri hesap etkin olduğu sürece saklanır. Hesap silme işlemini uygulamanın Ayarlar bölümünden başlatabilirsiniz. Silme işlemi hesap ve işletme bilgilerini etkin hizmetten kaldırır; sınırlı kopyalar, olağan saklama döngüleri sona erene kadar sağlayıcıların yedeklerinde veya güvenlik kayıtlarında geçici olarak kalabilir. Belirli kayıtları yasal bir yükümlülüğü yerine getirmek, bir uyuşmazlığı çözmek veya hizmeti korumak için gerektiği sürece saklayabilirim. Bir işletme, Bookli hesabınız silindikten sonra sorumlu olduğu rezervasyon bilgilerini kendi yasal kayıtlarında tutabilir.</p>
+<h2 id="rights">7. Seçenekleriniz ve haklarınız</h2><p>Profilinizi, hizmetlerinizi ve fotoğraflarınızı Ayarlar'dan düzenleyebilir veya kaldırabilir, hesabınızı silebilir ve konum erişimini veya bildirimleri cihaz ayarlarından kapatabilirsiniz. Geçerli hukuka ve koşullara bağlı olarak erişim, düzeltme, silme, kısıtlama veya taşınabilirlik talep edebilir; meşru menfaatlere dayalı işlemeye itiraz edebilir; ve dayanak rıza olduğunda rızanızı geri çekebilirsiniz. Bu hakları kullanmak için bana e-postayla ulaşın. Bilgileri bir işletme için işliyorsam, talebi o işletmeye yönlendirmem ve yanıtlamasına yardımcı olmam gerekebilir.</p><p>Yaşadığınız veya çalıştığınız yerdeki denetim makamına şikâyette bulunabilirsiniz. Danimarka'da bu makam <a href="https://www.datatilsynet.dk/english/file-a-complaint" rel="noopener">Danimarka Veri Koruma Kurumu'dur (Datatilsynet)</a>.</p>
+<h2 id="security">8. Güvenlik</h2><p>Uygulama ile sağlayıcıları arasında gönderilen bilgiler aktarım sırasında HTTPS/TLS ile korunur. Sağlayıcıların erişim denetimlerini kullanır ve erişimi Bookli'nin çalışması için gerekli olanla sınırlamak üzere makul adımlar atarım. Hiçbir çevrimiçi hizmet mutlak güvenlik vaat edemez.</p>
+<h2 id="children">9. Çocuklar</h2><p>Bookli 16 yaşından küçükler için tasarlanmamıştır ve Koşullar kullanıcıların en az 16 yaşında olmasını gerektirir. 16 yaşından küçük birinin hesap oluşturduğunu düşünüyorsanız, inceleyip gerektiğinde kaldırabilmem için benimle iletişime geçin.</p>
+<h2 id="website">10. Web sitesi ve değişiklikler</h2><p>Bu statik bilgi sitesinin sayfa kodunda şu anda reklam veya analiz etiketi bulunmuyor. Barındırıcısı yine de teknik bağlantı verilerini işleyebilir. Uygulama, sağlayıcılar veya yasal gereklilikler değiştiğinde bu politikayı güncelleyebilirim; yukarıdaki tarih en son revizyonu gösterir.</p>
+<h2 id="contact">11. İletişim</h2><p>Gizlilikle ilgili sorular veya haklarınıza ilişkin talepler için <a href="mailto:bookli.app.team@outlook.com">bookli.app.team@outlook.com</a> adresine yazın.</p><p class="crosslink">Ayrıca bkz.: <a href="/terms/tr/">Bookli Hizmet Koşulları</a>.</p>
+</article></main></body></html>
